@@ -112,6 +112,40 @@
         "licence": "Azure AI Speech terms",
         "commercial": true
       }
+    },
+    "natural-kokoro": {
+      "male_1": {
+        "provider": "kokoro",
+        "model": "hm_omega",
+        "label": "Omega",
+        "gender": "m",
+        "licence": "Apache-2.0 (Kokoro-82M by hexgrad)",
+        "commercial": true
+      },
+      "male_2": {
+        "provider": "kokoro",
+        "model": "hm_psi",
+        "label": "Psi",
+        "gender": "m",
+        "licence": "Apache-2.0 (Kokoro-82M by hexgrad)",
+        "commercial": true
+      },
+      "female_1": {
+        "provider": "kokoro",
+        "model": "hf_alpha",
+        "label": "Alpha",
+        "gender": "f",
+        "licence": "Apache-2.0 (Kokoro-82M by hexgrad)",
+        "commercial": true
+      },
+      "female_2": {
+        "provider": "kokoro",
+        "model": "hf_beta",
+        "label": "Beta",
+        "gender": "f",
+        "licence": "Apache-2.0 (Kokoro-82M by hexgrad)",
+        "commercial": true
+      }
     }
   }
 }

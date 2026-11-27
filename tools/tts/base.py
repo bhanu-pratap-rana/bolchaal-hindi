@@ -41,6 +41,9 @@ def get_provider(name: str) -> TTSProvider:
     if name == "azure":
         from .azure_tts import AzureProvider
         return AzureProvider()
+    if name == "kokoro":
+        from .kokoro_tts import KokoroProvider
+        return KokoroProvider()
     if name == "parler":
         from .parler_tts import ParlerProvider
         return ParlerProvider()

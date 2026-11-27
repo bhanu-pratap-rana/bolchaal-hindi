@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -29,7 +30,7 @@ from tts.text import leftover_latin, scene_fingerprint, to_speech  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CLIPS = ROOT / ".cache/clips"
-MEDIA = ROOT / "media"
+MEDIA = Path(os.environ["MEDIA_DIR"]).resolve() if os.environ.get("MEDIA_DIR") else ROOT / "media"  # override to build a second voice set side by side
 SR, GAP = 22050, 0.6
 VOCAB_SLOT = "female_1"
 TRIM = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse,"
