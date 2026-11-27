@@ -4,3 +4,4 @@ httpx>=0.27               # Azure adapter
 supabase>=2.10            # upload_supabase.py
 # Optional, only for the launch-parler profile (GPU recommended):
 #   pip install git+https://github.com/huggingface/parler-tts.git soundfile torch
+#   pip install -U "protobuf>=5.26" sentencepiece

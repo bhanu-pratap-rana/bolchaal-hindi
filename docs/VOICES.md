@@ -13,6 +13,7 @@ git clone https://github.com/bhanu-pratap-rana/bolchaal-hindi && cd bolchaal-hin
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r tools/requirements.txt
 pip install torch soundfile git+https://github.com/huggingface/parler-tts.git
+pip install -U "protobuf>=5.26" sentencepiece   # the tokenizer needs a newer protobuf than parler-tts pulls in
 
 # accept the model's terms at https://huggingface.co/ai4bharat/indic-parler-tts, then
 huggingface-cli login            # paste a read token from huggingface.co/settings/tokens
