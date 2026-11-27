@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bolchaal Hindi: spoken Hindi for travellers</title>
+<meta name="description" content="Listen to everyday Hindi conversations in distinct AI voices, follow along in Hindi, Roman and English, then practise your side.">
+<meta name="theme-color" content="#F5F7FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121a3a" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/mukta-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/tiro-devanagari-hindi-devanagari-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar" id="top">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">बो</span>
+    <span class="brand-text" aria-hidden="true"><span lang="hi" class="hi-ui">बोलचाल की हिंदी</span><span class="brand-en">Spoken Hindi</span></span><span class="sr-only">Bolchaal Hindi, home</span>
+  </a>
+  <nav class="bar-nav" aria-label="Main">
+    <a href="#/" data-nav="home">Course</a>
+    <a href="#/words" data-nav="words">Words</a>
+  </nav>
+  <button class="icon-btn" id="open-settings" type="button" aria-haspopup="dialog" aria-label="Settings">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+  </button>
+</header>
+<div id="preview-banner" class="banner" hidden></div>
+<div id="review-banner" class="banner review" hidden></div>
+<main id="main" tabindex="-1"></main>
+<div id="status" class="sr-only" role="status" aria-live="polite"></div>
+
+<dialog id="settings" class="sheet" aria-labelledby="settings-title" closedby="any">
+  <form method="dialog" class="sheet-body" id="settings-form">
+    <div class="sheet-head">
+      <h2 id="settings-title">Settings</h2>
+      <button class="icon-btn" value="close" aria-label="Close settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <fieldset>
+      <legend>I am learning as</legend>
+      <p class="hint">Hindi verbs change with the speaker's gender. This changes your lines, what people say to you, and your voice.</p>
+      <div class="seg" role="radiogroup">
+        <label><input type="radio" name="variant" value="m"><span>A man <span lang="hi" class="hi-ui">(आया हूँ)</span></span></label>
+        <label><input type="radio" name="variant" value="f"><span>A woman <span lang="hi" class="hi-ui">(आई हूँ)</span></span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Script</legend>
+      <div class="seg seg-3" role="radiogroup">
+        <label><input type="radio" name="script" value="both"><span>Hindi + Roman</span></label>
+        <label><input type="radio" name="script" value="roman"><span>Roman only</span></label>
+        <label><input type="radio" name="script" value="hindi"><span>Hindi only</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="toggles">
+      <legend>While listening</legend>
+      <label class="switch"><input type="checkbox" name="english"><span>Show English</span></label>
+      <label class="switch"><input type="checkbox" name="listenFirst"><span>Hide each line until I've heard it</span></label>
+    </fieldset>
+    <fieldset>
+      <legend>Theme</legend>
+      <div class="seg seg-3" role="radiogroup">
+        <label><input type="radio" name="theme" value="system"><span>System</span></label>
+        <label><input type="radio" name="theme" value="light"><span>Light</span></label>
+        <label><input type="radio" name="theme" value="dark"><span>Dark</span></label>
+      </div>
+    </fieldset>
+    <section class="about-voices" aria-labelledby="voices-title">
+      <h3 id="voices-title">About the voices</h3>
+      <p>Every voice in this course is AI-generated text-to-speech, not a recording of a person.</p>
+      <ul id="voice-list"></ul>
+    </section>
+    <section aria-labelledby="storage-title">
+      <h3 id="storage-title">Saved for offline</h3>
+      <p id="storage-info" class="hint">Nothing saved yet. Open a day and choose "Save for offline".</p>
+    </section>
+    <p class="hint">Your progress and settings stay in this browser. Nothing is sent anywhere.</p>
+  </form>
+</dialog>
+
+<dialog id="gloss" class="pop" aria-labelledby="gloss-word" closedby="any">
+  <div class="pop-body">
+    <p class="gloss-word" id="gloss-word"></p>
+    <p class="gloss-roman" id="gloss-roman"></p>
+    <p class="gloss-en" id="gloss-en"></p>
+    <div class="gloss-actions">
+      <button type="button" class="btn small" id="gloss-play">Hear it</button>
+      <div class="seg mini" role="group" aria-label="How well do you know this word?">
+        <button type="button" data-know="learning" aria-pressed="false">Still learning</button>
+        <button type="button" data-know="known" aria-pressed="false">I know it</button>
+      </div>
+    </div>
+    <form method="dialog"><button class="link-btn">Close</button></form>
+  </div>
+</dialog>
+<noscript><p class="noscript">This course needs JavaScript to play the conversations.</p></noscript>
+</body>
+</html>

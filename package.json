@@ -1,0 +1,18 @@
+{
+  "name": "bolchaal-hindi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "python3 tools/validate_content.py",
+    "audio": "python3 tools/build_audio.py --profile demo-piper",
+    "build": "python3 tools/build_web.py",
+    "build:preview": "python3 tools/build_web.py --only all",
+    "serve": "python3 tools/serve.py 8788 dist",
+    "test:unit": "python3 -m unittest discover -s tests/unit",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@playwright/test": "1.63.0"
+  }
+}
