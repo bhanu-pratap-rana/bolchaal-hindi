@@ -25,7 +25,15 @@ class ParlerProvider(TTSProvider):
         from transformers import AutoTokenizer
 
         self.torch = torch
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        # NVIDIA GPU (Colab), Apple Silicon GPU (MPS, e.g. MacBook M-series), else CPU (slow).
+        # On a Mac, run with PYTORCH_ENABLE_MPS_FALLBACK=1 so any op MPS lacks falls back to the CPU.
+        if torch.cuda.is_available():
+            self.device = "cuda"
+        elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+            self.device = "mps"
+        else:
+            self.device = "cpu"
+        print(f"Parler-TTS running on {self.device}", flush=True)
         name = os.environ.get("PARLER_MODEL", self.settings["model"])
         self.model = ParlerTTSForConditionalGeneration.from_pretrained(name).to(self.device)
         self.tok = AutoTokenizer.from_pretrained(name)

@@ -11,3 +11,4 @@ playwright-report/
 __pycache__/
 .wrangler/
 media-kokoro/
+samples/
