@@ -1,0 +1,6 @@
+# Build tools (Python 3.11+). ffmpeg must be on PATH.
+piper-tts==1.8.0          # demo voices (offline)
+httpx>=0.27               # Azure adapter
+supabase>=2.10            # upload_supabase.py
+# Optional, only for the launch-parler profile (GPU recommended):
+#   pip install git+https://github.com/huggingface/parler-tts.git soundfile torch

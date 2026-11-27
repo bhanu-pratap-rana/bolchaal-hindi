@@ -1,0 +1,325 @@
+{
+  "id": "d11",
+  "day": 11,
+  "status": "review",
+  "title_hi": "पासपोर्ट खो जाना",
+  "title_en": "Losing a passport",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "receptionist": {
+      "hi": "रिसेप्शनिस्ट",
+      "en": "Receptionist",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "hotel_staff": {
+      "hi": "होटल कर्मचारी",
+      "en": "Hotel staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "police_officer": {
+      "hi": "पुलिस अधिकारी",
+      "en": "Police officer",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "embassy_officer": {
+      "hi": "दूतावास अधिकारी",
+      "en": "Embassy officer",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "पूछताछ",
+      "roman": "poochhtaachh",
+      "en": "inquiry, asking"
+    },
+    {
+      "hi": "प्रतीक्षा",
+      "roman": "prateekshaa",
+      "en": "wait"
+    },
+    {
+      "hi": "क्षमा कीजिए",
+      "roman": "kshamaa keejiye",
+      "en": "I'm sorry / excuse me"
+    },
+    {
+      "hi": "सुरक्षा विभाग",
+      "roman": "surakshaa vibhaag",
+      "en": "security department"
+    },
+    {
+      "hi": "संभावना",
+      "roman": "sambhaavnaa",
+      "en": "possibility"
+    },
+    {
+      "hi": "रसीद",
+      "roman": "raseed",
+      "en": "receipt"
+    },
+    {
+      "hi": "वाहन संख्या",
+      "roman": "vaahan sankhyaa",
+      "en": "vehicle number"
+    },
+    {
+      "hi": "तुरंत",
+      "roman": "turant",
+      "en": "immediately"
+    },
+    {
+      "hi": "शिकायत",
+      "roman": "shikaayat",
+      "en": "complaint"
+    },
+    {
+      "hi": "संदेह",
+      "roman": "sandeh",
+      "en": "suspicion, doubt"
+    },
+    {
+      "hi": "प्रपत्र",
+      "roman": "prapatra",
+      "en": "form"
+    },
+    {
+      "hi": "प्रति",
+      "roman": "prati",
+      "en": "copy"
+    },
+    {
+      "hi": "दूतावास",
+      "roman": "dootaavaas",
+      "en": "embassy"
+    },
+    {
+      "hi": "पहचान-पत्र",
+      "roman": "pehchaan-patra",
+      "en": "identity document"
+    },
+    {
+      "hi": "कार्यदिवस",
+      "roman": "kaaryadivas",
+      "en": "working day"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d11s1",
+      "title_hi": "होटल में पूछताछ",
+      "title_en": "Asking at the hotel",
+      "situation": "You can't find your passport and ask the hotel reception if anyone has handed it in.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते। मेरा पासपोर्ट नहीं मिल रहा है। क्या किसी ने जमा कराया है?",
+          "roman": "Namaste. Meraa passport naheen mil rahaa hai. Kyaa kisee ne jamaa karaayaa hai?",
+          "en": "Hello. I can't find my passport. Has anyone turned it in?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "कृपया अपना नाम बताइए।",
+          "roman": "Kripyaa apnaa naam bataaiye.",
+          "en": "May I have your name, please?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मेरा नाम डेविड स्मिथ है। मैं कमरा संख्या 305 में ठहरा हूँ।",
+          "roman": "Meraa naam David Smith hai. Main kamraa sankhyaa 305 mein thehraa hoon.",
+          "en": "My name is David Smith. I am staying in room number 305.",
+          "f": {
+            "hi": "मेरा नाम डेविड स्मिथ है। मैं कमरा संख्या 305 में ठहरी हूँ।",
+            "roman": "Meraa naam David Smith hai. Main kamraa sankhyaa 305 mein thehree hoon."
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "कृपया कुछ देर प्रतीक्षा कीजिए।",
+          "roman": "Kripyaa kuchh der prateekshaa keejiye.",
+          "en": "Please wait for a moment."
+        },
+        {
+          "role": "receptionist",
+          "hi": "क्षमा कीजिए, हमारे पास आपका पासपोर्ट जमा नहीं हुआ है।",
+          "roman": "Kshamaa keejiye, hamaare paas aapkaa passport jamaa naheen huaa hai.",
+          "en": "I'm sorry. No one has handed in your passport."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या सीसीटीवी कैमरे की जाँच की जा सकती है?",
+          "roman": "Kyaa CCTV camere kee jaanch kee jaa saktee hai?",
+          "en": "Could you please check the CCTV footage?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी, हम सुरक्षा विभाग से बात करते हैं।",
+          "roman": "Jee, hum surakshaa vibhaag se baat karte hain.",
+          "en": "Certainly. We will contact the security department."
+        }
+      ]
+    },
+    {
+      "id": "d11s2",
+      "title_hi": "टैक्सी में छूट जाने की संभावना",
+      "title_en": "Maybe it was left in a taxi",
+      "situation": "You think you left your passport in a taxi and tell the hotel staff.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मुझे लगता है कि मेरा पासपोर्ट टैक्सी में छूट गया है।",
+          "roman": "Mujhe lagtaa hai ki meraa passport taxi mein chhoot gayaa hai.",
+          "en": "I think I left my passport in a taxi."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "क्या आपके पास टैक्सी की रसीद या वाहन संख्या है?",
+          "roman": "Kyaa aapke paas taxi kee raseed yaa vaahan sankhyaa hai?",
+          "en": "Do you have the taxi receipt or the vehicle number?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, यह रसीद मेरे पास है।",
+          "roman": "Jee, yeh raseed mere paas hai.",
+          "en": "Yes, I have the receipt."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "हम टैक्सी कंपनी से तुरंत संपर्क करेंगे।",
+          "roman": "Hum taxi company se turant sampark karenge.",
+          "en": "We will contact the taxi company immediately.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d11s3",
+      "title_hi": "पुलिस थाने में शिकायत",
+      "title_en": "Filing a police complaint",
+      "situation": "You report the lost passport at the police station and ask for a copy of the complaint.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पासपोर्ट खो गया है।",
+          "roman": "Meraa passport kho gayaa hai.",
+          "en": "I have lost my passport."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपने इसे आख़िरी बार कहाँ देखा था?",
+          "roman": "Aapne ise aakhiree baar kahaan dekhaa thaa?",
+          "en": "Where did you last see it?"
+        },
+        {
+          "role": "traveller",
+          "hi": "कल शाम होटल से बाज़ार जाते समय।",
+          "roman": "Kal shaam hotel se baazaar jaate samay.",
+          "en": "Yesterday evening while travelling from the hotel to the market."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या किसी पर आपको संदेह है?",
+          "roman": "Kyaa kisee par aapko sandeh hai?",
+          "en": "Do you suspect anyone?"
+        },
+        {
+          "role": "traveller",
+          "hi": "नहीं।",
+          "roman": "Naheen.",
+          "en": "No."
+        },
+        {
+          "role": "police_officer",
+          "hi": "कृपया यह शिकायत प्रपत्र भरिए।",
+          "roman": "Kripyaa yeh shikaayat prapatra bhariye.",
+          "en": "Please fill out this complaint form."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या मुझे शिकायत की एक प्रति मिल सकती है?",
+          "roman": "Kyaa mujhe shikaayat kee ek prati mil saktee hai?",
+          "en": "May I have a copy of the complaint?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "जी, यह प्रति आपके दूतावास में काम आएगी।",
+          "roman": "Jee, yeh prati aapke dootaavaas mein kaam aaegee.",
+          "en": "Certainly. You will need it at your embassy."
+        }
+      ]
+    },
+    {
+      "id": "d11s4",
+      "title_hi": "दूतावास से संपर्क",
+      "title_en": "Contacting the embassy",
+      "situation": "You go to your embassy to apply for a new passport.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पासपोर्ट खो गया है। मुझे नया पासपोर्ट चाहिए।",
+          "roman": "Meraa passport kho gayaa hai. Mujhe nayaa passport chaahiye.",
+          "en": "I have lost my passport. I need a new one."
+        },
+        {
+          "role": "embassy_officer",
+          "hi": "क्या आपने पुलिस में शिकायत दर्ज कराई है?",
+          "roman": "Kyaa aapne police mein shikaayat darj karaaee hai?",
+          "en": "Have you filed a police report?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, यह उसकी प्रति है।",
+          "roman": "Jee, yeh uskee prati hai.",
+          "en": "Yes. Here is a copy."
+        },
+        {
+          "role": "embassy_officer",
+          "hi": "कृपया अपना पहचान-पत्र और दो पासपोर्ट आकार के फोटो भी दीजिए।",
+          "roman": "Kripyaa apnaa pehchaan-patra aur do passport aakaar ke photo bhee deejiye.",
+          "en": "Please provide your identity document and two passport-size photographs."
+        },
+        {
+          "role": "traveller",
+          "hi": "नया पासपोर्ट बनने में कितना समय लगेगा?",
+          "roman": "Nayaa passport banne mein kitnaa samay lagegaa?",
+          "en": "How long will it take to get a new passport?"
+        },
+        {
+          "role": "embassy_officer",
+          "hi": "सामान्यतः दो से तीन कार्यदिवस लगेंगे।",
+          "roman": "Saamaanyatah do se teen kaaryadivas lagenge.",
+          "en": "It usually takes two to three working days."
+        }
+      ]
+    }
+  ]
+}

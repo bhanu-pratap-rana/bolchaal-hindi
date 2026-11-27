@@ -1,0 +1,681 @@
+{
+  "id": "d06",
+  "day": 6,
+  "status": "review",
+  "title_hi": "होटल में कमरा बुक करना",
+  "title_en": "Booking a hotel room",
+  "roles": {
+    "guest": {
+      "hi": "अतिथि",
+      "en": "Guest",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "receptionist": {
+      "hi": "रिसेप्शनिस्ट",
+      "en": "Receptionist",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "room_service": {
+      "hi": "रूम सर्विस कर्मचारी",
+      "en": "Room service staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "होटल",
+      "roman": "hotel",
+      "en": "hotel"
+    },
+    {
+      "hi": "कमरा",
+      "roman": "kamraa",
+      "en": "room"
+    },
+    {
+      "hi": "आरक्षण",
+      "roman": "aarakshan",
+      "en": "reservation, booking"
+    },
+    {
+      "hi": "कमरा बुक करना",
+      "roman": "kamraa book karnaa",
+      "en": "to book a room"
+    },
+    {
+      "hi": "रिसेप्शनिस्ट",
+      "roman": "receptionist",
+      "en": "receptionist"
+    },
+    {
+      "hi": "अतिथि",
+      "roman": "atithi",
+      "en": "guest"
+    },
+    {
+      "hi": "एकल कमरा",
+      "roman": "ekal kamraa",
+      "en": "single room"
+    },
+    {
+      "hi": "दो लोगों का कमरा",
+      "roman": "do logon kaa kamraa",
+      "en": "double room"
+    },
+    {
+      "hi": "रात",
+      "roman": "raat",
+      "en": "night"
+    },
+    {
+      "hi": "ठहरना",
+      "roman": "thaharnaa",
+      "en": "to stay"
+    },
+    {
+      "hi": "पहचान-पत्र",
+      "roman": "pehchaan-patra",
+      "en": "identity card, ID"
+    },
+    {
+      "hi": "पासपोर्ट",
+      "roman": "passport",
+      "en": "passport"
+    },
+    {
+      "hi": "ऑनलाइन आरक्षण",
+      "roman": "online aarakshan",
+      "en": "online reservation"
+    },
+    {
+      "hi": "पुष्टि",
+      "roman": "pushti",
+      "en": "confirmation"
+    },
+    {
+      "hi": "मंज़िल",
+      "roman": "manzil",
+      "en": "floor"
+    },
+    {
+      "hi": "किराया",
+      "roman": "kiraayaa",
+      "en": "room rate, fare"
+    },
+    {
+      "hi": "नाश्ता",
+      "roman": "naashtaa",
+      "en": "breakfast"
+    },
+    {
+      "hi": "सुविधा",
+      "roman": "suvidhaa",
+      "en": "facility"
+    },
+    {
+      "hi": "वाई-फाई",
+      "roman": "Wi-Fi",
+      "en": "Wi-Fi"
+    },
+    {
+      "hi": "गर्म पानी",
+      "roman": "garm paanee",
+      "en": "hot water"
+    },
+    {
+      "hi": "अतिरिक्त बिस्तर",
+      "roman": "atirikt bistar",
+      "en": "extra bed"
+    },
+    {
+      "hi": "अतिरिक्त शुल्क",
+      "roman": "atirikt shulk",
+      "en": "additional charge"
+    },
+    {
+      "hi": "वातानुकूलन/एयर कंडीशनर",
+      "roman": "vaataanukoolan / air conditioner",
+      "en": "air conditioner"
+    },
+    {
+      "hi": "तकनीशियन",
+      "roman": "technician",
+      "en": "technician"
+    },
+    {
+      "hi": "तौलिया",
+      "roman": "tauliyaa",
+      "en": "towel"
+    },
+    {
+      "hi": "पीने का पानी",
+      "roman": "peene kaa paanee",
+      "en": "drinking water"
+    },
+    {
+      "hi": "रूम सर्विस",
+      "roman": "room service",
+      "en": "room service"
+    },
+    {
+      "hi": "शाकाहारी थाली",
+      "roman": "shaakaahaaree thaalee",
+      "en": "vegetarian meal, platter"
+    },
+    {
+      "hi": "चाय",
+      "roman": "chaay",
+      "en": "tea"
+    },
+    {
+      "hi": "उपलब्धता",
+      "roman": "upalabdhtaa",
+      "en": "availability"
+    },
+    {
+      "hi": "बिल",
+      "roman": "bill",
+      "en": "bill"
+    },
+    {
+      "hi": "भुगतान",
+      "roman": "bhugtaan",
+      "en": "payment"
+    },
+    {
+      "hi": "नकद",
+      "roman": "naqad",
+      "en": "cash"
+    },
+    {
+      "hi": "कार्ड",
+      "roman": "card",
+      "en": "card"
+    },
+    {
+      "hi": "रसीद",
+      "roman": "raseed",
+      "en": "receipt"
+    },
+    {
+      "hi": "आतिथ्य",
+      "roman": "aatithya",
+      "en": "hospitality"
+    },
+    {
+      "hi": "धन्यवाद",
+      "roman": "dhanyavaad",
+      "en": "thank you"
+    },
+    {
+      "hi": "आपका स्वागत है",
+      "roman": "aapkaa svaagat hai",
+      "en": "you're welcome"
+    },
+    {
+      "hi": "शुभ यात्रा",
+      "roman": "shubh yaatraa",
+      "en": "have a pleasant journey"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d06s1",
+      "title_hi": "कमरा बुक करना",
+      "title_en": "Booking a room",
+      "situation": "You arrive at a hotel without a reservation and book a single room.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "नमस्कार! मुझे एक कमरा चाहिए।",
+          "roman": "Namaskaar! Mujhe ek kamraa chaahiye.",
+          "en": "Good morning! I would like a room."
+        },
+        {
+          "role": "receptionist",
+          "hi": "नमस्कार! क्या आपके पास पहले से आरक्षण है?",
+          "roman": "Namaskaar! Kyaa aapke paas pehle se aarakshan hai?",
+          "en": "Good morning! Do you already have a reservation?"
+        },
+        {
+          "role": "guest",
+          "hi": "नहीं, मैं अभी कमरा बुक करना चाहता हूँ।",
+          "roman": "Naheen, main abhee kamraa book karnaa chaahtaa hoon.",
+          "en": "No, I would like to book a room now.",
+          "f": {
+            "hi": "नहीं, मैं अभी कमरा बुक करना चाहती हूँ।",
+            "roman": "Naheen, main abhee kamraa book karnaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "आपको एकल कमरा चाहिए या दो लोगों के लिए?",
+          "roman": "Aapko ekal kamraa chaahiye yaa do logon ke liye?",
+          "en": "Would you like a single room or a double room?"
+        },
+        {
+          "role": "guest",
+          "hi": "मुझे एकल कमरा चाहिए।",
+          "roman": "Mujhe ekal kamraa chaahiye.",
+          "en": "I would like a single room."
+        },
+        {
+          "role": "receptionist",
+          "hi": "आप कितने दिनों के लिए ठहरेंगे?",
+          "roman": "Aap kitne dinon ke liye thahrenge?",
+          "en": "How many days will you be staying?",
+          "f": {
+            "hi": "आप कितने दिनों के लिए ठहरेंगी?",
+            "roman": "Aap kitne dinon ke liye thahrengee?"
+          }
+        },
+        {
+          "role": "guest",
+          "hi": "दो रातों के लिए।",
+          "roman": "Do raaton ke liye.",
+          "en": "For two nights."
+        },
+        {
+          "role": "receptionist",
+          "hi": "कृपया अपना पहचान-पत्र दीजिए।",
+          "roman": "Kripyaa apnaa pehchaan-patra deejiye.",
+          "en": "May I have your identification, please?"
+        },
+        {
+          "role": "guest",
+          "hi": "यह मेरा पासपोर्ट है।",
+          "roman": "Yeh meraa passport hai.",
+          "en": "Here is my passport."
+        },
+        {
+          "role": "receptionist",
+          "hi": "धन्यवाद। आपका कमरा तैयार है।",
+          "roman": "Dhanyavaad. Aapkaa kamraa taiyaar hai.",
+          "en": "Thank you. Your room is ready."
+        }
+      ]
+    },
+    {
+      "id": "d06s2",
+      "title_hi": "ऑनलाइन आरक्षण की पुष्टि करना",
+      "title_en": "Confirming an online reservation",
+      "situation": "You booked online and check in at the front desk.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "नमस्कार! मैंने ऑनलाइन कमरा बुक किया था।",
+          "roman": "Namaskaar! Maine online kamraa book kiyaa thaa.",
+          "en": "Good morning! I booked a room online."
+        },
+        {
+          "role": "receptionist",
+          "hi": "कृपया अपना नाम बताइए।",
+          "roman": "Kripyaa apnaa naam bataaiye.",
+          "en": "May I have your name, please?"
+        },
+        {
+          "role": "guest",
+          "hi": "मेरा नाम जॉन स्मिथ है।",
+          "roman": "Meraa naam John Smith hai.",
+          "en": "My name is John Smith."
+        },
+        {
+          "role": "receptionist",
+          "hi": "एक क्षण, मैं आपका आरक्षण देखता हूँ।",
+          "roman": "Ek kshan, main aapkaa aarakshan dekhtaa hoon.",
+          "en": "One moment, please. I will check your reservation."
+        },
+        {
+          "role": "guest",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी, आपका आरक्षण मिल गया है। आपका कमरा दूसरी मंज़िल पर है।",
+          "roman": "Jee, aapkaa aarakshan mil gayaa hai. Aapkaa kamraa doosree manzil par hai.",
+          "en": "Yes, we have found your reservation. Your room is on the second floor."
+        }
+      ]
+    },
+    {
+      "id": "d06s3",
+      "title_hi": "कमरे का किराया पूछना",
+      "title_en": "Asking about the room rate",
+      "situation": "You ask how much a room costs per night.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "एक रात के लिए कमरे का किराया कितना है?",
+          "roman": "Ek raat ke liye kamre kaa kiraayaa kitnaa hai?",
+          "en": "What is the room rate for one night?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "एकल कमरे का किराया तीन हज़ार रुपये है।",
+          "roman": "Ekal kamre kaa kiraayaa teen hazaar rupaye hai.",
+          "en": "The rate for a single room is three thousand rupees per night."
+        },
+        {
+          "role": "guest",
+          "hi": "क्या इसमें नाश्ता शामिल है?",
+          "roman": "Kyaa ismein naashtaa shaamil hai?",
+          "en": "Is breakfast included?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, नाश्ता किराए में शामिल है।",
+          "roman": "Jee haan, naashtaa kiraaye mein shaamil hai.",
+          "en": "Yes, breakfast is included in the room rate."
+        },
+        {
+          "role": "guest",
+          "hi": "बहुत अच्छा।",
+          "roman": "Bahut achchhaa.",
+          "en": "That's great."
+        }
+      ]
+    },
+    {
+      "id": "d06s4",
+      "title_hi": "सुविधाओं के बारे में पूछना",
+      "title_en": "Asking about the facilities",
+      "situation": "You ask about Wi-Fi and hot water in the room.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "क्या कमरे में वाई-फाई की सुविधा है?",
+          "roman": "Kyaa kamre mein Wi-Fi kee suvidhaa hai?",
+          "en": "Is Wi-Fi available in the room?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, निःशुल्क वाई-फाई उपलब्ध है।",
+          "roman": "Jee haan, nihshulk Wi-Fi upalabdh hai.",
+          "en": "Yes, complimentary Wi-Fi is available."
+        },
+        {
+          "role": "guest",
+          "hi": "क्या गर्म पानी भी मिलेगा?",
+          "roman": "Kyaa garm paanee bhee milegaa?",
+          "en": "Is hot water available as well?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, चौबीसों घंटे गर्म पानी उपलब्ध है।",
+          "roman": "Jee haan, chaubeeson ghante garm paanee upalabdh hai.",
+          "en": "Yes, hot water is available twenty-four hours a day."
+        },
+        {
+          "role": "guest",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d06s5",
+      "title_hi": "अतिरिक्त बिस्तर की माँग करना",
+      "title_en": "Asking for an extra bed",
+      "situation": "You ask for an extra bed in your room.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "क्या कमरे में एक अतिरिक्त बिस्तर मिल सकता है?",
+          "roman": "Kyaa kamre mein ek atirikt bistar mil saktaa hai?",
+          "en": "Could I have an extra bed in my room?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, अतिरिक्त शुल्क देकर मिल सकता है।",
+          "roman": "Jee haan, atirikt shulk dekar mil saktaa hai.",
+          "en": "Yes, it is available for an additional charge."
+        },
+        {
+          "role": "guest",
+          "hi": "कृपया एक अतिरिक्त बिस्तर लगवा दीजिए।",
+          "roman": "Kripyaa ek atirikt bistar lagvaa deejiye.",
+          "en": "Please arrange one for me."
+        },
+        {
+          "role": "receptionist",
+          "hi": "अवश्य।",
+          "roman": "Avashya.",
+          "en": "Certainly."
+        }
+      ]
+    },
+    {
+      "id": "d06s6",
+      "title_hi": "कमरे में समस्या होना",
+      "title_en": "A problem with the room",
+      "situation": "The air conditioner in your room is not working.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "मेरे कमरे का ए.सी. (एयर कंडीशनर) काम नहीं कर रहा है।",
+          "roman": "Mere kamre kaa AC (air conditioner) kaam naheen kar rahaa hai.",
+          "en": "The air conditioner in my room is not working."
+        },
+        {
+          "role": "receptionist",
+          "hi": "असुविधा के लिए क्षमा कीजिए। हम तुरंत तकनीशियन भेजते हैं।",
+          "roman": "Asuvidhaa ke liye kshamaa keejiye. Ham turant technician bhejte hain.",
+          "en": "We are sorry for the inconvenience. We will send a technician immediately."
+        },
+        {
+          "role": "guest",
+          "hi": "यदि ठीक न हो तो क्या मुझे दूसरा कमरा मिल सकता है?",
+          "roman": "Yadi theek na ho to kyaa mujhe doosraa kamraa mil saktaa hai?",
+          "en": "If it cannot be repaired, can I have another room?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, आवश्यकता होने पर हम दूसरा कमरा दे देंगे।",
+          "roman": "Jee haan, aavashyaktaa hone par ham doosraa kamraa de denge.",
+          "en": "Certainly. If necessary, we will provide you with another room.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d06s7",
+      "title_hi": "अतिरिक्त तौलिया और पानी माँगना",
+      "title_en": "Asking for a towel and drinking water",
+      "situation": "You ask reception for an extra towel and some drinking water.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "क्या मुझे एक अतिरिक्त तौलिया मिल सकता है?",
+          "roman": "Kyaa mujhe ek atirikt tauliyaa mil saktaa hai?",
+          "en": "Could I have an extra towel, please?"
+        },
+        {
+          "role": "receptionist",
+          "hi": "अवश्य। क्या आपको और कुछ चाहिए?",
+          "roman": "Avashya. Kyaa aapko aur kuchh chaahiye?",
+          "en": "Certainly. Would you like anything else?"
+        },
+        {
+          "role": "guest",
+          "hi": "कृपया पीने का पानी भी भेज दीजिए।",
+          "roman": "Kripyaa peene kaa paanee bhee bhej deejiye.",
+          "en": "Please send some drinking water as well."
+        },
+        {
+          "role": "receptionist",
+          "hi": "अभी भिजवाते हैं।",
+          "roman": "Abhee bhijvaate hain.",
+          "en": "We will send it right away."
+        }
+      ]
+    },
+    {
+      "id": "d06s8",
+      "title_hi": "भोजन मँगाना (रूम सर्विस)",
+      "title_en": "Ordering room service",
+      "situation": "You order a meal to your room.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "मैं अपने कमरे में भोजन मँगाना चाहता हूँ।",
+          "roman": "Main apne kamre mein bhojan mangaanaa chaahtaa hoon.",
+          "en": "I would like to order food to my room.",
+          "f": {
+            "hi": "मैं अपने कमरे में भोजन मँगाना चाहती हूँ।",
+            "roman": "Main apne kamre mein bhojan mangaanaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "room_service",
+          "hi": "आप क्या लेना चाहेंगे?",
+          "roman": "Aap kyaa lenaa chaahenge?",
+          "en": "What would you like to have?",
+          "f": {
+            "hi": "आप क्या लेना चाहेंगी?",
+            "roman": "Aap kyaa lenaa chaahengee?"
+          }
+        },
+        {
+          "role": "guest",
+          "hi": "एक शाकाहारी थाली और एक कप चाय।",
+          "roman": "Ek shaakaahaaree thaalee aur ek cup chaay.",
+          "en": "One vegetarian meal and a cup of tea, please."
+        },
+        {
+          "role": "room_service",
+          "hi": "लगभग तीस मिनट में भोजन पहुँच जाएगा।",
+          "roman": "Lagbhag tees minute mein bhojan pahunch jaayegaa.",
+          "en": "Your order will be delivered in about thirty minutes."
+        },
+        {
+          "role": "guest",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d06s9",
+      "title_hi": "एक रात और ठहरना",
+      "title_en": "Staying one more night",
+      "situation": "You ask to extend your stay by one night.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "मैं एक रात और रुकना चाहता हूँ।",
+          "roman": "Main ek raat aur ruknaa chaahtaa hoon.",
+          "en": "I would like to stay for one more night.",
+          "f": {
+            "hi": "मैं एक रात और रुकना चाहती हूँ।",
+            "roman": "Main ek raat aur ruknaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "मैं उपलब्धता देखता हूँ।",
+          "roman": "Main upalabdhtaa dekhtaa hoon.",
+          "en": "Let me check the availability."
+        },
+        {
+          "role": "guest",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी, आपका आरक्षण एक रात के लिए बढ़ा दिया गया है।",
+          "roman": "Jee, aapkaa aarakshan ek raat ke liye badhaa diyaa gayaa hai.",
+          "en": "Yes, your reservation has been extended for one more night."
+        }
+      ]
+    },
+    {
+      "id": "d06s10",
+      "title_hi": "बिल का भुगतान करना और होटल छोड़ना",
+      "title_en": "Paying the bill and checking out",
+      "situation": "You check out, pay by card and thank the receptionist.",
+      "lines": [
+        {
+          "role": "guest",
+          "hi": "मैं होटल छोड़ना चाहता हूँ। कृपया मेरा बिल तैयार कर दीजिए।",
+          "roman": "Main hotel chhodnaa chaahtaa hoon. Kripyaa meraa bill taiyaar kar deejiye.",
+          "en": "I would like to check out. Please prepare my bill.",
+          "f": {
+            "hi": "मैं होटल छोड़ना चाहती हूँ। कृपया मेरा बिल तैयार कर दीजिए।",
+            "roman": "Main hotel chhodnaa chaahtee hoon. Kripyaa meraa bill taiyaar kar deejiye."
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "अवश्य। यह आपका बिल है।",
+          "roman": "Avashya. Yeh aapkaa bill hai.",
+          "en": "Certainly. Here is your bill."
+        },
+        {
+          "role": "guest",
+          "hi": "क्या मैं कार्ड से भुगतान कर सकता हूँ?",
+          "roman": "Kyaa main card se bhugtaan kar saktaa hoon?",
+          "en": "Can I pay by card?",
+          "f": {
+            "hi": "क्या मैं कार्ड से भुगतान कर सकती हूँ?",
+            "roman": "Kyaa main card se bhugtaan kar saktee hoon?"
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "जी हाँ, आप कार्ड या नकद—दोनों से भुगतान कर सकते हैं।",
+          "roman": "Jee haan, aap card yaa naqad, donon se bhugtaan kar sakte hain.",
+          "en": "Yes, you can pay either by card or in cash.",
+          "f": {
+            "hi": "जी हाँ, आप कार्ड या नकद—दोनों से भुगतान कर सकती हैं।",
+            "roman": "Jee haan, aap card yaa naqad, donon se bhugtaan kar saktee hain."
+          }
+        },
+        {
+          "role": "guest",
+          "hi": "यह मेरा कार्ड है।",
+          "roman": "Yeh meraa card hai.",
+          "en": "Here is my card."
+        },
+        {
+          "role": "receptionist",
+          "hi": "भुगतान हो गया है। यह आपकी रसीद है।",
+          "roman": "Bhugtaan ho gayaa hai. Yeh aapkee raseed hai.",
+          "en": "Your payment has been completed. Here is your receipt."
+        },
+        {
+          "role": "guest",
+          "hi": "धन्यवाद। आपका आतिथ्य बहुत अच्छा रहा।",
+          "roman": "Dhanyavaad. Aapkaa aatithya bahut achchhaa rahaa.",
+          "en": "Thank you. I really enjoyed your hospitality."
+        },
+        {
+          "role": "receptionist",
+          "hi": "आपका धन्यवाद। फिर आइए। शुभ यात्रा!",
+          "roman": "Aapkaa dhanyavaad. Phir aaiye. Shubh yaatraa!",
+          "en": "Thank you. We hope to see you again. Have a pleasant journey!"
+        }
+      ]
+    }
+  ]
+}

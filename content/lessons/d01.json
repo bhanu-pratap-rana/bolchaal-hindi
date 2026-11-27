@@ -1,0 +1,372 @@
+{
+  "id": "d01",
+  "day": 1,
+  "status": "review",
+  "title_hi": "एयरपोर्ट पर आगमन",
+  "title_en": "Arriving at the airport",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Airport staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "officer": {
+      "hi": "अधिकारी",
+      "en": "Officer",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "मुड़िए",
+      "roman": "mudiye",
+      "en": "please turn"
+    },
+    {
+      "hi": "सामने",
+      "roman": "saamne",
+      "en": "ahead, in front"
+    },
+    {
+      "hi": "दाईं ओर",
+      "roman": "daaeen or",
+      "en": "to the right"
+    },
+    {
+      "hi": "सामान",
+      "roman": "saamaan",
+      "en": "luggage"
+    },
+    {
+      "hi": "उद्देश्य",
+      "roman": "uddeshya",
+      "en": "purpose"
+    },
+    {
+      "hi": "प्रपत्र",
+      "roman": "prapatra",
+      "en": "form"
+    },
+    {
+      "hi": "राशि",
+      "roman": "raashi",
+      "en": "amount"
+    },
+    {
+      "hi": "सूचना",
+      "roman": "soochnaa",
+      "en": "information, notice"
+    },
+    {
+      "hi": "आगमन",
+      "roman": "aagman",
+      "en": "arrival"
+    },
+    {
+      "hi": "प्रस्थान",
+      "roman": "prasthaan",
+      "en": "departure"
+    },
+    {
+      "hi": "इमिग्रेशन",
+      "roman": "immigration",
+      "en": "immigration"
+    },
+    {
+      "hi": "पासपोर्ट",
+      "roman": "passport",
+      "en": "passport"
+    },
+    {
+      "hi": "वीज़ा",
+      "roman": "visa",
+      "en": "visa"
+    },
+    {
+      "hi": "बैगेज बेल्ट",
+      "roman": "baggage belt",
+      "en": "baggage belt"
+    },
+    {
+      "hi": "कस्टम",
+      "roman": "custom",
+      "en": "customs"
+    },
+    {
+      "hi": "टैक्सी",
+      "roman": "taxi",
+      "en": "taxi"
+    },
+    {
+      "hi": "प्रीपेड",
+      "roman": "prepaid",
+      "en": "prepaid"
+    },
+    {
+      "hi": "सूचना काउंटर",
+      "roman": "soochnaa counter",
+      "en": "information counter"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d01s1",
+      "title_hi": "रास्ता पूछना",
+      "title_en": "Finding immigration",
+      "situation": "You have just landed and can't find the immigration counter.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्षमा कीजिए, इमिग्रेशन काउंटर कहाँ है?",
+          "roman": "Kshamaa keejiye, immigration counter kahaan hai?",
+          "en": "Excuse me, where is the immigration counter?"
+        },
+        {
+          "role": "staff",
+          "hi": "सामने सीधे जाइए, फिर दाईं ओर मुड़िए।",
+          "roman": "Saamne seedhe jaaiye, phir daaeen or mudiye.",
+          "en": "Go straight ahead, then turn right."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "आपका स्वागत है।",
+          "roman": "Aapkaa svaagat hai.",
+          "en": "You're welcome."
+        }
+      ]
+    },
+    {
+      "id": "d01s2",
+      "title_hi": "इमिग्रेशन अधिकारी से बातचीत",
+      "title_en": "At the immigration desk",
+      "situation": "The officer checks your passport and asks about your visit.",
+      "lines": [
+        {
+          "role": "officer",
+          "hi": "नमस्कार। कृपया आपका पासपोर्ट दीजिए।",
+          "roman": "Namaskaar. Kripyaa aapkaa passport deejiye.",
+          "en": "Hello. May I have your passport, please?"
+        },
+        {
+          "role": "traveller",
+          "hi": "यह लीजिए।",
+          "roman": "Yeh leejiye.",
+          "en": "Here it is."
+        },
+        {
+          "role": "officer",
+          "hi": "आप भारत किस उद्देश्य से आए हैं?",
+          "roman": "Aap Bhaarat kis uddeshya se aae hain?",
+          "en": "What is the purpose of your visit to India?",
+          "f": {
+            "hi": "आप भारत किस उद्देश्य से आई हैं?",
+            "roman": "Aap Bhaarat kis uddeshya se aaee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं घूमने के लिए आया हूँ।",
+          "roman": "Main ghoomne ke liye aayaa hoon.",
+          "en": "I am here for tourism.",
+          "f": {
+            "hi": "मैं घूमने के लिए आई हूँ।",
+            "roman": "Main ghoomne ke liye aaee hoon."
+          }
+        },
+        {
+          "role": "officer",
+          "hi": "आप कितने दिन भारत में रहेंगे?",
+          "roman": "Aap kitne din Bhaarat mein rahenge?",
+          "en": "How many days will you stay in India?",
+          "f": {
+            "hi": "आप कितने दिन भारत में रहेंगी?",
+            "roman": "Aap kitne din Bhaarat mein rahengee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "लगभग पंद्रह दिन।",
+          "roman": "Lagbhag pandrah din.",
+          "en": "About fifteen days."
+        },
+        {
+          "role": "officer",
+          "hi": "धन्यवाद। आपका स्वागत है।",
+          "roman": "Dhanyavaad. Aapkaa svaagat hai.",
+          "en": "Thank you. Welcome to India."
+        }
+      ]
+    },
+    {
+      "id": "d01s3",
+      "title_hi": "सामान के बारे में पूछना",
+      "title_en": "Finding your baggage belt",
+      "situation": "You can't find the belt for your flight's luggage.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "कृपया बताइए, जर्मनी से आने वाली फ्लाइट का सामान कहाँ मिलेगा?",
+          "roman": "Kripyaa bataaiye, Germany se aane vaalee flight kaa saamaan kahaan milegaa?",
+          "en": "Excuse me, where can I collect the baggage from the flight from Germany?"
+        },
+        {
+          "role": "staff",
+          "hi": "बेल्ट नंबर पाँच पर।",
+          "roman": "Belt number paanch par.",
+          "en": "At belt number five."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "आपका सामान कुछ ही मिनटों में आ जाएगा।",
+          "roman": "Aapkaa saamaan kuchh hee minton mein aa jaaegaa.",
+          "en": "Your baggage will arrive in a few minutes."
+        }
+      ]
+    },
+    {
+      "id": "d01s4",
+      "title_hi": "सामान न मिलना",
+      "title_en": "Reporting a lost bag",
+      "situation": "Your bag did not arrive on the belt.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा बैग नहीं मिला।",
+          "roman": "Meraa bag naheen milaa.",
+          "en": "I can't find my bag."
+        },
+        {
+          "role": "officer",
+          "hi": "आपका बैगेज टैग दिखाइए।",
+          "roman": "Aapkaa baggage tag dikhaaiye.",
+          "en": "May I see your baggage tag, please?"
+        },
+        {
+          "role": "traveller",
+          "hi": "यह रहा।",
+          "roman": "Yeh rahaa.",
+          "en": "Here it is."
+        },
+        {
+          "role": "officer",
+          "hi": "कृपया यह शिकायत प्रपत्र भर दीजिए।",
+          "roman": "Kripyaa yeh shikaayat prapatra bhar deejiye.",
+          "en": "Please fill out this baggage claim form."
+        },
+        {
+          "role": "traveller",
+          "hi": "मेरा सामान कब मिलेगा?",
+          "roman": "Meraa saamaan kab milegaa?",
+          "en": "When will I get my baggage?"
+        },
+        {
+          "role": "officer",
+          "hi": "मिलते ही हम आपको सूचना देंगे।",
+          "roman": "Milte hee hum aapko soochnaa denge.",
+          "en": "We will inform you as soon as it is found.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d01s5",
+      "title_hi": "मुद्रा विनिमय",
+      "title_en": "Changing money",
+      "situation": "You want to exchange US dollars for rupees.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मुझे डॉलर बदलवाने हैं।",
+          "roman": "Mujhe dollar badalvaane hain.",
+          "en": "I'd like to exchange some US dollars."
+        },
+        {
+          "role": "staff",
+          "hi": "आप कितनी राशि बदलना चाहते हैं?",
+          "roman": "Aap kitnee raashi badalnaa chaahte hain?",
+          "en": "How much would you like to exchange?",
+          "f": {
+            "hi": "आप कितनी राशि बदलना चाहती हैं?",
+            "roman": "Aap kitnee raashi badalnaa chaahtee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "दो सौ डॉलर।",
+          "roman": "Do sau dollar.",
+          "en": "Two hundred US dollars."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया अपना पासपोर्ट दिखाइए।",
+          "roman": "Kripyaa apnaa passport dikhaaiye.",
+          "en": "May I see your passport, please?"
+        }
+      ]
+    },
+    {
+      "id": "d01s6",
+      "title_hi": "सिम कार्ड खरीदना",
+      "title_en": "Buying a SIM card",
+      "situation": "You want an Indian SIM card before leaving the airport.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मुझे एक भारतीय सिम कार्ड चाहिए।",
+          "roman": "Mujhe ek Bhaarteey SIM card chaahiye.",
+          "en": "I'd like to buy an Indian SIM card."
+        },
+        {
+          "role": "staff",
+          "hi": "आपके पास पासपोर्ट है?",
+          "roman": "Aapke paas passport hai?",
+          "en": "Do you have your passport with you?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, है।",
+          "roman": "Jee, hai.",
+          "en": "Yes, I do."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया यह फ़ॉर्म भर दीजिए।",
+          "roman": "Kripyaa yeh form bhar deejiye.",
+          "en": "Please fill out this application form."
+        }
+      ]
+    }
+  ]
+}

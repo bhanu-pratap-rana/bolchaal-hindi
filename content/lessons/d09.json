@@ -1,0 +1,772 @@
+{
+  "id": "d09",
+  "day": 9,
+  "status": "review",
+  "title_hi": "खरीदारी",
+  "title_en": "Shopping",
+  "roles": {
+    "customer": {
+      "hi": "ग्राहक",
+      "en": "Customer",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Store assistant",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "shopkeeper": {
+      "hi": "दुकानदार",
+      "en": "Shopkeeper",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "सुपरमार्केट",
+      "roman": "supermarket",
+      "en": "supermarket"
+    },
+    {
+      "hi": "अनुभाग",
+      "roman": "anubhaag",
+      "en": "section"
+    },
+    {
+      "hi": "फल",
+      "roman": "phal",
+      "en": "fruit"
+    },
+    {
+      "hi": "सनस्क्रीन",
+      "roman": "sunscreen",
+      "en": "sunscreen"
+    },
+    {
+      "hi": "मच्छर भगाने की क्रीम",
+      "roman": "machchhar bhagaane kee cream",
+      "en": "mosquito repellent cream"
+    },
+    {
+      "hi": "टिश्यू पेपर",
+      "roman": "tissue paper",
+      "en": "tissue paper"
+    },
+    {
+      "hi": "चार्जर",
+      "roman": "charger",
+      "en": "charger"
+    },
+    {
+      "hi": "पारंपरिक वस्त्र",
+      "roman": "paaramparik vastra",
+      "en": "traditional clothing"
+    },
+    {
+      "hi": "कुर्ता",
+      "roman": "kurtaa",
+      "en": "kurta"
+    },
+    {
+      "hi": "दुपट्टा",
+      "roman": "dupattaa",
+      "en": "scarf, stole"
+    },
+    {
+      "hi": "शॉल",
+      "roman": "shawl",
+      "en": "shawl"
+    },
+    {
+      "hi": "हस्तशिल्प",
+      "roman": "hastshilp",
+      "en": "handicraft"
+    },
+    {
+      "hi": "स्मृति-चिह्न",
+      "roman": "smriti-chihn",
+      "en": "souvenir"
+    },
+    {
+      "hi": "लकड़ी की नक्काशी",
+      "roman": "lakdee kee nakkaashee",
+      "en": "wood carving"
+    },
+    {
+      "hi": "पीतल की कलाकृति",
+      "roman": "peetal kee kalaakriti",
+      "en": "brass artefact"
+    },
+    {
+      "hi": "अगरबत्ती",
+      "roman": "agarbattee",
+      "en": "incense sticks"
+    },
+    {
+      "hi": "मसाले",
+      "roman": "masaale",
+      "en": "spices"
+    },
+    {
+      "hi": "छूट",
+      "roman": "chhoot",
+      "en": "discount"
+    },
+    {
+      "hi": "निश्चित मूल्य",
+      "roman": "nishchit moolya",
+      "en": "fixed price"
+    },
+    {
+      "hi": "मोलभाव",
+      "roman": "molbhaav",
+      "en": "bargaining"
+    },
+    {
+      "hi": "भुगतान",
+      "roman": "bhugtaan",
+      "en": "payment"
+    },
+    {
+      "hi": "बिल",
+      "roman": "bill",
+      "en": "bill, receipt"
+    },
+    {
+      "hi": "बदलना",
+      "roman": "badalnaa",
+      "en": "to exchange"
+    },
+    {
+      "hi": "लौटाना",
+      "roman": "lautaanaa",
+      "en": "to return"
+    },
+    {
+      "hi": "क्षतिग्रस्त",
+      "roman": "kshatigrast",
+      "en": "damaged"
+    },
+    {
+      "hi": "पैक करना",
+      "roman": "pack karnaa",
+      "en": "to pack"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d09s1",
+      "title_hi": "सुपरमार्केट में",
+      "title_en": "At the supermarket",
+      "situation": "You buy a few travel essentials at a supermarket.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्ते! क्या यह सुपरमार्केट है?",
+          "roman": "Namaste! Kyaa yeh supermarket hai?",
+          "en": "Hello! Is this a supermarket?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ। आपका स्वागत है। मैं आपकी क्या सहायता कर सकता हूँ?",
+          "roman": "Jee haan. Aapkaa svaagat hai. Main aapkee kyaa sahaayataa kar saktaa hoon?",
+          "en": "Yes, it is. Welcome! How may I help you?"
+        },
+        {
+          "role": "customer",
+          "hi": "मैं भारत घूमने आया हूँ। मुझे यात्रा के लिए कुछ सामान खरीदना है।",
+          "roman": "Main Bhaarat ghoomne aayaa hoon. Mujhe yaatraa ke liye kuchh saamaan khareednaa hai.",
+          "en": "I have come to India for a trip. I would like to buy a few things for my journey.",
+          "f": {
+            "hi": "मैं भारत घूमने आई हूँ। मुझे यात्रा के लिए कुछ सामान खरीदना है।",
+            "roman": "Main Bhaarat ghoomne aaee hoon. Mujhe yaatraa ke liye kuchh saamaan khareednaa hai."
+          }
+        },
+        {
+          "role": "staff",
+          "hi": "आपको क्या चाहिए?",
+          "roman": "Aapko kyaa chaahiye?",
+          "en": "Certainly. What would you like?"
+        },
+        {
+          "role": "customer",
+          "hi": "दो बोतल पानी, एक पैकेट बिस्कुट, कुछ फल, टिश्यू पेपर, सनस्क्रीन और मच्छर भगाने की क्रीम चाहिए।",
+          "roman": "Do botal paanee, ek packet biscuit, kuchh phal, tissue paper, sunscreen aur machchhar bhagaane kee cream chaahiye.",
+          "en": "I need two bottles of water, a packet of biscuits, some fruit, tissue paper, sunscreen, and mosquito repellent cream."
+        },
+        {
+          "role": "staff",
+          "hi": "ये सभी सामान इस तरफ़ मिल जाएँगे। यदि आपको सहायता चाहिए, तो बताइए।",
+          "roman": "Ye sabhee saamaan is taraf mil jaaenge. Yadi aapko sahaayataa chaahiye, to bataaiye.",
+          "en": "You will find all these items in this section. Please let me know if you need any assistance.",
+          "gender_ok": true
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद। क्या मोबाइल चार्जर भी मिलेगा?",
+          "roman": "Dhanyavaad. Kyaa mobile charger bhee milegaa?",
+          "en": "Thank you. Do you also have a mobile phone charger?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ। वह इलेक्ट्रॉनिक्स अनुभाग में है।",
+          "roman": "Jee haan. Vah electronics anubhaag mein hai.",
+          "en": "Yes. You can find it in the electronics section."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d09s2",
+      "title_hi": "फलों की दुकान पर",
+      "title_en": "At the fruit shop",
+      "situation": "You buy some local fruit and ask which one is the sweetest.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्ते! मैं भारत के कुछ स्थानीय फल खरीदना चाहता हूँ।",
+          "roman": "Namaste! Main Bhaarat ke kuchh sthaaneey phal khareednaa chaahtaa hoon.",
+          "en": "Hello! I would like to buy some local Indian fruits.",
+          "f": {
+            "hi": "नमस्ते! मैं भारत के कुछ स्थानीय फल खरीदना चाहती हूँ।",
+            "roman": "Namaste! Main Bhaarat ke kuchh sthaaneey phal khareednaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "ज़रूर। इस समय आम, केला, पपीता और अनार बहुत अच्छे हैं।",
+          "roman": "Zaroor. Is samay aam, kelaa, papeetaa aur anaar bahut achchhe hain.",
+          "en": "Certainly. Mangoes, bananas, papayas, and pomegranates are very good at this time of the year."
+        },
+        {
+          "role": "customer",
+          "hi": "इनमें सबसे मीठा फल कौन-सा है?",
+          "roman": "Inmein sabse meethaa phal kaun-saa hai?",
+          "en": "Which fruit is the sweetest?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आम बहुत मीठे हैं। आप चखकर भी देख सकते हैं।",
+          "roman": "Aam bahut meethe hain. Aap chakhkar bhee dekh sakte hain.",
+          "en": "Mangoes are very sweet. You may taste one if you like.",
+          "f": {
+            "hi": "आम बहुत मीठे हैं। आप चखकर भी देख सकती हैं।",
+            "roman": "Aam bahut meethe hain. Aap chakhkar bhee dekh saktee hain."
+          }
+        },
+        {
+          "role": "customer",
+          "hi": "अच्छा। एक किलो आम और आधा किलो केले दे दीजिए।",
+          "roman": "Achchhaa. Ek kilo aam aur aadhaa kilo kele de deejiye.",
+          "en": "Great. Please give me one kilogram of mangoes and half a kilogram of bananas."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "क्या और कुछ चाहिए?",
+          "roman": "Kyaa aur kuchh chaahiye?",
+          "en": "Would you like anything else?"
+        },
+        {
+          "role": "customer",
+          "hi": "नहीं, बस इतना ही।",
+          "roman": "Naheen, bas itnaa hee.",
+          "en": "No, that's all. Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d09s3",
+      "title_hi": "कपड़ों की दुकान में",
+      "title_en": "At a clothing shop",
+      "situation": "You look for a cotton kurta, try it on and, a few minutes later, decide to buy it.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्ते! मैं भारतीय पारंपरिक कपड़े खरीदना चाहता हूँ।",
+          "roman": "Namaste! Main Bhaarteey paaramparik kapde khareednaa chaahtaa hoon.",
+          "en": "Hello! I would like to buy some traditional Indian clothes.",
+          "f": {
+            "hi": "नमस्ते! मैं भारतीय पारंपरिक कपड़े खरीदना चाहती हूँ।",
+            "roman": "Namaste! Main Bhaarteey paaramparik kapde khareednaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आपका स्वागत है। आपके लिए कुर्ता, दुपट्टा, शॉल और साड़ी उपलब्ध हैं।",
+          "roman": "Aapkaa svaagat hai. Aapke liye kurtaa, dupattaa, shawl aur saadee upalabdh hain.",
+          "en": "Welcome. We have kurtas, scarves, shawls, and saris."
+        },
+        {
+          "role": "customer",
+          "hi": "मुझे एक सूती कुर्ता चाहिए।",
+          "roman": "Mujhe ek sootee kurtaa chaahiye.",
+          "en": "I would like a cotton kurta."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आपका आकार क्या है?",
+          "roman": "Aapkaa aakaar kyaa hai?",
+          "en": "What size do you need?"
+        },
+        {
+          "role": "customer",
+          "hi": "मध्यम (Medium)।",
+          "roman": "Madhyam (Medium).",
+          "en": "Medium."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "यह देखिए। यह कई रंगों में उपलब्ध है।",
+          "roman": "Yeh dekhiye. Yeh kaee rangon mein upalabdh hai.",
+          "en": "Here you are. It is available in different colours."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या मैं इसे पहनकर देख सकता हूँ?",
+          "roman": "Kyaa main ise pahankar dekh saktaa hoon?",
+          "en": "May I try it on?",
+          "f": {
+            "hi": "क्या मैं इसे पहनकर देख सकती हूँ?",
+            "roman": "Kyaa main ise pahankar dekh saktee hoon?"
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "जी हाँ। ट्रायल रूम उधर है।",
+          "roman": "Jee haan. Trial room udhar hai.",
+          "en": "Certainly. The fitting room is over there."
+        },
+        {
+          "role": "customer",
+          "hi": "यह बहुत अच्छा है। मैं यही लेता हूँ।",
+          "roman": "Yeh bahut achchhaa hai. Main yahee letaa hoon.",
+          "en": "It fits well. I'll take it.",
+          "f": {
+            "hi": "यह बहुत अच्छा है। मैं यही लेती हूँ।",
+            "roman": "Yeh bahut achchhaa hai. Main yahee letee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d09s4",
+      "title_hi": "हस्तशिल्प और स्मृति-चिह्न की दुकान",
+      "title_en": "At a handicrafts and souvenir shop",
+      "situation": "You buy a handmade statue as a gift and ask for it to be packed for your flight.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "मैं अपने परिवार और मित्रों के लिए कुछ स्मृति-चिह्न खरीदना चाहता हूँ।",
+          "roman": "Main apne parivaar aur mitron ke liye kuchh smriti-chihn khareednaa chaahtaa hoon.",
+          "en": "I would like to buy some souvenirs for my family and friends.",
+          "f": {
+            "hi": "मैं अपने परिवार और मित्रों के लिए कुछ स्मृति-चिह्न खरीदना चाहती हूँ।",
+            "roman": "Main apne parivaar aur mitron ke liye kuchh smriti-chihn khareednaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "हमारे पास हस्तशिल्प, लकड़ी की नक्काशी, पीतल की कलाकृतियाँ, अगरबत्ती, भारतीय चाय और मसाले उपलब्ध हैं।",
+          "roman": "Hamaare paas hastshilp, lakdee kee nakkaashee, peetal kee kalaakritiyaan, agarbattee, Bhaarteey chaay aur masaale upalabdh hain.",
+          "en": "We have handicrafts, wooden carvings, brass artefacts, incense sticks, Indian tea, and spices."
+        },
+        {
+          "role": "customer",
+          "hi": "यह हाथ से बनी मूर्ति बहुत सुंदर है। इसकी कीमत क्या है?",
+          "roman": "Yeh haath se banee moorti bahut sundar hai. Iskee keemat kyaa hai?",
+          "en": "This handmade statue is beautiful. How much does it cost?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "इसकी कीमत ₹2,000 है।",
+          "roman": "Iskee keemat do hazaar rupaye hai.",
+          "en": "It costs ₹2,000."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या यह सुरक्षित पैक कर देंगे? मुझे इसे हवाई यात्रा में ले जाना है।",
+          "roman": "Kyaa yeh surakshit pack kar denge? Mujhe ise havaaee yaatraa mein le jaanaa hai.",
+          "en": "Could you pack it safely? I need to carry it on my flight."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "जी अवश्य। हम इसे अच्छी तरह पैक कर देंगे।",
+          "roman": "Jee avashya. Hum ise achchhee tarah pack kar denge.",
+          "en": "Certainly. We will pack it carefully.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d09s5",
+      "title_hi": "कीमत पूछना",
+      "title_en": "Asking the price",
+      "situation": "You ask the price of a kurta and whether there is a discount.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "इस कुर्ते की कीमत क्या है?",
+          "roman": "Is kurte kee keemat kyaa hai?",
+          "en": "How much is this kurta?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "₹1,200।",
+          "roman": "Baarah sau rupaye.",
+          "en": "It is ₹1,200."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या इस पर कोई छूट है?",
+          "roman": "Kyaa is par koee chhoot hai?",
+          "en": "Is there any discount?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "जी, आज दस प्रतिशत की छूट है।",
+          "roman": "Jee, aaj das pratishat kee chhoot hai.",
+          "en": "Yes. There is a 10% discount today."
+        },
+        {
+          "role": "customer",
+          "hi": "अच्छा, मैं इसे खरीद लेता हूँ।",
+          "roman": "Achchhaa, main ise khareed letaa hoon.",
+          "en": "Great. I'll buy it.",
+          "f": {
+            "hi": "अच्छा, मैं इसे खरीद लेती हूँ।",
+            "roman": "Achchhaa, main ise khareed letee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d09s6",
+      "title_hi": "मोलभाव करना (स्थानीय बाज़ार में)",
+      "title_en": "Bargaining at a local market",
+      "situation": "You bargain over the price of handicrafts at a local market.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "यह हस्तशिल्प की वस्तु बहुत पसंद आई। इसकी कीमत क्या है?",
+          "roman": "Yeh hastshilp kee vastu bahut pasand aaee. Iskee keemat kyaa hai?",
+          "en": "I really like this handicraft. How much is it?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "₹1,500।",
+          "roman": "Pandrah sau rupaye.",
+          "en": "It is ₹1,500."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या कुछ कम हो सकता है?",
+          "roman": "Kyaa kuchh kam ho saktaa hai?",
+          "en": "Could you reduce the price a little?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आपके लिए ₹1,300 कर देता हूँ।",
+          "roman": "Aapke liye terah sau rupaye kar detaa hoon.",
+          "en": "I can offer it to you for ₹1,300."
+        },
+        {
+          "role": "customer",
+          "hi": "यदि मैं दो वस्तुएँ खरीदूँ, तो?",
+          "roman": "Yadi main do vastuen khareedoon, to?",
+          "en": "What if I buy two items?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "तब ₹2,400 में दोनों दे दूँगा।",
+          "roman": "Tab chaubees sau rupaye mein donon de doongaa.",
+          "en": "Then I'll give you both for ₹2,400."
+        },
+        {
+          "role": "customer",
+          "hi": "ठीक है, पैक कर दीजिए।",
+          "roman": "Theek hai, pack kar deejiye.",
+          "en": "That's a good deal. Please pack them."
+        }
+      ]
+    },
+    {
+      "id": "d09s7",
+      "title_hi": "भुगतान करना",
+      "title_en": "Paying",
+      "situation": "You pay for your shopping by card.",
+      "lines": [
+        {
+          "role": "shopkeeper",
+          "hi": "कुल ₹3,450 हुए।",
+          "roman": "Kul teen hazaar chaar sau pachaas rupaye hue.",
+          "en": "The total is ₹3,450."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या मैं अंतरराष्ट्रीय क्रेडिट कार्ड से भुगतान कर सकता हूँ?",
+          "roman": "Kyaa main antarraashtreey credit card se bhugtaan kar saktaa hoon?",
+          "en": "Can I pay with an international credit card?",
+          "f": {
+            "hi": "क्या मैं अंतरराष्ट्रीय क्रेडिट कार्ड से भुगतान कर सकती हूँ?",
+            "roman": "Kyaa main antarraashtreey credit card se bhugtaan kar saktee hoon?"
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "जी हाँ। आप कार्ड, नकद या यूपीआई से भुगतान कर सकते हैं।",
+          "roman": "Jee haan. Aap card, naqad yaa UPI se bhugtaan kar sakte hain.",
+          "en": "Yes. We accept credit cards, cash, and UPI payments.",
+          "f": {
+            "hi": "जी हाँ। आप कार्ड, नकद या यूपीआई से भुगतान कर सकती हैं।",
+            "roman": "Jee haan. Aap card, naqad yaa UPI se bhugtaan kar saktee hain."
+          }
+        },
+        {
+          "role": "customer",
+          "hi": "मैं कार्ड से भुगतान करूँगा।",
+          "roman": "Main card se bhugtaan karoongaa.",
+          "en": "I'll pay by card.",
+          "f": {
+            "hi": "मैं कार्ड से भुगतान करूँगी।",
+            "roman": "Main card se bhugtaan karoongee."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "भुगतान हो गया। यह आपका बिल है।",
+          "roman": "Bhugtaan ho gayaa. Yeh aapkaa bill hai.",
+          "en": "Your payment has been received. Here is your receipt."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d09s8",
+      "title_hi": "वस्तु बदलना",
+      "title_en": "Exchanging an item",
+      "situation": "The next day, you bring back a kurta that is too small.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्ते! मैं यह कुर्ता बदलना चाहता हूँ।",
+          "roman": "Namaste! Main yeh kurtaa badalnaa chaahtaa hoon.",
+          "en": "Hello! I'd like to exchange this kurta.",
+          "f": {
+            "hi": "नमस्ते! मैं यह कुर्ता बदलना चाहती हूँ।",
+            "roman": "Namaste! Main yeh kurtaa badalnaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "क्या कोई समस्या है?",
+          "roman": "Kyaa koee samasyaa hai?",
+          "en": "Is there any problem?"
+        },
+        {
+          "role": "customer",
+          "hi": "इसका साइज़ मेरे लिए छोटा है।",
+          "roman": "Iskaa size mere liye chhotaa hai.",
+          "en": "It's too small for me."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "क्या आपके पास बिल है?",
+          "roman": "Kyaa aapke paas bill hai?",
+          "en": "Do you have the receipt?"
+        },
+        {
+          "role": "customer",
+          "hi": "जी, यह रहा।",
+          "roman": "Jee, yeh rahaa.",
+          "en": "Yes, here it is."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "कोई बात नहीं। हम इसे बड़े साइज़ से बदल देते हैं।",
+          "roman": "Koee baat naheen. Hum ise bade size se badal dete hain.",
+          "en": "No problem. We'll exchange it for a larger size."
+        }
+      ]
+    },
+    {
+      "id": "d09s9",
+      "title_hi": "वस्तु लौटाना",
+      "title_en": "Returning an item",
+      "situation": "You return an item that turned out to be damaged.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "मैं यह वस्तु लौटाना चाहता हूँ।",
+          "roman": "Main yeh vastu lautaanaa chaahtaa hoon.",
+          "en": "I'd like to return this item.",
+          "f": {
+            "hi": "मैं यह वस्तु लौटाना चाहती हूँ।",
+            "roman": "Main yeh vastu lautaanaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "क्या इसमें कोई समस्या है?",
+          "roman": "Kyaa ismein koee samasyaa hai?",
+          "en": "Is there any problem with it?"
+        },
+        {
+          "role": "customer",
+          "hi": "घर जाकर देखा तो यह क्षतिग्रस्त निकली।",
+          "roman": "Ghar jaakar dekhaa to yeh kshatigrast niklee.",
+          "en": "I found it damaged after I got back."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "हमें खेद है। यदि आपके पास बिल है, तो हम इसे बदल सकते हैं या हमारी नीति के अनुसार धन वापस कर सकते हैं।",
+          "roman": "Hamein khed hai. Yadi aapke paas bill hai, to hum ise badal sakte hain yaa hamaaree neeti ke anusaar dhan vaapas kar sakte hain.",
+          "en": "We're sorry about that. If you have the receipt, we can exchange it or refund your money according to our return policy."
+        },
+        {
+          "role": "customer",
+          "hi": "मुझे दूसरी वस्तु लेनी है।",
+          "roman": "Mujhe doosree vastu lenee hai.",
+          "en": "I'd prefer a replacement."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "अवश्य।",
+          "roman": "Avashya.",
+          "en": "Certainly."
+        }
+      ]
+    },
+    {
+      "id": "d09s10",
+      "title_hi": "गलत वस्तु मिलना",
+      "title_en": "Getting the wrong item",
+      "situation": "You notice the shopkeeper has given you the wrong product.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "क्षमा कीजिए, मुझे लगता है कि आपने गलत सामान दे दिया है।",
+          "roman": "Kshamaa keejiye, mujhe lagtaa hai ki aapne galat saamaan de diyaa hai.",
+          "en": "Excuse me. I think you've given me the wrong item."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आपको क्या चाहिए था?",
+          "roman": "Aapko kyaa chaahiye thaa?",
+          "en": "What did you want?"
+        },
+        {
+          "role": "customer",
+          "hi": "मैंने सनस्क्रीन माँगी थी, लेकिन आपने मॉइस्चराइज़र दे दिया।",
+          "roman": "Mainne sunscreen maangee thee, lekin aapne moisturiser de diyaa.",
+          "en": "I asked for sunscreen, but you gave me a moisturiser."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "क्षमा कीजिए। मैं अभी बदल देता हूँ।",
+          "roman": "Kshamaa keejiye. Main abhee badal detaa hoon.",
+          "en": "I'm sorry. I'll replace it right away."
+        }
+      ]
+    },
+    {
+      "id": "d09s11",
+      "title_hi": "सामान क्षतिग्रस्त होना",
+      "title_en": "A damaged item",
+      "situation": "The handicraft you bought is broken.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "यह हस्तशिल्प की वस्तु टूटी हुई है।",
+          "roman": "Yeh hastshilp kee vastu tootee huee hai.",
+          "en": "This handicraft is damaged."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "हमें खेद है। हम इसे बदल देते हैं।",
+          "roman": "Hamein khed hai. Hum ise badal dete hain.",
+          "en": "We're sorry about that. We'll replace it."
+        }
+      ]
+    },
+    {
+      "id": "d09s12",
+      "title_hi": "भुगतान में समस्या",
+      "title_en": "A problem with payment",
+      "situation": "Your card is not accepted at the counter.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "मेरा कार्ड स्वीकार नहीं हो रहा है।",
+          "roman": "Meraa card sveekaar naheen ho rahaa hai.",
+          "en": "My card isn't working."
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "आप दूसरा कार्ड या नकद भुगतान कर सकते हैं।",
+          "roman": "Aap doosraa card yaa naqad bhugtaan kar sakte hain.",
+          "en": "You can use another card or pay in cash.",
+          "f": {
+            "hi": "आप दूसरा कार्ड या नकद भुगतान कर सकती हैं।",
+            "roman": "Aap doosraa card yaa naqad bhugtaan kar saktee hain."
+          }
+        },
+        {
+          "role": "customer",
+          "hi": "ठीक है, मैं दूसरा कार्ड इस्तेमाल करता हूँ।",
+          "roman": "Theek hai, main doosraa card istemaal kartaa hoon.",
+          "en": "All right. I'll use another card.",
+          "f": {
+            "hi": "ठीक है, मैं दूसरा कार्ड इस्तेमाल करती हूँ।",
+            "roman": "Theek hai, main doosraa card istemaal kartee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d09s13",
+      "title_hi": "भाषा की कठिनाई",
+      "title_en": "Language difficulty",
+      "situation": "You ask whether someone in the shop speaks English.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "क्या कोई अंग्रेज़ी बोल सकता है?",
+          "roman": "Kyaa koee angrezee bol saktaa hai?",
+          "en": "Does anyone here speak English?"
+        },
+        {
+          "role": "shopkeeper",
+          "hi": "जी हाँ, मेरे साथी आपकी सहायता करेंगे।",
+          "roman": "Jee haan, mere saathee aapkee sahaayataa karenge.",
+          "en": "Yes. My colleague will be happy to assist you.",
+          "gender_ok": true
+        }
+      ]
+    }
+  ]
+}

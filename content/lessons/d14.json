@@ -1,0 +1,401 @@
+{
+  "id": "d14",
+  "day": 14,
+  "status": "review",
+  "title_hi": "शहर और स्थानीय स्थानों के बारे में पूछताछ",
+  "title_en": "Asking about places to visit",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "local": {
+      "hi": "स्थानीय व्यक्ति",
+      "en": "Local person",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "स्थानीय स्थान",
+      "roman": "sthaaneey sthaan",
+      "en": "local place"
+    },
+    {
+      "hi": "घूमने की जगह",
+      "roman": "ghoomne kee jagah",
+      "en": "place to visit"
+    },
+    {
+      "hi": "दर्शनीय स्थल",
+      "roman": "darshaneey sthal",
+      "en": "tourist attraction"
+    },
+    {
+      "hi": "प्रसिद्ध",
+      "roman": "prasiddh",
+      "en": "famous"
+    },
+    {
+      "hi": "विशेषता",
+      "roman": "visheshtaa",
+      "en": "special feature"
+    },
+    {
+      "hi": "ऐतिहासिक",
+      "roman": "aitihaasik",
+      "en": "historical"
+    },
+    {
+      "hi": "वास्तुकला",
+      "roman": "vaastukalaa",
+      "en": "architecture"
+    },
+    {
+      "hi": "किला",
+      "roman": "kilaa",
+      "en": "fort"
+    },
+    {
+      "hi": "संग्रहालय",
+      "roman": "sangrahaalay",
+      "en": "museum"
+    },
+    {
+      "hi": "गाइड",
+      "roman": "guide",
+      "en": "guide"
+    },
+    {
+      "hi": "दूरी",
+      "roman": "dooree",
+      "en": "distance"
+    },
+    {
+      "hi": "किलोमीटर",
+      "roman": "kilometre",
+      "en": "kilometre"
+    },
+    {
+      "hi": "बस स्टॉप",
+      "roman": "bus stop",
+      "en": "bus stop"
+    },
+    {
+      "hi": "स्थानीय बाज़ार",
+      "roman": "sthaaneey baazaar",
+      "en": "local market"
+    },
+    {
+      "hi": "हस्तशिल्प",
+      "roman": "hastashilp",
+      "en": "handicrafts"
+    },
+    {
+      "hi": "मिठाई",
+      "roman": "mithaaee",
+      "en": "sweet"
+    },
+    {
+      "hi": "भीड़",
+      "roman": "bheed",
+      "en": "crowd"
+    },
+    {
+      "hi": "शांत",
+      "roman": "shaant",
+      "en": "quiet"
+    },
+    {
+      "hi": "पार्क",
+      "roman": "park",
+      "en": "park"
+    },
+    {
+      "hi": "नदी का किनारा",
+      "roman": "nadee kaa kinaaraa",
+      "en": "riverside"
+    },
+    {
+      "hi": "बैठने की व्यवस्था",
+      "roman": "baithne kee vyavasthaa",
+      "en": "seating arrangement"
+    },
+    {
+      "hi": "वातावरण",
+      "roman": "vaataavaran",
+      "en": "atmosphere"
+    },
+    {
+      "hi": "आराम करना",
+      "roman": "aaraam karnaa",
+      "en": "to relax"
+    },
+    {
+      "hi": "जानकारी",
+      "roman": "jaankaaree",
+      "en": "information"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d14s1",
+      "title_hi": "घूमने योग्य स्थानों के बारे में पूछना",
+      "title_en": "Asking about places to visit",
+      "situation": "You are new in town and ask a local person which places are worth seeing.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते, मैं इस शहर में पहली बार आया हूँ। यहाँ घूमने के लिए कौन-कौन सी अच्छी जगहें हैं?",
+          "roman": "Namaste, main is shahar mein pehlee baar aayaa hoon. Yahaan ghoomne ke liye kaun-kaun see achchhee jagahen hain?",
+          "en": "Namaste, I am visiting this city for the first time. What are some good places to visit here?",
+          "f": {
+            "hi": "नमस्ते, मैं इस शहर में पहली बार आई हूँ। यहाँ घूमने के लिए कौन-कौन सी अच्छी जगहें हैं?",
+            "roman": "Namaste, main is shahar mein pehlee baar aaee hoon. Yahaan ghoomne ke liye kaun-kaun see achchhee jagahen hain?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ कई अच्छी जगहें हैं। आप किला, संग्रहालय और पुराना शहर देख सकते हैं।",
+          "roman": "Yahaan kaee achchhee jagahen hain. Aap kilaa, sangrahaalay aur puraanaa shahar dekh sakte hain.",
+          "en": "There are many good places here. You can visit the fort, the museum, and the old city.",
+          "f": {
+            "hi": "यहाँ कई अच्छी जगहें हैं। आप किला, संग्रहालय और पुराना शहर देख सकती हैं।",
+            "roman": "Yahaan kaee achchhee jagahen hain. Aap kilaa, sangrahaalay aur puraanaa shahar dekh saktee hain."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "इनमें से सबसे प्रसिद्ध जगह कौन-सी है?",
+          "roman": "Inmein se sabse prasiddh jagah kaun-see hai?",
+          "en": "Which of these places is the most famous?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ का किला सबसे प्रसिद्ध है। वहाँ से शहर का सुंदर दृश्य दिखाई देता है।",
+          "roman": "Yahaan kaa kilaa sabse prasiddh hai. Vahaan se shahar kaa sundar drishya dikhaaee detaa hai.",
+          "en": "The fort is the most famous. You can see a beautiful view of the city from there."
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत अच्छा। मैं वहाँ ज़रूर जाना चाहूँगा।",
+          "roman": "Bahut achchhaa. Main vahaan zaroor jaanaa chaahoongaa.",
+          "en": "That's great. I would definitely like to go there.",
+          "f": {
+            "hi": "बहुत अच्छा। मैं वहाँ ज़रूर जाना चाहूँगी।",
+            "roman": "Bahut achchhaa. Main vahaan zaroor jaanaa chaahoongee."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d14s2",
+      "title_hi": "किसी स्थान की विशेषता पूछना",
+      "title_en": "Asking what makes a place special",
+      "situation": "You ask what is special about the fort and whether you can get a guide there.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "इस किले की क्या विशेषता है?",
+          "roman": "Is kile kee kyaa visheshtaa hai?",
+          "en": "What is special about this fort?"
+        },
+        {
+          "role": "local",
+          "hi": "यह बहुत पुराना और ऐतिहासिक किला है। इसकी वास्तुकला बहुत सुंदर है।",
+          "roman": "Yeh bahut puraanaa aur aitihaasik kilaa hai. Iskee vaastukalaa bahut sundar hai.",
+          "en": "It is a very old and historic fort. Its architecture is very beautiful."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या इसके बारे में कोई प्रसिद्ध कहानी भी है?",
+          "roman": "Kyaa iske baare mein koee prasiddh kahaanee bhee hai?",
+          "en": "Is there any famous story associated with it?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, इस किले से जुड़ी कई ऐतिहासिक कहानियाँ हैं।",
+          "roman": "Jee haan, is kile se judee kaee aitihaasik kahaaniyaan hain.",
+          "en": "Yes, there are several historical stories associated with this fort."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ कोई गाइड मिल सकता है?",
+          "roman": "Kyaa vahaan koee guide mil saktaa hai?",
+          "en": "Can I find a guide there?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, वहाँ स्थानीय गाइड उपलब्ध रहते हैं।",
+          "roman": "Jee haan, vahaan sthaaneey guide upalabdh rahte hain.",
+          "en": "Yes, local guides are available there."
+        }
+      ]
+    },
+    {
+      "id": "d14s3",
+      "title_hi": "स्थान की दूरी और वहाँ पहुँचने के साधन के बारे में पूछना",
+      "title_en": "Asking about distance and transport",
+      "situation": "You ask how far the fort is and how to get there.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "यह जगह यहाँ से कितनी दूर है?",
+          "roman": "Yeh jagah yahaan se kitnee door hai?",
+          "en": "How far is this place from here?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ से लगभग पाँच किलोमीटर दूर है।",
+          "roman": "Yahaan se lagbhag paanch kilometre door hai.",
+          "en": "It is about five kilometres from here."
+        },
+        {
+          "role": "traveller",
+          "hi": "वहाँ जाने में कितना समय लगेगा?",
+          "roman": "Vahaan jaane mein kitnaa samay lagegaa?",
+          "en": "How long will it take to get there?"
+        },
+        {
+          "role": "local",
+          "hi": "ऑटो से लगभग बीस मिनट लगेंगे।",
+          "roman": "Auto se lagbhag bees minute lagenge.",
+          "en": "It will take about twenty minutes by auto-rickshaw."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ बस भी जाती है?",
+          "roman": "Kyaa vahaan bus bhee jaatee hai?",
+          "en": "Is there also a bus that goes there?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, पास के बस स्टॉप से बस मिल जाएगी।",
+          "roman": "Jee haan, paas ke bus stop se bus mil jaaegee.",
+          "en": "Yes, you can take a bus from the nearby bus stop."
+        },
+        {
+          "role": "traveller",
+          "hi": "ठीक है। बहुत धन्यवाद।",
+          "roman": "Theek hai. Bahut dhanyavaad.",
+          "en": "Okay. Thank you very much."
+        }
+      ]
+    },
+    {
+      "id": "d14s4",
+      "title_hi": "स्थानीय बाज़ार के बारे में पूछना",
+      "title_en": "Asking about the local market",
+      "situation": "You ask about a good local market and when to go.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या यहाँ कोई अच्छा स्थानीय बाज़ार है?",
+          "roman": "Kyaa yahaan koee achchhaa sthaaneey baazaar hai?",
+          "en": "Is there a good local market here?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, पुराना बाज़ार बहुत प्रसिद्ध है।",
+          "roman": "Jee haan, puraanaa baazaar bahut prasiddh hai.",
+          "en": "Yes, the old market is very famous."
+        },
+        {
+          "role": "traveller",
+          "hi": "वहाँ क्या-क्या मिल सकता है?",
+          "roman": "Vahaan kyaa-kyaa mil saktaa hai?",
+          "en": "What can I find there?"
+        },
+        {
+          "role": "local",
+          "hi": "वहाँ कपड़े, हस्तशिल्प, स्थानीय मिठाइयाँ और कई दूसरी चीज़ें मिलती हैं।",
+          "roman": "Vahaan kapde, hastashilp, sthaaneey mithaaiyaan aur kaee doosree cheezen miltee hain.",
+          "en": "You can find clothes, handicrafts, local sweets, and many other things there."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वह बाज़ार शाम को खुला रहता है?",
+          "roman": "Kyaa voh baazaar shaam ko khulaa rahtaa hai?",
+          "en": "Is the market open in the evening?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, शाम को वहाँ काफी भीड़ रहती है।",
+          "roman": "Jee haan, shaam ko vahaan kaafee bheed rahtee hai.",
+          "en": "Yes, it is quite crowded there in the evening."
+        },
+        {
+          "role": "traveller",
+          "hi": "अच्छा, मैं आज शाम वहाँ जाऊँगा।",
+          "roman": "Achchhaa, main aaj shaam vahaan jaaoongaa.",
+          "en": "Okay, I will go there this evening.",
+          "f": {
+            "hi": "अच्छा, मैं आज शाम वहाँ जाऊँगी।",
+            "roman": "Achchhaa, main aaj shaam vahaan jaaoongee."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d14s5",
+      "title_hi": "शांत या मनोरंजन की जगह के बारे में पूछना",
+      "title_en": "Asking about a quiet place to relax",
+      "situation": "You look for a quiet place where you can rest for a while.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या यहाँ कोई शांत जगह है, जहाँ मैं कुछ समय आराम कर सकूँ?",
+          "roman": "Kyaa yahaan koee shaant jagah hai, jahaan main kuchh samay aaraam kar sakoon?",
+          "en": "Is there a quiet place here where I can relax for some time?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, नदी के किनारे एक सुंदर पार्क है।",
+          "roman": "Jee haan, nadee ke kinaare ek sundar park hai.",
+          "en": "Yes, there is a beautiful park near the river."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ बैठने की व्यवस्था है?",
+          "roman": "Kyaa vahaan baithne kee vyavasthaa hai?",
+          "en": "Is there seating available there?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, वहाँ बैठने की अच्छी व्यवस्था है।",
+          "roman": "Jee haan, vahaan baithne kee achchhee vyavasthaa hai.",
+          "en": "Yes, there is good seating available."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ शाम को जाना अच्छा रहेगा?",
+          "roman": "Kyaa vahaan shaam ko jaanaa achchhaa rahegaa?",
+          "en": "Would it be good to go there in the evening?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, शाम के समय वहाँ का वातावरण बहुत अच्छा रहता है।",
+          "roman": "Jee haan, shaam ke samay vahaan kaa vaataavaran bahut achchhaa rahtaa hai.",
+          "en": "Yes, the atmosphere there is very pleasant in the evening."
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत अच्छा। आपकी जानकारी के लिए धन्यवाद।",
+          "roman": "Bahut achchhaa. Aapkee jaankaaree ke liye dhanyavaad.",
+          "en": "That's great. Thank you for the information."
+        }
+      ]
+    }
+  ]
+}

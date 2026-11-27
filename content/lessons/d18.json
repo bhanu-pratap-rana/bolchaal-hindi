@@ -1,0 +1,335 @@
+{
+  "id": "d18",
+  "day": 18,
+  "status": "review",
+  "title_hi": "दैनिक जीवन की आवश्यकताएँ",
+  "title_en": "Everyday needs",
+  "roles": {
+    "tourist": {
+      "hi": "पर्यटक",
+      "en": "Tourist",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "local": {
+      "hi": "स्थानीय व्यक्ति",
+      "en": "Local person",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Staff member",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "hotel_staff": {
+      "hi": "होटल कर्मचारी",
+      "en": "Hotel staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_2",
+        "f": "female_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "दैनिक आवश्यकता",
+      "roman": "dainik aavashyaktaa",
+      "en": "daily need"
+    },
+    {
+      "hi": "सार्वजनिक शौचालय",
+      "roman": "saarvajanik shauchaalay",
+      "en": "public restroom"
+    },
+    {
+      "hi": "पीने का पानी",
+      "roman": "peene kaa paanee",
+      "en": "drinking water"
+    },
+    {
+      "hi": "पानी की मशीन",
+      "roman": "paanee kee masheen",
+      "en": "water dispenser"
+    },
+    {
+      "hi": "सामान",
+      "roman": "saamaan",
+      "en": "luggage/baggage"
+    },
+    {
+      "hi": "सामान रखने की जगह",
+      "roman": "saamaan rakhne kee jagah",
+      "en": "place to keep luggage"
+    },
+    {
+      "hi": "क्लोक रूम",
+      "roman": "cloakroom",
+      "en": "cloakroom"
+    },
+    {
+      "hi": "पर्ची",
+      "roman": "parchee",
+      "en": "token/slip"
+    },
+    {
+      "hi": "चार्जिंग की सुविधा",
+      "roman": "charging kee suvidhaa",
+      "en": "charging facility"
+    },
+    {
+      "hi": "प्रतीक्षालय",
+      "roman": "prateekshaalay",
+      "en": "waiting room"
+    },
+    {
+      "hi": "वाई-फाई",
+      "roman": "Wi-Fi",
+      "en": "Wi-Fi"
+    },
+    {
+      "hi": "पासवर्ड",
+      "roman": "password",
+      "en": "password"
+    },
+    {
+      "hi": "सूचना-पट्ट",
+      "roman": "soochnaa-patt",
+      "en": "information board"
+    },
+    {
+      "hi": "कपड़े धुलवाना",
+      "roman": "kapde dhulvaanaa",
+      "en": "to have clothes washed"
+    },
+    {
+      "hi": "लॉन्ड्री",
+      "roman": "laundry",
+      "en": "laundry"
+    },
+    {
+      "hi": "दस्तावेज",
+      "roman": "dastaavez",
+      "en": "documents"
+    },
+    {
+      "hi": "फोटोकॉपी",
+      "roman": "photocopy",
+      "en": "photocopy"
+    },
+    {
+      "hi": "प्रिंट करवाना",
+      "roman": "print karvaanaa",
+      "en": "to get something printed"
+    },
+    {
+      "hi": "प्रतियाँ",
+      "roman": "pratiyaan",
+      "en": "copies"
+    },
+    {
+      "hi": "स्कैन",
+      "roman": "scan",
+      "en": "scan"
+    },
+    {
+      "hi": "फोटो स्टूडियो",
+      "roman": "photo studio",
+      "en": "photo studio"
+    },
+    {
+      "hi": "फोटो खिंचवाना",
+      "roman": "photo khinchvaanaa",
+      "en": "to have a photograph taken"
+    },
+    {
+      "hi": "पासपोर्ट आकार की फोटो",
+      "roman": "passport aakaar kee photo",
+      "en": "passport-size photograph"
+    },
+    {
+      "hi": "सुविधा उपलब्ध होना",
+      "roman": "suvidhaa upalabdh honaa",
+      "en": "facility being available"
+    },
+    {
+      "hi": "आवश्यकता होना",
+      "roman": "aavashyaktaa honaa",
+      "en": "to need"
+    },
+    {
+      "hi": "बेझिझक पूछना",
+      "roman": "bejhijhak poochhnaa",
+      "en": "to ask freely (without hesitation)"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d18s1",
+      "title_hi": "दैनिक जीवन की आवश्यकताएँ",
+      "title_en": "Everyday needs",
+      "situation": "On your trip you ask about restrooms, water, luggage, charging, Wi-Fi, laundry, copies and photos.",
+      "lines": [
+        {
+          "role": "tourist",
+          "hi": "माफ कीजिए, क्या आप बता सकते हैं कि यहाँ सार्वजनिक शौचालय कहाँ है?",
+          "roman": "Maaf keejiye, kyaa aap bataa sakte hain ki yahaan saarvajanik shauchaalay kahaan hai?",
+          "en": "Excuse me, could you tell me where the public restroom is?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ। शौचालय सामने वाली इमारत के पास है।",
+          "roman": "Jee haan. Shauchaalay saamne vaalee imaarat ke paas hai.",
+          "en": "Yes. The restroom is near the building in front."
+        },
+        {
+          "role": "tourist",
+          "hi": "धन्यवाद। क्या यहाँ पीने का पानी भी मिल सकता है?",
+          "roman": "Dhanyavaad. Kyaa yahaan peene kaa paanee bhee mil saktaa hai?",
+          "en": "Thank you. Is drinking water also available here?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ। वहाँ पानी की मशीन लगी है। आप वहाँ से पानी ले सकते हैं।",
+          "roman": "Jee haan. Vahaan paanee kee masheen lagee hai. Aap vahaan se paanee le sakte hain.",
+          "en": "Yes. There is a water dispenser over there. You can get water from it.",
+          "f": {
+            "hi": "जी हाँ। वहाँ पानी की मशीन लगी है। आप वहाँ से पानी ले सकती हैं।",
+            "roman": "Jee haan. Vahaan paanee kee masheen lagee hai. Aap vahaan se paanee le saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत अच्छा। मेरे पास कुछ सामान है। क्या यहाँ सामान रखने की कोई जगह है?",
+          "roman": "Bahut achchhaa. Mere paas kuchh saamaan hai. Kyaa yahaan saamaan rakhne kee koee jagah hai?",
+          "en": "Very good. I have some luggage with me. Is there a place where I can keep it?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ। आप अपना सामान क्लोक रूम में रख सकते हैं। इसके लिए आपको एक पर्ची मिलेगी।",
+          "roman": "Jee haan. Aap apnaa saamaan cloakroom mein rakh sakte hain. Iske liye aapko ek parchee milegee.",
+          "en": "Yes. You can leave your luggage in the cloakroom. You will receive a token for it.",
+          "f": {
+            "hi": "जी हाँ। आप अपना सामान क्लोक रूम में रख सकती हैं। इसके लिए आपको एक पर्ची मिलेगी।",
+            "roman": "Jee haan. Aap apnaa saamaan cloakroom mein rakh saktee hain. Iske liye aapko ek parchee milegee."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "धन्यवाद। क्या यहाँ मोबाइल फोन चार्ज करने की सुविधा भी है?",
+          "roman": "Dhanyavaad. Kyaa yahaan mobile phone charge karne kee suvidhaa bhee hai?",
+          "en": "Thank you. Is there also a facility for charging mobile phones here?"
+        },
+        {
+          "role": "staff",
+          "hi": "हाँ, प्रतीक्षालय में चार्जिंग की सुविधा उपलब्ध है।",
+          "roman": "Haan, prateekshaalay mein charging kee suvidhaa upalabdh hai.",
+          "en": "Yes, charging facilities are available in the waiting room."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या आप मुझे वाई-फाई का पासवर्ड बता सकते हैं?",
+          "roman": "Kyaa aap mujhe Wi-Fi kaa password bataa sakte hain?",
+          "en": "Could you tell me the Wi-Fi password?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी। वाई-फाई का नाम और पासवर्ड यहाँ सूचना-पट्ट पर लिखा है।",
+          "roman": "Jee. Wi-Fi kaa naam aur password yahaan soochnaa-patt par likhaa hai.",
+          "en": "Yes. The Wi-Fi name and password are written on the information board here."
+        },
+        {
+          "role": "tourist",
+          "hi": "धन्यवाद। मुझे कुछ कपड़े धुलवाने हैं। क्या यहाँ लॉन्ड्री की सुविधा मिल सकती है?",
+          "roman": "Dhanyavaad. Mujhe kuchh kapde dhulvaane hain. Kyaa yahaan laundry kee suvidhaa mil saktee hai?",
+          "en": "Thank you. I need to have some clothes washed. Is laundry service available here?"
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "जी हाँ। आप अपने कपड़े लॉन्ड्री में दे सकते हैं। सामान्यतः कपड़े अगले दिन मिल जाते हैं।",
+          "roman": "Jee haan. Aap apne kapde laundry mein de sakte hain. Saamaanyatah kapde agle din mil jaate hain.",
+          "en": "Yes. You can give your clothes to the laundry. Usually, they will be ready the next day.",
+          "f": {
+            "hi": "जी हाँ। आप अपने कपड़े लॉन्ड्री में दे सकती हैं। सामान्यतः कपड़े अगले दिन मिल जाते हैं।",
+            "roman": "Jee haan. Aap apne kapde laundry mein de saktee hain. Saamaanyatah kapde agle din mil jaate hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "अच्छा। मुझे कुछ दस्तावेजों की फोटोकॉपी और प्रिंट भी करवानी है। क्या आसपास कोई दुकान है?",
+          "roman": "Achchhaa. Mujhe kuchh dastaavezon kee photocopy aur print bhee karvaanee hai. Kyaa aaspaas koee dukaan hai?",
+          "en": "All right. I also need to photocopy and print some documents. Is there a shop nearby?"
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "जी हाँ। होटल के सामने ही फोटोकॉपी और प्रिंट की दुकान है।",
+          "roman": "Jee haan. Hotel ke saamne hee photocopy aur print kee dukaan hai.",
+          "en": "Yes. There is a photocopy and printing shop right opposite the hotel."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या वहाँ से मैं अपने दस्तावेजों की कुछ प्रतियाँ निकलवा सकता हूँ?",
+          "roman": "Kyaa vahaan se main apne dastaavezon kee kuchh pratiyaan nikalvaa saktaa hoon?",
+          "en": "Can I get a few copies of my documents made there?",
+          "f": {
+            "hi": "क्या वहाँ से मैं अपने दस्तावेजों की कुछ प्रतियाँ निकलवा सकती हूँ?",
+            "roman": "Kyaa vahaan se main apne dastaavezon kee kuchh pratiyaan nikalvaa saktee hoon?"
+          }
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "जी हाँ। वहाँ फोटोकॉपी, प्रिंट और स्कैन की सुविधा उपलब्ध है।",
+          "roman": "Jee haan. Vahaan photocopy, print aur scan kee suvidhaa upalabdh hai.",
+          "en": "Yes. Photocopying, printing, and scanning services are available there."
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत अच्छा। और मुझे अपनी एक फोटो भी खिंचवानी है। क्या आसपास फोटो स्टूडियो है?",
+          "roman": "Bahut achchhaa. Aur mujhe apnee ek photo bhee khinchvaanee hai. Kyaa aaspaas photo studio hai?",
+          "en": "Very good. I also need to have a photograph taken. Is there a photo studio nearby?"
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "जी हाँ। पास में एक फोटो स्टूडियो है। वहाँ आप पासपोर्ट आकार की या सामान्य फोटो खिंचवा सकते हैं।",
+          "roman": "Jee haan. Paas mein ek photo studio hai. Vahaan aap passport aakaar kee yaa saamaanya photo khinchvaa sakte hain.",
+          "en": "Yes. There is a photo studio nearby. You can have passport-size or regular photographs taken there.",
+          "f": {
+            "hi": "जी हाँ। पास में एक फोटो स्टूडियो है। वहाँ आप पासपोर्ट आकार की या सामान्य फोटो खिंचवा सकती हैं।",
+            "roman": "Jee haan. Paas mein ek photo studio hai. Vahaan aap passport aakaar kee yaa saamaanya photo khinchvaa saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत धन्यवाद। यात्रा के दौरान ये सभी सुविधाएँ मेरे लिए बहुत उपयोगी हैं।",
+          "roman": "Bahut dhanyavaad. Yaatraa ke dauraan ye sabhee suvidhaaen mere liye bahut upyogee hain.",
+          "en": "Thank you very much. All these facilities are very useful for me during my trip."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "आपका स्वागत है। यदि आपको किसी और सुविधा की आवश्यकता हो, तो आप बेझिझक पूछ सकते हैं।",
+          "roman": "Aapkaa svaagat hai. Yadi aapko kisee aur suvidhaa kee aavashyaktaa ho, to aap bejhijhak poochh sakte hain.",
+          "en": "You are welcome. If you need any other facility, please feel free to ask.",
+          "f": {
+            "hi": "आपका स्वागत है। यदि आपको किसी और सुविधा की आवश्यकता हो, तो आप बेझिझक पूछ सकती हैं।",
+            "roman": "Aapkaa svaagat hai. Yadi aapko kisee aur suvidhaa kee aavashyaktaa ho, to aap bejhijhak poochh saktee hain."
+          }
+        }
+      ]
+    }
+  ]
+}

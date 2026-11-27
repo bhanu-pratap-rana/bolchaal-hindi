@@ -1,0 +1,673 @@
+{
+  "id": "d07",
+  "day": 7,
+  "status": "review",
+  "title_hi": "रेस्तराँ में खाना मँगाना",
+  "title_en": "Ordering at a restaurant",
+  "roles": {
+    "customer": {
+      "hi": "ग्राहक",
+      "en": "Customer",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "waiter": {
+      "hi": "वेटर",
+      "en": "Waiter",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "restaurant_staff": {
+      "hi": "रेस्तराँ कर्मचारी",
+      "en": "Restaurant staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "मेज़",
+      "roman": "mez",
+      "en": "table"
+    },
+    {
+      "hi": "तीखा",
+      "roman": "teekhaa",
+      "en": "spicy (hot)"
+    },
+    {
+      "hi": "हल्का मसालेदार",
+      "roman": "halkaa masaaledaar",
+      "en": "mildly spiced"
+    },
+    {
+      "hi": "प्याज़",
+      "roman": "pyaaz",
+      "en": "onion"
+    },
+    {
+      "hi": "लहसुन",
+      "roman": "lahsun",
+      "en": "garlic"
+    },
+    {
+      "hi": "शाकाहारी",
+      "roman": "shaakaahaaree",
+      "en": "vegetarian"
+    },
+    {
+      "hi": "नकद",
+      "roman": "naqad",
+      "en": "cash"
+    },
+    {
+      "hi": "स्वादिष्ट",
+      "roman": "svaadisht",
+      "en": "delicious"
+    },
+    {
+      "hi": "रेस्तराँ",
+      "roman": "restaurant",
+      "en": "restaurant"
+    },
+    {
+      "hi": "बुकिंग",
+      "roman": "booking",
+      "en": "booking"
+    },
+    {
+      "hi": "वेटर",
+      "roman": "waiter",
+      "en": "waiter"
+    },
+    {
+      "hi": "ग्राहक",
+      "roman": "graahak",
+      "en": "customer"
+    },
+    {
+      "hi": "मेन्यू",
+      "roman": "menu",
+      "en": "menu"
+    },
+    {
+      "hi": "स्पेशल डिश",
+      "roman": "special dish",
+      "en": "special dish"
+    },
+    {
+      "hi": "खाना",
+      "roman": "khaanaa",
+      "en": "food, meal"
+    },
+    {
+      "hi": "मांसाहारी",
+      "roman": "maansaahaaree",
+      "en": "non-vegetarian"
+    },
+    {
+      "hi": "दाल",
+      "roman": "daal",
+      "en": "lentils"
+    },
+    {
+      "hi": "तंदूरी रोटी",
+      "roman": "tandooree rotee",
+      "en": "tandoori bread"
+    },
+    {
+      "hi": "पानी",
+      "roman": "paanee",
+      "en": "water"
+    },
+    {
+      "hi": "लस्सी",
+      "roman": "lassee",
+      "en": "lassi"
+    },
+    {
+      "hi": "ऑर्डर",
+      "roman": "order",
+      "en": "order"
+    },
+    {
+      "hi": "अचार",
+      "roman": "achaar",
+      "en": "pickle"
+    },
+    {
+      "hi": "सलाद",
+      "roman": "salad",
+      "en": "salad"
+    },
+    {
+      "hi": "मसालेदार",
+      "roman": "masaaledaar",
+      "en": "spicy"
+    },
+    {
+      "hi": "गरम",
+      "roman": "garam",
+      "en": "hot"
+    },
+    {
+      "hi": "ठंडा",
+      "roman": "thandaa",
+      "en": "cold"
+    },
+    {
+      "hi": "पैक करना",
+      "roman": "pack karnaa",
+      "en": "to pack, take away"
+    },
+    {
+      "hi": "बिल",
+      "roman": "bill",
+      "en": "bill"
+    },
+    {
+      "hi": "पेमेंट",
+      "roman": "payment",
+      "en": "payment"
+    },
+    {
+      "hi": "कार्ड",
+      "roman": "card",
+      "en": "card"
+    },
+    {
+      "hi": "सेवा",
+      "roman": "sevaa",
+      "en": "service"
+    },
+    {
+      "hi": "रसोई",
+      "roman": "rasoee",
+      "en": "kitchen"
+    },
+    {
+      "hi": "कम मसाले का",
+      "roman": "kam masaale kaa",
+      "en": "less spicy"
+    },
+    {
+      "hi": "कम तेल",
+      "roman": "kam tel",
+      "en": "less oil"
+    },
+    {
+      "hi": "धन्यवाद",
+      "roman": "dhanyavaad",
+      "en": "thank you"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d07s1",
+      "title_hi": "मेज़ लेना",
+      "title_en": "Getting a table",
+      "situation": "You arrive without a booking and need a table for two.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्कार! दो लोगों के लिए एक मेज़ चाहिए।",
+          "roman": "Namaskaar! Do logon ke liye ek mez chaahiye.",
+          "en": "Hello! We need a table for two."
+        },
+        {
+          "role": "waiter",
+          "hi": "नमस्कार! क्या आपने पहले से बुकिंग की है?",
+          "roman": "Namaskaar! Kyaa aapne pehle se booking kee hai?",
+          "en": "Hello! Do you have a booking?"
+        },
+        {
+          "role": "customer",
+          "hi": "नहीं।",
+          "roman": "Naheen.",
+          "en": "No."
+        },
+        {
+          "role": "waiter",
+          "hi": "कोई बात नहीं। कृपया मेरे साथ आइए।",
+          "roman": "Koee baat naheen. Kripyaa mere saath aaiye.",
+          "en": "No problem. Please come with me."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d07s2",
+      "title_hi": "मेन्यू माँगना",
+      "title_en": "Asking for the menu",
+      "situation": "You ask for the menu and today's special.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "कृपया मेन्यू दीजिए।",
+          "roman": "Kripyaa menu deejiye.",
+          "en": "May I have the menu, please?"
+        },
+        {
+          "role": "waiter",
+          "hi": "जी, यह लीजिए।",
+          "roman": "Jee, yeh leejiye.",
+          "en": "Certainly. Here you are."
+        },
+        {
+          "role": "customer",
+          "hi": "आज की स्पेशल डिश क्या है?",
+          "roman": "Aaj kee special dish kyaa hai?",
+          "en": "What's today's special?"
+        },
+        {
+          "role": "waiter",
+          "hi": "आज पनीर टिक्का और वेज बिरयानी स्पेशल है।",
+          "roman": "Aaj paneer tikkaa aur veg biryaanee special hai.",
+          "en": "Today's specials are paneer tikka and veg biryani."
+        },
+        {
+          "role": "customer",
+          "hi": "अच्छा, धन्यवाद।",
+          "roman": "Achchhaa, dhanyavaad.",
+          "en": "Okay, thank you."
+        }
+      ]
+    },
+    {
+      "id": "d07s3",
+      "title_hi": "खाने के बारे में पूछना",
+      "title_en": "Asking about the food",
+      "situation": "You check how spicy a dish is and what is in it.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "क्या यह खाना ज़्यादा तीखा है?",
+          "roman": "Kyaa yeh khaanaa zyaadaa teekhaa hai?",
+          "en": "Is this food very spicy?"
+        },
+        {
+          "role": "waiter",
+          "hi": "नहीं, यह हल्का मसालेदार है।",
+          "roman": "Naheen, yeh halkaa masaaledaar hai.",
+          "en": "No, it is mildly spiced."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या इसमें प्याज़ और लहसुन है?",
+          "roman": "Kyaa ismein pyaaz aur lahsun hai?",
+          "en": "Does it contain onion and garlic?"
+        },
+        {
+          "role": "waiter",
+          "hi": "जी हाँ। अगर आप चाहें, तो बिना प्याज़ और लहसुन का भी बन सकता है।",
+          "roman": "Jee haan. Agar aap chaahen, to binaa pyaaz aur lahsun kaa bhee ban saktaa hai.",
+          "en": "Yes. If you prefer, we can make it without onion and garlic."
+        },
+        {
+          "role": "customer",
+          "hi": "ठीक है, वही ले आइए।",
+          "roman": "Theek hai, vahee le aaiye.",
+          "en": "All right. I'll have that."
+        }
+      ]
+    },
+    {
+      "id": "d07s4",
+      "title_hi": "खाना ऑर्डर करना",
+      "title_en": "Ordering food",
+      "situation": "The waiter takes your food and drinks order.",
+      "lines": [
+        {
+          "role": "waiter",
+          "hi": "आप क्या लेंगे?",
+          "roman": "Aap kyaa lenge?",
+          "en": "What would you like to have?",
+          "f": {
+            "hi": "आप क्या लेंगी?",
+            "roman": "Aap kyaa lengee?"
+          }
+        },
+        {
+          "role": "customer",
+          "hi": "एक शाकाहारी थाली, एक दाल और दो तंदूरी रोटियाँ।",
+          "roman": "Ek shaakaahaaree thaalee, ek daal aur do tandooree rotiyaan.",
+          "en": "One vegetarian thali, one dal and two tandoori rotis."
+        },
+        {
+          "role": "waiter",
+          "hi": "पीने के लिए क्या लेंगे?",
+          "roman": "Peene ke liye kyaa lenge?",
+          "en": "What would you like to drink?",
+          "f": {
+            "hi": "पीने के लिए क्या लेंगी?",
+            "roman": "Peene ke liye kyaa lengee?"
+          }
+        },
+        {
+          "role": "customer",
+          "hi": "एक बोतल पानी और एक मीठी लस्सी।",
+          "roman": "Ek botal paanee aur ek meethee lassee.",
+          "en": "One bottle of water and one sweet lassi."
+        },
+        {
+          "role": "waiter",
+          "hi": "ठीक है, आपका ऑर्डर ले लिया है।",
+          "roman": "Theek hai, aapkaa order le liyaa hai.",
+          "en": "All right. I've taken your order."
+        }
+      ]
+    },
+    {
+      "id": "d07s5",
+      "title_hi": "बिल माँगना",
+      "title_en": "Asking for the bill",
+      "situation": "You ask for the bill and pay by card.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "कृपया बिल ले आइए।",
+          "roman": "Kripyaa bill le aaiye.",
+          "en": "May I have the bill, please?"
+        },
+        {
+          "role": "waiter",
+          "hi": "जी, यह आपका बिल है।",
+          "roman": "Jee, yeh aapkaa bill hai.",
+          "en": "Certainly. Here is your bill."
+        },
+        {
+          "role": "customer",
+          "hi": "क्या मैं कार्ड से पेमेंट कर सकता हूँ?",
+          "roman": "Kyaa main card se payment kar saktaa hoon?",
+          "en": "Can I pay by card?",
+          "f": {
+            "hi": "क्या मैं कार्ड से पेमेंट कर सकती हूँ?",
+            "roman": "Kyaa main card se payment kar saktee hoon?"
+          }
+        },
+        {
+          "role": "waiter",
+          "hi": "जी हाँ। कार्ड और नकद, दोनों चलेंगे।",
+          "roman": "Jee haan. Card aur naqad, donon chalenge.",
+          "en": "Yes. Card or cash, both are fine.",
+          "gender_ok": true
+        },
+        {
+          "role": "customer",
+          "hi": "यह मेरा कार्ड है।",
+          "roman": "Yeh meraa card hai.",
+          "en": "Here is my card."
+        },
+        {
+          "role": "waiter",
+          "hi": "धन्यवाद। पेमेंट हो गया है।",
+          "roman": "Dhanyavaad. Payment ho gayaa hai.",
+          "en": "Thank you. Your payment is complete."
+        }
+      ]
+    },
+    {
+      "id": "d07s6",
+      "title_hi": "खाने की तारीफ़ करना",
+      "title_en": "Complimenting the food",
+      "situation": "You thank the waiter on your way out.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "खाना बहुत स्वादिष्ट था।",
+          "roman": "Khaanaa bahut svaadisht thaa.",
+          "en": "The food was delicious."
+        },
+        {
+          "role": "waiter",
+          "hi": "बहुत-बहुत धन्यवाद।",
+          "roman": "Bahut-bahut dhanyavaad.",
+          "en": "Thank you very much."
+        },
+        {
+          "role": "customer",
+          "hi": "आपकी सेवा भी बहुत अच्छी थी।",
+          "roman": "Aapkee sevaa bhee bahut achchhee thee.",
+          "en": "The service was excellent too."
+        },
+        {
+          "role": "waiter",
+          "hi": "धन्यवाद। फिर आइएगा।",
+          "roman": "Dhanyavaad. Phir aaiyegaa.",
+          "en": "Thank you. Please visit us again."
+        }
+      ]
+    },
+    {
+      "id": "d07s7",
+      "title_hi": "कुछ और मँगाना",
+      "title_en": "Asking for something extra",
+      "situation": "You ask the waiter for pickle, salad and more water.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "थोड़ा अचार और सलाद भी ले आइए।",
+          "roman": "Thodaa achaar aur salad bhee le aaiye.",
+          "en": "Please bring some pickle and salad as well."
+        },
+        {
+          "role": "waiter",
+          "hi": "जी, अभी लाता हूँ।",
+          "roman": "Jee, abhee laataa hoon.",
+          "en": "Certainly."
+        },
+        {
+          "role": "customer",
+          "hi": "थोड़ा और पानी भी दे दीजिए।",
+          "roman": "Thodaa aur paanee bhee de deejiye.",
+          "en": "Could I have some more water, please?"
+        },
+        {
+          "role": "waiter",
+          "hi": "ज़रूर।",
+          "roman": "Zaroor.",
+          "en": "Of course."
+        }
+      ]
+    },
+    {
+      "id": "d07s8",
+      "title_hi": "खाने में समस्या बताना",
+      "title_en": "Reporting a problem with the food",
+      "situation": "Your food has arrived cold and you tell the waiter.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "माफ़ कीजिए, खाना ठंडा है।",
+          "roman": "Maaf keejiye, khaanaa thandaa hai.",
+          "en": "Excuse me, the food is cold."
+        },
+        {
+          "role": "waiter",
+          "hi": "क्षमा कीजिए। मैं अभी गरम करके लाता हूँ।",
+          "roman": "Kshamaa keejiye. Main abhee garam karke laataa hoon.",
+          "en": "I'm sorry. I'll bring it back hot right away."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "waiter",
+          "hi": "दो मिनट में ले आता हूँ।",
+          "roman": "Do minute mein le aataa hoon.",
+          "en": "I'll be back in two minutes."
+        }
+      ]
+    },
+    {
+      "id": "d07s9",
+      "title_hi": "खाना पैक कराना",
+      "title_en": "Packing the leftover food",
+      "situation": "You have food left over and ask the waiter to pack it.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "यह खाना बच गया है। क्या इसे पैक कर देंगे?",
+          "roman": "Yeh khaanaa bach gayaa hai. Kyaa ise pack kar denge?",
+          "en": "There's some food left. Could you pack it, please?"
+        },
+        {
+          "role": "waiter",
+          "hi": "जी, ज़रूर।",
+          "roman": "Jee, zaroor.",
+          "en": "Certainly."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "waiter",
+          "hi": "यह लीजिए, आपका पैक किया हुआ खाना।",
+          "roman": "Yeh leejiye, aapkaa pack kiyaa huaa khaanaa.",
+          "en": "Here is your packed food."
+        }
+      ]
+    },
+    {
+      "id": "d07s10",
+      "title_hi": "फ़ोन पर मेज़ बुक करना",
+      "title_en": "Booking a table by phone",
+      "situation": "You phone a restaurant to book a table for four this evening.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "नमस्कार! आज शाम के लिए एक मेज़ बुक करनी है।",
+          "roman": "Namaskaar! Aaj shaam ke liye ek mez book karnee hai.",
+          "en": "Hello! I'd like to book a table for this evening."
+        },
+        {
+          "role": "restaurant_staff",
+          "hi": "जी, कितने लोगों के लिए?",
+          "roman": "Jee, kitne logon ke liye?",
+          "en": "Certainly. For how many people?"
+        },
+        {
+          "role": "customer",
+          "hi": "चार लोगों के लिए।",
+          "roman": "Chaar logon ke liye.",
+          "en": "Four people."
+        },
+        {
+          "role": "restaurant_staff",
+          "hi": "किस समय चाहिए?",
+          "roman": "Kis samay chaahiye?",
+          "en": "What time would you like it?"
+        },
+        {
+          "role": "customer",
+          "hi": "शाम सात बजे।",
+          "roman": "Shaam saat baje.",
+          "en": "Seven o'clock in the evening."
+        },
+        {
+          "role": "restaurant_staff",
+          "hi": "ठीक है। आपकी बुकिंग हो गई है।",
+          "roman": "Theek hai. Aapkee booking ho gaee hai.",
+          "en": "All right. Your booking is confirmed."
+        },
+        {
+          "role": "customer",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d07s11",
+      "title_hi": "शाकाहारी खाना पूछना",
+      "title_en": "Asking for vegetarian food",
+      "situation": "You ask whether the restaurant serves vegetarian food.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "क्या यहाँ शाकाहारी खाना मिलता है?",
+          "roman": "Kyaa yahaan shaakaahaaree khaanaa miltaa hai?",
+          "en": "Do you serve vegetarian food?"
+        },
+        {
+          "role": "waiter",
+          "hi": "जी हाँ। हमारे यहाँ शाकाहारी और मांसाहारी, दोनों तरह का खाना मिलता है।",
+          "roman": "Jee haan. Hamaare yahaan shaakaahaaree aur maansaahaaree, donon tarah kaa khaanaa miltaa hai.",
+          "en": "Yes. We serve both vegetarian and non-vegetarian food."
+        },
+        {
+          "role": "customer",
+          "hi": "मैं शाकाहारी खाना ही खाता हूँ।",
+          "roman": "Main shaakaahaaree khaanaa hee khaataa hoon.",
+          "en": "I only eat vegetarian food.",
+          "f": {
+            "hi": "मैं शाकाहारी खाना ही खाती हूँ।",
+            "roman": "Main shaakaahaaree khaanaa hee khaatee hoon."
+          }
+        },
+        {
+          "role": "waiter",
+          "hi": "तो कृपया यह शाकाहारी मेन्यू देखिए।",
+          "roman": "To kripyaa yeh shaakaahaaree menu dekhiye.",
+          "en": "Then please have a look at our vegetarian menu."
+        }
+      ]
+    },
+    {
+      "id": "d07s12",
+      "title_hi": "कम मसाले वाला खाना मँगाना",
+      "title_en": "Asking for less spicy food",
+      "situation": "You ask for your food to be made with less spice and less oil.",
+      "lines": [
+        {
+          "role": "customer",
+          "hi": "कृपया खाना कम मसाले का बनाइए।",
+          "roman": "Kripyaa khaanaa kam masaale kaa banaaiye.",
+          "en": "Please make the food less spicy."
+        },
+        {
+          "role": "waiter",
+          "hi": "ज़रूर। क्या कम तेल में भी बनाना है?",
+          "roman": "Zaroor. Kyaa kam tel mein bhee banaanaa hai?",
+          "en": "Certainly. Would you also like it with less oil?"
+        },
+        {
+          "role": "customer",
+          "hi": "जी हाँ, कृपया।",
+          "roman": "Jee haan, kripyaa.",
+          "en": "Yes, please."
+        },
+        {
+          "role": "waiter",
+          "hi": "ठीक है, मैं रसोई में बता देता हूँ।",
+          "roman": "Theek hai, main rasoee mein bataa detaa hoon.",
+          "en": "All right. I'll let the kitchen know."
+        }
+      ]
+    }
+  ]
+}

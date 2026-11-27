@@ -1,0 +1,555 @@
+{
+  "id": "d10",
+  "day": 10,
+  "status": "review",
+  "title_hi": "स्वास्थ्य और चिकित्सा सहायता",
+  "title_en": "Health and medical help",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "hotel_staff": {
+      "hi": "होटल कर्मचारी",
+      "en": "Hotel staff",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "receptionist": {
+      "hi": "रिसेप्शनिस्ट",
+      "en": "Receptionist",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "doctor": {
+      "hi": "डॉक्टर",
+      "en": "Doctor",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "pharmacist": {
+      "hi": "फार्मासिस्ट",
+      "en": "Pharmacist",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Staff member",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "hospital_staff": {
+      "hi": "अस्पताल कर्मचारी",
+      "en": "Hospital staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "अस्पताल",
+      "roman": "aspataal",
+      "en": "hospital"
+    },
+    {
+      "hi": "क्लिनिक",
+      "roman": "clinic",
+      "en": "clinic"
+    },
+    {
+      "hi": "पंजीकरण",
+      "roman": "panjeekaran",
+      "en": "registration"
+    },
+    {
+      "hi": "प्रतीक्षालय",
+      "roman": "prateekshaalay",
+      "en": "waiting area"
+    },
+    {
+      "hi": "डॉक्टर",
+      "roman": "doctor",
+      "en": "doctor"
+    },
+    {
+      "hi": "नर्स",
+      "roman": "nurse",
+      "en": "nurse"
+    },
+    {
+      "hi": "फार्मेसी/दवा की दुकान",
+      "roman": "pharmacy / davaa kee dukaan",
+      "en": "pharmacy"
+    },
+    {
+      "hi": "दवा",
+      "roman": "davaa",
+      "en": "medicine"
+    },
+    {
+      "hi": "पर्चा/नुस्खा",
+      "roman": "parchaa / nuskhaa",
+      "en": "prescription"
+    },
+    {
+      "hi": "बुखार",
+      "roman": "bukhaar",
+      "en": "fever"
+    },
+    {
+      "hi": "सिरदर्द",
+      "roman": "sirdard",
+      "en": "headache"
+    },
+    {
+      "hi": "पेट दर्द",
+      "roman": "pet dard",
+      "en": "stomach ache"
+    },
+    {
+      "hi": "गले में दर्द",
+      "roman": "gale mein dard",
+      "en": "sore throat"
+    },
+    {
+      "hi": "खाँसी",
+      "roman": "khaansee",
+      "en": "cough"
+    },
+    {
+      "hi": "एलर्जी",
+      "roman": "allergy",
+      "en": "allergy"
+    },
+    {
+      "hi": "मधुमेह",
+      "roman": "madhumeh",
+      "en": "diabetes"
+    },
+    {
+      "hi": "उच्च रक्तचाप",
+      "roman": "uchch raktchaap",
+      "en": "high blood pressure"
+    },
+    {
+      "hi": "अस्थमा",
+      "roman": "asthma",
+      "en": "asthma"
+    },
+    {
+      "hi": "जाँच",
+      "roman": "jaanch",
+      "en": "examination"
+    },
+    {
+      "hi": "रक्तचाप",
+      "roman": "raktchaap",
+      "en": "blood pressure"
+    },
+    {
+      "hi": "तापमान",
+      "roman": "taapmaan",
+      "en": "temperature"
+    },
+    {
+      "hi": "संक्रमण",
+      "roman": "sankraman",
+      "en": "infection"
+    },
+    {
+      "hi": "दुष्प्रभाव",
+      "roman": "dushprabhaav",
+      "en": "side effects"
+    },
+    {
+      "hi": "एम्बुलेंस",
+      "roman": "ambulance",
+      "en": "ambulance"
+    },
+    {
+      "hi": "शीघ्र स्वस्थ हो जाइए",
+      "roman": "sheeghra svasth ho jaaiye",
+      "en": "get well soon"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d10s1",
+      "title_hi": "होटल में",
+      "title_en": "Falling ill at the hotel",
+      "situation": "You are staying at a hotel and suddenly feel ill.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्षमा कीजिए, मेरी तबीयत ठीक नहीं है।",
+          "roman": "Kshamaa keejiye, meree tabeeyat theek naheen hai.",
+          "en": "Excuse me, I'm not feeling well."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "आपको क्या परेशानी है?",
+          "roman": "Aapko kyaa pareshaanee hai?",
+          "en": "What seems to be the problem?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे तेज़ बुखार है, सिरदर्द हो रहा है और शरीर में बहुत दर्द है।",
+          "roman": "Mujhe tez bukhaar hai, sirdard ho rahaa hai aur shareer mein bahut dard hai.",
+          "en": "I have a high fever, a headache, and body aches."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "क्या आपको किसी डॉक्टर के पास जाना है?",
+          "roman": "Kyaa aapko kisee doctor ke paas jaanaa hai?",
+          "en": "Would you like to see a doctor?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ। क्या यहाँ पास में कोई अस्पताल या क्लिनिक है?",
+          "roman": "Jee haan. Kyaa yahaan paas mein koee aspataal yaa clinic hai?",
+          "en": "Yes. Is there a hospital or a clinic nearby?"
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "जी, यहाँ से पाँच मिनट की दूरी पर एक अस्पताल है। यदि चाहें तो मैं टैक्सी बुला देता हूँ।",
+          "roman": "Jee, yahaan se paanch minute kee dooree par ek aspataal hai. Yadi chaahen to main taxi bulaa detaa hoon.",
+          "en": "Yes. There is a hospital about five minutes from here. If you like, I can call a taxi for you."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद। कृपया टैक्सी बुला दीजिए।",
+          "roman": "Dhanyavaad. Kripyaa taxi bulaa deejiye.",
+          "en": "Thank you. Please call a taxi."
+        }
+      ]
+    },
+    {
+      "id": "d10s2",
+      "title_hi": "अस्पताल में पंजीकरण",
+      "title_en": "Registering at the hospital",
+      "situation": "At the hospital desk, you register to see a doctor.",
+      "lines": [
+        {
+          "role": "receptionist",
+          "hi": "नमस्ते। मैं आपकी क्या सहायता कर सकता/सकती हूँ?",
+          "roman": "Namaste. Main aapkee kyaa sahaayataa kar saktaa/saktee hoon?",
+          "en": "Good morning. How may I help you?",
+          "tts": "नमस्ते। मैं आपकी क्या सहायता कर सकता हूँ?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं डॉक्टर से मिलना चाहता हूँ। मेरी तबीयत ठीक नहीं है।",
+          "roman": "Main doctor se milnaa chaahtaa hoon. Meree tabeeyat theek naheen hai.",
+          "en": "I would like to see a doctor. I'm not feeling well.",
+          "f": {
+            "hi": "मैं डॉक्टर से मिलना चाहती हूँ। मेरी तबीयत ठीक नहीं है।",
+            "roman": "Main doctor se milnaa chaahtee hoon. Meree tabeeyat theek naheen hai."
+          }
+        },
+        {
+          "role": "receptionist",
+          "hi": "कृपया अपना नाम, पासपोर्ट और संपर्क संख्या बताइए।",
+          "roman": "Kripyaa apnaa naam, passport aur sampark sankhyaa bataaiye.",
+          "en": "Please tell me your name, show me your passport, and provide your contact number."
+        },
+        {
+          "role": "traveller",
+          "hi": "मेरा नाम जॉन विलियम्स है। यह मेरा पासपोर्ट है।",
+          "roman": "Meraa naam John Williams hai. Yeh meraa passport hai.",
+          "en": "My name is John Williams. Here is my passport."
+        },
+        {
+          "role": "receptionist",
+          "hi": "धन्यवाद। कृपया यह पंजीकरण फ़ॉर्म भर दीजिए।",
+          "roman": "Dhanyavaad. Kripyaa yeh panjeekaran form bhar deejiye.",
+          "en": "Thank you. Please fill out this registration form."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आप मेरी सहायता कर सकते हैं? मुझे हिंदी अच्छी तरह नहीं आती।",
+          "roman": "Kyaa aap meree sahaayataa kar sakte hain? Mujhe Hindi achchhee tarah naheen aatee.",
+          "en": "Could you help me? I don't speak Hindi very well."
+        },
+        {
+          "role": "receptionist",
+          "hi": "अवश्य। मैं आपकी सहायता करता/करती हूँ।",
+          "roman": "Avashya. Main aapkee sahaayataa kartaa/kartee hoon.",
+          "en": "Certainly. I'll help you.",
+          "tts": "अवश्य। मैं आपकी सहायता करता हूँ।"
+        },
+        {
+          "role": "receptionist",
+          "hi": "आपका पंजीकरण हो गया है। कृपया प्रतीक्षालय में बैठिए। डॉक्टर आपको शीघ्र बुलाएँगे।",
+          "roman": "Aapkaa panjeekaran ho gayaa hai. Kripyaa prateekshaalay mein baithiye. Doctor aapko sheeghra bulaaenge.",
+          "en": "Your registration is complete. Please wait in the waiting area. The doctor will see you shortly."
+        }
+      ]
+    },
+    {
+      "id": "d10s3",
+      "title_hi": "डॉक्टर से मुलाकात",
+      "title_en": "Seeing the doctor",
+      "situation": "The doctor asks about your symptoms, examines you and gives advice.",
+      "lines": [
+        {
+          "role": "doctor",
+          "hi": "नमस्ते। आपको क्या समस्या है?",
+          "roman": "Namaste. Aapko kyaa samasyaa hai?",
+          "en": "Hello. What seems to be the problem?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे कल रात से बुखार है। सिरदर्द भी है और शरीर में दर्द हो रहा है।",
+          "roman": "Mujhe kal raat se bukhaar hai. Sirdard bhee hai aur shareer mein dard ho rahaa hai.",
+          "en": "I have had a fever since last night. I also have a headache and body pain."
+        },
+        {
+          "role": "doctor",
+          "hi": "क्या आपको खाँसी, गले में दर्द या पेट की कोई समस्या है?",
+          "roman": "Kyaa aapko khaansee, gale mein dard yaa pet kee koee samasyaa hai?",
+          "en": "Do you have a cough, a sore throat, or any stomach problem?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे थोड़ा गले में दर्द भी है।",
+          "roman": "Mujhe thodaa gale mein dard bhee hai.",
+          "en": "I have a slight sore throat as well."
+        },
+        {
+          "role": "doctor",
+          "hi": "क्या आपको किसी दवा से एलर्जी है?",
+          "roman": "Kyaa aapko kisee davaa se allergy hai?",
+          "en": "Are you allergic to any medicine?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ। मुझे पेनिसिलिन से एलर्जी है।",
+          "roman": "Jee haan. Mujhe penicillin se allergy hai.",
+          "en": "Yes. I'm allergic to penicillin."
+        },
+        {
+          "role": "doctor",
+          "hi": "क्या आपको कोई पुरानी बीमारी है, जैसे मधुमेह, उच्च रक्तचाप या अस्थमा?",
+          "roman": "Kyaa aapko koee puraanee beemaaree hai, jaise madhumeh, uchch raktchaap yaa asthma?",
+          "en": "Do you have any medical condition such as diabetes, high blood pressure, or asthma?"
+        },
+        {
+          "role": "traveller",
+          "hi": "नहीं। मुझे कोई पुरानी बीमारी नहीं है।",
+          "roman": "Naheen. Mujhe koee puraanee beemaaree naheen hai.",
+          "en": "No. I don't have any chronic illness."
+        },
+        {
+          "role": "doctor",
+          "hi": "मैं आपका तापमान और रक्तचाप जाँचता हूँ।",
+          "roman": "Main aapkaa taapmaan aur raktchaap jaanchtaa hoon.",
+          "en": "Let me check your temperature and blood pressure."
+        },
+        {
+          "role": "doctor",
+          "hi": "आपको वायरल संक्रमण लगता है। घबराने की आवश्यकता नहीं है।",
+          "roman": "Aapko viral sankraman lagtaa hai. Ghabraane kee aavashyaktaa naheen hai.",
+          "en": "It appears that you have a viral infection. There is no need to worry."
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे क्या करना होगा?",
+          "roman": "Mujhe kyaa karnaa hogaa?",
+          "en": "What should I do?"
+        },
+        {
+          "role": "doctor",
+          "hi": "यह दवाइयाँ लीजिए, पर्याप्त पानी पीजिए, आराम कीजिए और यदि दो दिन में आराम न मिले तो फिर से आइए।",
+          "roman": "Yeh davaaiyaan leejiye, paryaapt paanee peejiye, aaraam keejiye aur yadi do din mein aaraam na mile to phir se aaiye.",
+          "en": "Take these medicines, drink plenty of water, get enough rest, and come back if you do not feel better in two days."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद, डॉक्टर।",
+          "roman": "Dhanyavaad, doctor.",
+          "en": "Thank you, Doctor."
+        }
+      ]
+    },
+    {
+      "id": "d10s4",
+      "title_hi": "दवा की दुकान पर",
+      "title_en": "At the pharmacy",
+      "situation": "You take your prescription to a pharmacy and ask how to take the medicines.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते। यह डॉक्टर का पर्चा है। कृपया ये दवाइयाँ दे दीजिए।",
+          "roman": "Namaste. Yeh doctor kaa parchaa hai. Kripyaa ye davaaiyaan de deejiye.",
+          "en": "Hello. Here is my prescription. Could you please give me these medicines?"
+        },
+        {
+          "role": "pharmacist",
+          "hi": "अवश्य। एक क्षण, मैं दवाइयाँ निकाल देता हूँ।",
+          "roman": "Avashya. Ek kshan, main davaaiyaan nikaal detaa hoon.",
+          "en": "Certainly. Please wait a moment while I get them."
+        },
+        {
+          "role": "traveller",
+          "hi": "इन्हें कैसे लेना है?",
+          "roman": "Inhen kaise lenaa hai?",
+          "en": "How should I take these medicines?"
+        },
+        {
+          "role": "pharmacist",
+          "hi": "यह दवा दिन में दो बार भोजन के बाद लीजिए और यह दवा बुखार होने पर लीजिए।",
+          "roman": "Yeh davaa din mein do baar bhojan ke baad leejiye aur yeh davaa bukhaar hone par leejiye.",
+          "en": "Take this medicine twice a day after meals. Take the other medicine whenever you have a fever."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या इन दवाओं के कोई दुष्प्रभाव हैं?",
+          "roman": "Kyaa in davaaon ke koee dushprabhaav hain?",
+          "en": "Do these medicines have any side effects?"
+        },
+        {
+          "role": "pharmacist",
+          "hi": "सामान्यतः नहीं। यदि कोई एलर्जी या असुविधा हो, तो तुरंत डॉक्टर से संपर्क कीजिए।",
+          "roman": "Saamaanyatah naheen. Yadi koee allergy yaa asuvidhaa ho, to turant doctor se sampark keejiye.",
+          "en": "They usually do not. However, if you develop an allergic reaction or experience any discomfort, contact your doctor immediately."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "pharmacist",
+          "hi": "शीघ्र स्वस्थ हो जाइए।",
+          "roman": "Sheeghra svasth ho jaaiye.",
+          "en": "Get well soon."
+        }
+      ]
+    },
+    {
+      "id": "d10s5",
+      "title_hi": "अचानक अधिक तबीयत खराब होना",
+      "title_en": "Suddenly feeling much worse",
+      "situation": "You suddenly have trouble breathing and need an ambulance.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मुझे साँस लेने में कठिनाई हो रही है। कृपया एम्बुलेंस बुलाइए।",
+          "roman": "Mujhe saans lene mein kathinaaee ho rahee hai. Kripyaa ambulance bulaaiye.",
+          "en": "I'm having difficulty breathing. Please call an ambulance."
+        },
+        {
+          "role": "staff",
+          "hi": "घबराइए नहीं। मैं तुरंत एम्बुलेंस बुलाता हूँ।",
+          "roman": "Ghabraaiye naheen. Main turant ambulance bulaataa hoon.",
+          "en": "Don't worry. I'll call an ambulance right away."
+        }
+      ]
+    },
+    {
+      "id": "d10s6",
+      "title_hi": "दवा उपलब्ध न होना",
+      "title_en": "Medicine not available",
+      "situation": "The pharmacy does not have your medicine, so you ask for an alternative.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या यह दवा उपलब्ध है?",
+          "roman": "Kyaa yeh davaa upalabdh hai?",
+          "en": "Is this medicine available?"
+        },
+        {
+          "role": "pharmacist",
+          "hi": "क्षमा कीजिए, यह दवा अभी उपलब्ध नहीं है।",
+          "roman": "Kshamaa keejiye, yeh davaa abhee upalabdh naheen hai.",
+          "en": "I'm sorry. This medicine is currently out of stock."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या इसका कोई दूसरा विकल्प है?",
+          "roman": "Kyaa iskaa koee doosraa vikalp hai?",
+          "en": "Is there an alternative?"
+        },
+        {
+          "role": "pharmacist",
+          "hi": "जी हाँ। डॉक्टर द्वारा अनुमोदित यह दवा उपलब्ध है।",
+          "roman": "Jee haan. Doctor dvaaraa anumodit yeh davaa upalabdh hai.",
+          "en": "Yes. This medicine is an approved alternative prescribed by your doctor."
+        }
+      ]
+    },
+    {
+      "id": "d10s7",
+      "title_hi": "एलर्जी की जानकारी देना",
+      "title_en": "Telling the doctor about an allergy",
+      "situation": "The doctor asks whether you are allergic to any medicine.",
+      "lines": [
+        {
+          "role": "doctor",
+          "hi": "क्या आपको किसी दवा से एलर्जी है?",
+          "roman": "Kyaa aapko kisee davaa se allergy hai?",
+          "en": "Are you allergic to any medicine?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ। मुझे पेनिसिलिन से एलर्जी है।",
+          "roman": "Jee haan. Mujhe penicillin se allergy hai.",
+          "en": "Yes. I'm allergic to penicillin."
+        }
+      ]
+    },
+    {
+      "id": "d10s8",
+      "title_hi": "भाषा की समस्या",
+      "title_en": "Language difficulty",
+      "situation": "At the hospital, you ask whether someone speaks English.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या यहाँ कोई अंग्रेज़ी बोल सकता है?",
+          "roman": "Kyaa yahaan koee angrezee bol saktaa hai?",
+          "en": "Does anyone here speak English?"
+        },
+        {
+          "role": "hospital_staff",
+          "hi": "जी हाँ। हमारे एक कर्मचारी अंग्रेज़ी बोलते हैं। वे आपकी सहायता करेंगे।",
+          "roman": "Jee haan. Hamaare ek karmachaaree angrezee bolte hain. Ve aapkee sahaayataa karenge.",
+          "en": "Yes. One of our staff members speaks English and will assist you.",
+          "gender_ok": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "id": "d03",
+  "day": 3,
+  "status": "review",
+  "title_hi": "रेलवे स्टेशन पर",
+  "title_en": "At the railway station",
+  "roles": {
+    "passenger": {
+      "hi": "यात्री",
+      "en": "Passenger",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Railway staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "porter": {
+      "hi": "कुली",
+      "en": "Porter",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "co_passenger": {
+      "hi": "सहयात्री",
+      "en": "Fellow passenger",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "रेलवे स्टेशन",
+      "roman": "railway station",
+      "en": "railway station"
+    },
+    {
+      "hi": "टिकट",
+      "roman": "ticket",
+      "en": "ticket"
+    },
+    {
+      "hi": "टिकट खिड़की",
+      "roman": "ticket khidkee",
+      "en": "ticket counter"
+    },
+    {
+      "hi": "आरक्षण",
+      "roman": "aarakshan",
+      "en": "reservation"
+    },
+    {
+      "hi": "प्रतीक्षा सूची",
+      "roman": "prateekshaa soochee",
+      "en": "waiting list"
+    },
+    {
+      "hi": "पुष्टि टिकट",
+      "roman": "pushti ticket",
+      "en": "confirmed ticket"
+    },
+    {
+      "hi": "प्लेटफ़ॉर्म",
+      "roman": "platform",
+      "en": "platform"
+    },
+    {
+      "hi": "फुट ओवर ब्रिज",
+      "roman": "foot over bridge",
+      "en": "foot over bridge"
+    },
+    {
+      "hi": "ट्रेन",
+      "roman": "train",
+      "en": "train"
+    },
+    {
+      "hi": "डिब्बा",
+      "roman": "dibbaa",
+      "en": "coach"
+    },
+    {
+      "hi": "सीट",
+      "roman": "seat",
+      "en": "seat"
+    },
+    {
+      "hi": "बर्थ",
+      "roman": "berth",
+      "en": "berth"
+    },
+    {
+      "hi": "सामान्य श्रेणी",
+      "roman": "saamaanya shrenee",
+      "en": "general class"
+    },
+    {
+      "hi": "स्लीपर श्रेणी",
+      "roman": "sleeper shrenee",
+      "en": "sleeper class"
+    },
+    {
+      "hi": "एसी श्रेणी",
+      "roman": "AC shrenee",
+      "en": "AC class"
+    },
+    {
+      "hi": "किराया",
+      "roman": "kiraayaa",
+      "en": "fare"
+    },
+    {
+      "hi": "समय-सारिणी",
+      "roman": "samay-saarinee",
+      "en": "timetable"
+    },
+    {
+      "hi": "कुली/पोर्टर",
+      "roman": "kulee / porter",
+      "en": "porter"
+    },
+    {
+      "hi": "सामान",
+      "roman": "saamaan",
+      "en": "luggage"
+    },
+    {
+      "hi": "घोषणा",
+      "roman": "ghoshnaa",
+      "en": "announcement"
+    },
+    {
+      "hi": "विलंब",
+      "roman": "vilamb",
+      "en": "delay"
+    },
+    {
+      "hi": "रेलवे पुलिस",
+      "roman": "railway police",
+      "en": "railway police"
+    },
+    {
+      "hi": "गंतव्य",
+      "roman": "gantavya",
+      "en": "destination"
+    },
+    {
+      "hi": "प्रस्थान",
+      "roman": "prasthaan",
+      "en": "departure"
+    },
+    {
+      "hi": "आगमन",
+      "roman": "aagman",
+      "en": "arrival"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d03s1",
+      "title_hi": "टिकट खरीदना",
+      "title_en": "Buying a ticket",
+      "situation": "You buy a sleeper-class ticket to Delhi at the ticket counter.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "नमस्कार, मुझे दिल्ली का एक टिकट चाहिए।",
+          "roman": "Namaskaar, mujhe Dillee kaa ek ticket chaahiye.",
+          "en": "Hello, I would like a ticket to Delhi."
+        },
+        {
+          "role": "staff",
+          "hi": "किस श्रेणी में?",
+          "roman": "Kis shrenee mein?",
+          "en": "Which class would you like to travel in?"
+        },
+        {
+          "role": "passenger",
+          "hi": "स्लीपर श्रेणी में।",
+          "roman": "Sleeper shrenee mein.",
+          "en": "Sleeper Class, please."
+        },
+        {
+          "role": "staff",
+          "hi": "किराया ₹650 है।",
+          "roman": "Kiraayaa chhah sau pachaas rupaye hai.",
+          "en": "The fare is ₹650."
+        },
+        {
+          "role": "passenger",
+          "hi": "यह लीजिए।",
+          "roman": "Yeh leejiye.",
+          "en": "Here you are."
+        },
+        {
+          "role": "staff",
+          "hi": "यह आपका टिकट है।",
+          "roman": "Yeh aapkaa ticket hai.",
+          "en": "Here is your ticket."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d03s2",
+      "title_hi": "आरक्षण के बारे में पूछना",
+      "title_en": "Reserving a seat",
+      "situation": "You ask for a reserved seat on tomorrow's train to Delhi.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या दिल्ली के लिए कल की ट्रेन में सीट उपलब्ध है?",
+          "roman": "Kyaa Dillee ke liye kal kee train mein seat uplabdh hai?",
+          "en": "Is there a seat available on tomorrow's train to Delhi?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी, कुछ सीटें उपलब्ध हैं।",
+          "roman": "Jee, kuchh seaten uplabdh hain.",
+          "en": "Yes, a few seats are available."
+        },
+        {
+          "role": "passenger",
+          "hi": "कृपया एक सीट बुक कर दीजिए।",
+          "roman": "Kripyaa ek seat book kar deejiye.",
+          "en": "Please book one seat for me."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया यह फार्म भर दीजिए।",
+          "roman": "Kripyaa yeh form bhar deejiye.",
+          "en": "Please fill out this form."
+        },
+        {
+          "role": "staff",
+          "hi": "आपका आरक्षण हो गया है।",
+          "roman": "Aapkaa aarakshan ho gayaa hai.",
+          "en": "Your reservation has been confirmed."
+        }
+      ]
+    },
+    {
+      "id": "d03s3",
+      "title_hi": "प्लेटफ़ॉर्म का पता",
+      "title_en": "Finding the platform",
+      "situation": "You ask which platform the Mumbai train leaves from and how to get there.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मुंबई जाने वाली ट्रेन किस प्लेटफ़ॉर्म से जाएगी?",
+          "roman": "Mumbaee jaane vaalee train kis platform se jaaegee?",
+          "en": "Which platform does the train to Mumbai leave from?"
+        },
+        {
+          "role": "staff",
+          "hi": "प्लेटफ़ॉर्म संख्या पाँच से।",
+          "roman": "Platform sankhyaa paanch se.",
+          "en": "It departs from Platform Number 5."
+        },
+        {
+          "role": "passenger",
+          "hi": "वहाँ कैसे जाऊँ?",
+          "roman": "Vahaan kaise jaaoon?",
+          "en": "How can I get there?"
+        },
+        {
+          "role": "staff",
+          "hi": "सामने फुट ओवर ब्रिज से जाइए।",
+          "roman": "Saamne foot over bridge se jaaiye.",
+          "en": "Please use the foot overbridge in front of you."
+        }
+      ]
+    },
+    {
+      "id": "d03s4",
+      "title_hi": "ट्रेन का समय पूछना",
+      "title_en": "Asking the train time",
+      "situation": "You ask when your train will arrive.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "ट्रेन कितने बजे आएगी?",
+          "roman": "Train kitne baje aaegee?",
+          "en": "What time will the train arrive?"
+        },
+        {
+          "role": "staff",
+          "hi": "शाम 6:30 बजे।",
+          "roman": "Shaam saadhe chhah baje.",
+          "en": "It will arrive at 6:30 p.m."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या ट्रेन समय पर है?",
+          "roman": "Kyaa train samay par hai?",
+          "en": "Is the train on time?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ, समय पर है।",
+          "roman": "Jee haan, samay par hai.",
+          "en": "Yes, it is on time."
+        }
+      ]
+    },
+    {
+      "id": "d03s5",
+      "title_hi": "ट्रेन के विलंब की जानकारी",
+      "title_en": "Asking about a delay",
+      "situation": "You ask whether the train is on time and learn it is running late.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या ट्रेन समय पर आएगी?",
+          "roman": "Kyaa train samay par aaegee?",
+          "en": "Will the train arrive on time?"
+        },
+        {
+          "role": "staff",
+          "hi": "नहीं, ट्रेन लगभग एक घंटे विलंब से चल रही है।",
+          "roman": "Naheen, train lagbhag ek ghante vilamb se chal rahee hai.",
+          "en": "No, it is running about one hour late."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या इसकी घोषणा होगी?",
+          "roman": "Kyaa iskee ghoshnaa hogee?",
+          "en": "Will there be an announcement?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ इसकी घोषणा की जाएगी।",
+          "roman": "Jee haan, iskee ghoshnaa kee jaaegee.",
+          "en": "Yes, an announcement will be made."
+        }
+      ]
+    },
+    {
+      "id": "d03s6",
+      "title_hi": "सही कोच ढूँढ़ना",
+      "title_en": "Finding your coach",
+      "situation": "You ask where your coach will stop on the platform.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरा कोच कहाँ है?",
+          "roman": "Meraa coach kahaan hai?",
+          "en": "Where is my coach?"
+        },
+        {
+          "role": "staff",
+          "hi": "आपका डिब्बा S-4 है।",
+          "roman": "Aapkaa dibbaa S-4 hai.",
+          "en": "Your coach is S-4."
+        },
+        {
+          "role": "passenger",
+          "hi": "वह कहाँ रुकेगा?",
+          "roman": "Voh kahaan rukegaa?",
+          "en": "Where will it stop?"
+        },
+        {
+          "role": "staff",
+          "hi": "प्लेटफ़ॉर्म के बीच वाले भाग में।",
+          "roman": "Platform ke beech vaale bhaag mein.",
+          "en": "It will stop near the middle of the platform."
+        }
+      ]
+    },
+    {
+      "id": "d03s7",
+      "title_hi": "सीट ढूँढ़ना",
+      "title_en": "Finding your seat",
+      "situation": "On the train, you check your coach and seat with a fellow passenger.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या यह कोच संख्या S4 है?",
+          "roman": "Kyaa yeh coach sankhyaa S-4 hai?",
+          "en": "Is this Coach S4?"
+        },
+        {
+          "role": "co_passenger",
+          "hi": "जी हाँ।",
+          "roman": "Jee haan.",
+          "en": "Yes."
+        },
+        {
+          "role": "passenger",
+          "hi": "मेरी सीट संख्या 32 है।",
+          "roman": "Meree seat sankhyaa battees hai.",
+          "en": "My seat number is 32."
+        },
+        {
+          "role": "co_passenger",
+          "hi": "यह ऊपर वाली बर्थ है।",
+          "roman": "Yeh oopar vaalee berth hai.",
+          "en": "It is the upper berth."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "co_passenger",
+          "hi": "आपका स्वागत है।",
+          "roman": "Aapkaa svaagat hai.",
+          "en": "You're welcome."
+        }
+      ]
+    },
+    {
+      "id": "d03s8",
+      "title_hi": "कुली से सहायता लेना",
+      "title_en": "Hiring a porter",
+      "situation": "You agree a price with a porter to carry your luggage to platform 3, then pay him there.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "नमस्कार, क्या आप मेरा सामान उठा सकते हैं?",
+          "roman": "Namaskaar, kyaa aap meraa saamaan uthaa sakte hain?",
+          "en": "Hello, could you carry my luggage, please?"
+        },
+        {
+          "role": "porter",
+          "hi": "जी, अवश्य। आपको कहाँ जाना है?",
+          "roman": "Jee, avashya. Aapko kahaan jaanaa hai?",
+          "en": "Certainly. Where would you like to go?"
+        },
+        {
+          "role": "passenger",
+          "hi": "मुझे प्लेटफ़ॉर्म संख्या तीन तक जाना है।",
+          "roman": "Mujhe platform sankhyaa teen tak jaanaa hai.",
+          "en": "I need to go to Platform Number 3."
+        },
+        {
+          "role": "porter",
+          "hi": "आपके पास कितने सामान हैं?",
+          "roman": "Aapke paas kitne saamaan hain?",
+          "en": "How many pieces of luggage do you have?"
+        },
+        {
+          "role": "passenger",
+          "hi": "दो सूटकेस और एक बैग।",
+          "roman": "Do suitcase aur ek bag.",
+          "en": "Two suitcases and one bag."
+        },
+        {
+          "role": "porter",
+          "hi": "मेरा शुल्क ₹250 होगा।",
+          "roman": "Meraa shulk do sau pachaas rupaye hogaa.",
+          "en": "My charge is ₹250."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या कुछ कम हो सकता है?",
+          "roman": "Kyaa kuchh kam ho saktaa hai?",
+          "en": "Could you reduce the price a little?"
+        },
+        {
+          "role": "porter",
+          "hi": "ठीक है, ₹200 दे दीजिए।",
+          "roman": "Theek hai, do sau rupaye de deejiye.",
+          "en": "All right. Please pay ₹200."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है, चलिए।",
+          "roman": "Theek hai, chaliye.",
+          "en": "Okay, let's go."
+        },
+        {
+          "role": "passenger",
+          "hi": "यह लीजिए ₹200।",
+          "roman": "Yeh leejiye, do sau rupaye.",
+          "en": "Here is ₹200."
+        },
+        {
+          "role": "porter",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "passenger",
+          "hi": "आपकी सहायता के लिए धन्यवाद।",
+          "roman": "Aapkee sahaayataa ke liye dhanyavaad.",
+          "en": "Thank you for your help."
+        },
+        {
+          "role": "porter",
+          "hi": "आपका स्वागत है। आपकी यात्रा शुभ हो।",
+          "roman": "Aapkaa svaagat hai. Aapkee yaatraa shubh ho.",
+          "en": "You're welcome. Have a pleasant journey."
+        }
+      ]
+    },
+    {
+      "id": "d03s9",
+      "title_hi": "ट्रेन में भोजन के बारे में पूछना",
+      "title_en": "Asking about food on the train",
+      "situation": "You ask a staff member whether meals are served on the train.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या इस ट्रेन में भोजन मिलेगा?",
+          "roman": "Kyaa is train mein bhojan milegaa?",
+          "en": "Is food available on this train?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ, भोजन उपलब्ध है।",
+          "roman": "Jee haan, bhojan uplabdh hai.",
+          "en": "Yes, food is available."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "आपका स्वागत है।",
+          "roman": "Aapkaa svaagat hai.",
+          "en": "You're welcome."
+        }
+      ]
+    },
+    {
+      "id": "d03s10",
+      "title_hi": "ट्रेन से उतरने से पहले",
+      "title_en": "Before getting off",
+      "situation": "You ask a fellow passenger about the next station.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "अगला स्टेशन कौन-सा है?",
+          "roman": "Aglaa station kaun-saa hai?",
+          "en": "Which is the next station?"
+        },
+        {
+          "role": "co_passenger",
+          "hi": "अगला स्टेशन भोपाल है।",
+          "roman": "Aglaa station Bhopaal hai.",
+          "en": "The next station is Bhopal."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या ट्रेन वहाँ पाँच मिनट रुकेगी?",
+          "roman": "Kyaa train vahaan paanch minute rukegee?",
+          "en": "Will the train stop there for five minutes?"
+        },
+        {
+          "role": "co_passenger",
+          "hi": "जी हाँ।",
+          "roman": "Jee haan.",
+          "en": "Yes, it will."
+        }
+      ]
+    },
+    {
+      "id": "d03s11",
+      "title_hi": "सामान खो जाना",
+      "title_en": "Lost luggage",
+      "situation": "Your bag is missing and you tell a railway staff member.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरा बैग नहीं मिल रहा है।",
+          "roman": "Meraa bag naheen mil rahaa hai.",
+          "en": "I can't find my bag."
+        },
+        {
+          "role": "staff",
+          "hi": "आपने आख़िरी बार उसे कहाँ देखा था?",
+          "roman": "Aapne aakhiree baar use kahaan dekhaa thaa?",
+          "en": "Where did you see it last?"
+        },
+        {
+          "role": "passenger",
+          "hi": "सीट के पास रखा था।",
+          "roman": "Seat ke paas rakhaa thaa.",
+          "en": "I left it near my seat."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया रेलवे पुलिस में शिकायत दर्ज कराइए।",
+          "roman": "Kripyaa railway police mein shikaayat darj karaaiye.",
+          "en": "Please file a complaint with the Railway Police."
+        }
+      ]
+    },
+    {
+      "id": "d03s12",
+      "title_hi": "ट्रेन छूट जाना",
+      "title_en": "Missing the train",
+      "situation": "You have missed your train and ask about the next one.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी ट्रेन छूट गई।",
+          "roman": "Meree train chhoot gaee.",
+          "en": "I missed my train."
+        },
+        {
+          "role": "staff",
+          "hi": "अगली ट्रेन रात 9 बजे है।",
+          "roman": "Aglee train raat nau baje hai.",
+          "en": "The next train leaves at 9:00 p.m."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या मैं उसी टिकट से यात्रा कर सकता हूँ?",
+          "roman": "Kyaa main usee ticket se yaatraa kar saktaa hoon?",
+          "en": "Can I travel with the same ticket?",
+          "f": {
+            "hi": "क्या मैं उसी टिकट से यात्रा कर सकती हूँ?",
+            "roman": "Kyaa main usee ticket se yaatraa kar saktee hoon?"
+          }
+        },
+        {
+          "role": "staff",
+          "hi": "नहीं, आपको नया टिकट लेना होगा।",
+          "roman": "Naheen, aapko nayaa ticket lenaa hogaa.",
+          "en": "No, you will have to buy a new ticket."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "id": "d15",
+  "day": 15,
+  "status": "review",
+  "title_hi": "स्थानीय लोगों से बातचीत",
+  "title_en": "Talking with local people",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "local": {
+      "hi": "स्थानीय व्यक्ति",
+      "en": "Local person",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "host": {
+      "hi": "मेज़बान",
+      "en": "Host",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "परिचय",
+      "roman": "parichay",
+      "en": "introduction"
+    },
+    {
+      "hi": "परिचय देना",
+      "roman": "parichay denaa",
+      "en": "to introduce oneself"
+    },
+    {
+      "hi": "परिचय पूछना",
+      "roman": "parichay poochhnaa",
+      "en": "to ask someone to introduce themselves"
+    },
+    {
+      "hi": "मिलना",
+      "roman": "milnaa",
+      "en": "to meet"
+    },
+    {
+      "hi": "मेज़बान",
+      "roman": "mezbaan",
+      "en": "host"
+    },
+    {
+      "hi": "अतिथि",
+      "roman": "atithi",
+      "en": "guest"
+    },
+    {
+      "hi": "घर",
+      "roman": "ghar",
+      "en": "home"
+    },
+    {
+      "hi": "स्वागत",
+      "roman": "svaagat",
+      "en": "welcome"
+    },
+    {
+      "hi": "आमंत्रित करना",
+      "roman": "aamantrit karnaa",
+      "en": "to invite"
+    },
+    {
+      "hi": "निमंत्रण",
+      "roman": "nimantran",
+      "en": "invitation"
+    },
+    {
+      "hi": "कार्यक्रम",
+      "roman": "kaaryakram",
+      "en": "programme/event"
+    },
+    {
+      "hi": "पारिवारिक कार्यक्रम",
+      "roman": "paarivaarik kaaryakram",
+      "en": "family gathering"
+    },
+    {
+      "hi": "शामिल होना",
+      "roman": "shaamil honaa",
+      "en": "to join/participate"
+    },
+    {
+      "hi": "स्वीकार करना",
+      "roman": "sveekaar karnaa",
+      "en": "to accept"
+    },
+    {
+      "hi": "अस्वीकार करना",
+      "roman": "asveekaar karnaa",
+      "en": "to decline"
+    },
+    {
+      "hi": "आमंत्रण स्वीकार करना",
+      "roman": "aamantran sveekaar karnaa",
+      "en": "to accept an invitation"
+    },
+    {
+      "hi": "निमंत्रण अस्वीकार करना",
+      "roman": "nimantran asveekaar karnaa",
+      "en": "to decline an invitation"
+    },
+    {
+      "hi": "आपत्ति",
+      "roman": "aapatti",
+      "en": "objection"
+    },
+    {
+      "hi": "असमर्थता",
+      "roman": "asamarthataa",
+      "en": "inability"
+    },
+    {
+      "hi": "आभारी",
+      "roman": "aabhaaree",
+      "en": "grateful"
+    },
+    {
+      "hi": "धन्यवाद",
+      "roman": "dhanyavaad",
+      "en": "thanks"
+    },
+    {
+      "hi": "दिल से",
+      "roman": "dil se",
+      "en": "sincerely (from the heart)"
+    },
+    {
+      "hi": "सहायता",
+      "roman": "sahaayataa",
+      "en": "help"
+    },
+    {
+      "hi": "असुविधा",
+      "roman": "asuvidhaa",
+      "en": "inconvenience"
+    },
+    {
+      "hi": "क्षमा करना",
+      "roman": "kshamaa karnaa",
+      "en": "to forgive"
+    },
+    {
+      "hi": "क्षमा माँगना",
+      "roman": "kshamaa maangnaa",
+      "en": "to apologise"
+    },
+    {
+      "hi": "शिष्टता",
+      "roman": "shishtataa",
+      "en": "politeness"
+    },
+    {
+      "hi": "व्यवहार",
+      "roman": "vyavahaar",
+      "en": "behaviour"
+    },
+    {
+      "hi": "मेहमान",
+      "roman": "mehmaan",
+      "en": "guest"
+    },
+    {
+      "hi": "परिवार",
+      "roman": "parivaar",
+      "en": "family"
+    },
+    {
+      "hi": "मिलनसार",
+      "roman": "milansaar",
+      "en": "friendly"
+    },
+    {
+      "hi": "वातावरण",
+      "roman": "vaataavaran",
+      "en": "atmosphere"
+    },
+    {
+      "hi": "समय पर",
+      "roman": "samay par",
+      "en": "on time"
+    },
+    {
+      "hi": "याद रखना",
+      "roman": "yaad rakhnaa",
+      "en": "to remember"
+    },
+    {
+      "hi": "सुखद",
+      "roman": "sukhad",
+      "en": "pleasant"
+    },
+    {
+      "hi": "यादगार",
+      "roman": "yaadgaar",
+      "en": "memorable"
+    },
+    {
+      "hi": "निमंत्रण देना",
+      "roman": "nimantran denaa",
+      "en": "to invite"
+    },
+    {
+      "hi": "खुशी होना",
+      "roman": "khushee honaa",
+      "en": "to be happy"
+    },
+    {
+      "hi": "आपसे मिलकर खुशी हुई",
+      "roman": "aapse milkar khushee huee",
+      "en": "nice to meet you"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d15s1",
+      "title_hi": "अपना परिचय देना और किसी से परिचय पूछना",
+      "title_en": "Introducing yourself",
+      "situation": "You meet a local person, Amit, and you introduce yourselves.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते! मेरा नाम डेविड है। मैं अमेरिका से आया हूँ। मैं भारत घूमने आया हूँ।",
+          "roman": "Namaste! Meraa naam David hai. Main America se aayaa hoon. Main Bhaarat ghoomne aayaa hoon.",
+          "en": "Hello! My name is David. I am from the United States. I have come to travel around India.",
+          "f": {
+            "hi": "नमस्ते! मेरा नाम डेविड है। मैं अमेरिका से आई हूँ। मैं भारत घूमने आई हूँ।",
+            "roman": "Namaste! Meraa naam David hai. Main America se aaee hoon. Main Bhaarat ghoomne aaee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "नमस्ते! आपसे मिलकर खुशी हुई। मैं अमित हूँ। आप भारत में पहली बार आए हैं?",
+          "roman": "Namaste! Aapse milkar khushee huee. Main Amit hoon. Aap Bhaarat mein pehlee baar aae hain?",
+          "en": "Hello! Nice to meet you. I am Amit. Is this your first visit to India?",
+          "f": {
+            "hi": "नमस्ते! आपसे मिलकर खुशी हुई। मैं अमित हूँ। आप भारत में पहली बार आई हैं?",
+            "roman": "Namaste! Aapse milkar khushee huee. Main Amit hoon. Aap Bhaarat mein pehlee baar aaee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ, मैं पहली बार भारत आया हूँ। आपसे मिलकर भी मुझे खुशी हुई।",
+          "roman": "Jee haan, main pehlee baar Bhaarat aayaa hoon. Aapse milkar bhee mujhe khushee huee.",
+          "en": "Yes, this is my first visit to India. It is nice to meet you too.",
+          "f": {
+            "hi": "जी हाँ, मैं पहली बार भारत आई हूँ। आपसे मिलकर भी मुझे खुशी हुई।",
+            "roman": "Jee haan, main pehlee baar Bhaarat aaee hoon. Aapse milkar bhee mujhe khushee huee."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "आप भारत में कितने दिन रहेंगे?",
+          "roman": "Aap Bhaarat mein kitne din rahenge?",
+          "en": "How many days will you stay in India?",
+          "f": {
+            "hi": "आप भारत में कितने दिन रहेंगी?",
+            "roman": "Aap Bhaarat mein kitne din rahengee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं लगभग दो सप्ताह रहूँगा। मैं यहाँ की संस्कृति और लोगों के बारे में जानना चाहता हूँ।",
+          "roman": "Main lagbhag do saptaah rahoongaa. Main yahaan kee sanskriti aur logon ke baare mein jaannaa chaahtaa hoon.",
+          "en": "I will stay for about two weeks. I want to learn about the culture and people here.",
+          "f": {
+            "hi": "मैं लगभग दो सप्ताह रहूँगी। मैं यहाँ की संस्कृति और लोगों के बारे में जानना चाहती हूँ।",
+            "roman": "Main lagbhag do saptaah rahoongee. Main yahaan kee sanskriti aur logon ke baare mein jaannaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "बहुत अच्छा। आपको भारत कैसा लग रहा है?",
+          "roman": "Bahut achchhaa. Aapko Bhaarat kaisaa lag rahaa hai?",
+          "en": "That's great. How are you finding India?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे भारत बहुत अच्छा लग रहा है। यहाँ के लोग बहुत मिलनसार हैं।",
+          "roman": "Mujhe Bhaarat bahut achchhaa lag rahaa hai. Yahaan ke log bahut milansaar hain.",
+          "en": "I am really enjoying India. The people here are very friendly."
+        }
+      ]
+    },
+    {
+      "id": "d15s2",
+      "title_hi": "किसी के घर जाना और मेज़बान से बातचीत",
+      "title_en": "Visiting someone's home",
+      "situation": "Your host welcomes you into the home and offers you tea or coffee.",
+      "lines": [
+        {
+          "role": "host",
+          "hi": "आइए, आपका स्वागत है। अंदर आइए।",
+          "roman": "Aaiye, aapkaa svaagat hai. Andar aaiye.",
+          "en": "Please come in. Welcome!"
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत धन्यवाद। आपने मुझे अपने घर बुलाया, इसके लिए मैं आपका आभारी हूँ।",
+          "roman": "Bahut dhanyavaad. Aapne mujhe apne ghar bulaayaa, iske liye main aapkaa aabhaaree hoon.",
+          "en": "Thank you very much. I am grateful that you invited me to your home."
+        },
+        {
+          "role": "host",
+          "hi": "इसमें धन्यवाद की कोई बात नहीं है। आप हमारे अतिथि हैं।",
+          "roman": "Ismein dhanyavaad kee koee baat naheen hai. Aap hamaare atithi hain.",
+          "en": "There is no need to thank me. You are our guest."
+        },
+        {
+          "role": "traveller",
+          "hi": "आपका घर बहुत सुंदर है। यहाँ का वातावरण भी बहुत अच्छा है।",
+          "roman": "Aapkaa ghar bahut sundar hai. Yahaan kaa vaataavaran bhee bahut achchhaa hai.",
+          "en": "Your home is very beautiful. The atmosphere here is also very pleasant."
+        },
+        {
+          "role": "host",
+          "hi": "धन्यवाद। आप आराम से बैठिए। क्या आप कुछ लेना पसंद करेंगे—चाय या कॉफी?",
+          "roman": "Dhanyavaad. Aap aaraam se baithiye. Kyaa aap kuchh lenaa pasand karenge—chaay yaa coffee?",
+          "en": "Thank you. Please have a seat. Would you like something—tea or coffee?",
+          "f": {
+            "hi": "धन्यवाद। आप आराम से बैठिए। क्या आप कुछ लेना पसंद करेंगी—चाय या कॉफी?",
+            "roman": "Dhanyavaad. Aap aaraam se baithiye. Kyaa aap kuchh lenaa pasand karengee—chaay yaa coffee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मैं चाय लेना पसंद करूँगा।",
+          "roman": "Jee, main chaay lenaa pasand karoongaa.",
+          "en": "Yes, I would like some tea.",
+          "f": {
+            "hi": "जी, मैं चाय लेना पसंद करूँगी।",
+            "roman": "Jee, main chaay lenaa pasand karoongee."
+          }
+        },
+        {
+          "role": "host",
+          "hi": "ज़रूर। आप चीनी कितनी लेंगे?",
+          "roman": "Zaroor. Aap cheenee kitnee lenge?",
+          "en": "Certainly. How much sugar would you like?",
+          "f": {
+            "hi": "ज़रूर। आप चीनी कितनी लेंगी?",
+            "roman": "Zaroor. Aap cheenee kitnee lengee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "थोड़ी-सी चीनी, कृपया।",
+          "roman": "Thodee-see cheenee, kripyaa.",
+          "en": "A little sugar, please."
+        }
+      ]
+    },
+    {
+      "id": "d15s3",
+      "title_hi": "निमंत्रण स्वीकार करना",
+      "title_en": "Accepting an invitation",
+      "situation": "Your host invites you to a small family gathering next Sunday, and you accept.",
+      "lines": [
+        {
+          "role": "host",
+          "hi": "अगले रविवार हमारे घर एक छोटा-सा पारिवारिक कार्यक्रम है। क्या आप उसमें शामिल होंगे?",
+          "roman": "Agle ravivaar hamaare ghar ek chhotaa-saa paarivaarik kaaryakram hai. Kyaa aap usmein shaamil honge?",
+          "en": "We are having a small family gathering at our home next Sunday. Would you like to join us?",
+          "f": {
+            "hi": "अगले रविवार हमारे घर एक छोटा-सा पारिवारिक कार्यक्रम है। क्या आप उसमें शामिल होंगी?",
+            "roman": "Agle ravivaar hamaare ghar ek chhotaa-saa paarivaarik kaaryakram hai. Kyaa aap usmein shaamil hongee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ, मुझे बहुत खुशी होगी। आपने मुझे आमंत्रित किया, इसके लिए बहुत धन्यवाद।",
+          "roman": "Jee haan, mujhe bahut khushee hogee. Aapne mujhe aamantrit kiyaa, iske liye bahut dhanyavaad.",
+          "en": "Yes, I would be very happy to. Thank you very much for inviting me."
+        },
+        {
+          "role": "host",
+          "hi": "हमें भी खुशी होगी। कार्यक्रम शाम छह बजे शुरू होगा।",
+          "roman": "Hamen bhee khushee hogee. Kaaryakram shaam chhah baje shuroo hogaa.",
+          "en": "We would be happy to have you. The programme will begin at six in the evening."
+        },
+        {
+          "role": "traveller",
+          "hi": "ठीक है। मैं समय पर पहुँचने की कोशिश करूँगा।",
+          "roman": "Theek hai. Main samay par pahunchne kee koshish karoongaa.",
+          "en": "All right. I will try to arrive on time.",
+          "f": {
+            "hi": "ठीक है। मैं समय पर पहुँचने की कोशिश करूँगी।",
+            "roman": "Theek hai. Main samay par pahunchne kee koshish karoongee."
+          }
+        },
+        {
+          "role": "host",
+          "hi": "आप अकेले आएँगे या अपने किसी मित्र के साथ?",
+          "roman": "Aap akele aaenge yaa apne kisee mitra ke saath?",
+          "en": "Will you come alone or with a friend?",
+          "f": {
+            "hi": "आप अकेली आएँगी या अपने किसी मित्र के साथ?",
+            "roman": "Aap akelee aaengee yaa apne kisee mitra ke saath?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं अपने मित्र के साथ आऊँगा, अगर आपको कोई आपत्ति न हो।",
+          "roman": "Main apne mitra ke saath aaoongaa, agar aapko koee aapatti na ho.",
+          "en": "I will come with my friend, if you don't mind.",
+          "f": {
+            "hi": "मैं अपने मित्र के साथ आऊँगी, अगर आपको कोई आपत्ति न हो।",
+            "roman": "Main apne mitra ke saath aaoongee, agar aapko koee aapatti na ho."
+          }
+        },
+        {
+          "role": "host",
+          "hi": "बिल्कुल नहीं। आप अपने मित्र को भी साथ ला सकते हैं।",
+          "roman": "Bilkul naheen. Aap apne mitra ko bhee saath laa sakte hain.",
+          "en": "Not at all. You can bring your friend too.",
+          "f": {
+            "hi": "बिल्कुल नहीं। आप अपने मित्र को भी साथ ला सकती हैं।",
+            "roman": "Bilkul naheen. Aap apne mitra ko bhee saath laa saktee hain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d15s4",
+      "title_hi": "निमंत्रण अस्वीकार करना",
+      "title_en": "Declining an invitation",
+      "situation": "You politely decline a dinner invitation and agree on another day.",
+      "lines": [
+        {
+          "role": "host",
+          "hi": "कल शाम हमारे घर भोजन का कार्यक्रम है। क्या आप हमारे साथ भोजन करेंगे?",
+          "roman": "Kal shaam hamaare ghar bhojan kaa kaaryakram hai. Kyaa aap hamaare saath bhojan karenge?",
+          "en": "We are having dinner at our home tomorrow evening. Would you like to have dinner with us?",
+          "f": {
+            "hi": "कल शाम हमारे घर भोजन का कार्यक्रम है। क्या आप हमारे साथ भोजन करेंगी?",
+            "roman": "Kal shaam hamaare ghar bhojan kaa kaaryakram hai. Kyaa aap hamaare saath bhojan karengee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "आपका बहुत धन्यवाद। मुझे आपके साथ भोजन करना बहुत अच्छा लगेगा, लेकिन कल शाम मेरा पहले से एक कार्यक्रम है।",
+          "roman": "Aapkaa bahut dhanyavaad. Mujhe aapke saath bhojan karnaa bahut achchhaa lagegaa, lekin kal shaam meraa pehle se ek kaaryakram hai.",
+          "en": "Thank you very much. I would be happy to have dinner with you, but I already have another engagement tomorrow evening."
+        },
+        {
+          "role": "host",
+          "hi": "कोई बात नहीं। क्या आप किसी और दिन हमारे साथ भोजन करेंगे?",
+          "roman": "Koee baat naheen. Kyaa aap kisee aur din hamaare saath bhojan karenge?",
+          "en": "That's all right. Would you like to have dinner with us another day?",
+          "f": {
+            "hi": "कोई बात नहीं। क्या आप किसी और दिन हमारे साथ भोजन करेंगी?",
+            "roman": "Koee baat naheen. Kyaa aap kisee aur din hamaare saath bhojan karengee?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "जी हाँ, मुझे बहुत खुशी होगी। अगले दिन मैं खाली हूँ।",
+          "roman": "Jee haan, mujhe bahut khushee hogee. Agle din main khaalee hoon.",
+          "en": "Yes, I would be very happy to. I am free the following day."
+        },
+        {
+          "role": "host",
+          "hi": "ठीक है, तो हम अगले दिन मिलते हैं।",
+          "roman": "Theek hai, to hum agle din milte hain.",
+          "en": "All right, then we will meet the next day."
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत धन्यवाद। आशा है, आपको मेरी असमर्थता का बुरा नहीं लगा होगा।",
+          "roman": "Bahut dhanyavaad. Aashaa hai, aapko meree asamarthataa kaa buraa naheen lagaa hogaa.",
+          "en": "Thank you very much. I hope you don't mind that I am unable to come."
+        },
+        {
+          "role": "host",
+          "hi": "बिल्कुल नहीं। मैं आपकी स्थिति समझ सकता हूँ।",
+          "roman": "Bilkul naheen. Main aapkee sthiti samajh saktaa hoon.",
+          "en": "Not at all. I understand your situation."
+        }
+      ]
+    },
+    {
+      "id": "d15s5",
+      "title_hi": "धन्यवाद करना और क्षमा माँगना",
+      "title_en": "Thanking and apologising",
+      "situation": "Before you leave, you thank your host and apologise for any trouble you caused.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "आपने मेरी यात्रा के दौरान बहुत सहायता की। मैं आपका दिल से धन्यवाद करता हूँ।",
+          "roman": "Aapne meree yaatraa ke dauraan bahut sahaayataa kee. Main aapkaa dil se dhanyavaad kartaa hoon.",
+          "en": "You have helped me a lot during my journey. I sincerely thank you.",
+          "f": {
+            "hi": "आपने मेरी यात्रा के दौरान बहुत सहायता की। मैं आपका दिल से धन्यवाद करती हूँ।",
+            "roman": "Aapne meree yaatraa ke dauraan bahut sahaayataa kee. Main aapkaa dil se dhanyavaad kartee hoon."
+          }
+        },
+        {
+          "role": "host",
+          "hi": "इसकी कोई आवश्यकता नहीं है। आपकी सहायता करके मुझे खुशी हुई।",
+          "roman": "Iskee koee aavashyaktaa naheen hai. Aapkee sahaayataa karke mujhe khushee huee.",
+          "en": "There is no need to thank me. I was happy to help you."
+        },
+        {
+          "role": "traveller",
+          "hi": "अगर मेरी किसी बात या व्यवहार से आपको असुविधा हुई हो, तो कृपया मुझे क्षमा कीजिए।",
+          "roman": "Agar meree kisee baat yaa vyavahaar se aapko asuvidhaa huee ho, to kripyaa mujhe kshamaa keejiye.",
+          "en": "If anything I said or did caused you any inconvenience, please forgive me."
+        },
+        {
+          "role": "host",
+          "hi": "ऐसी कोई बात नहीं है। आपने बहुत शिष्टता से व्यवहार किया।",
+          "roman": "Aisee koee baat naheen hai. Aapne bahut shishtataa se vyavahaar kiyaa.",
+          "en": "Not at all. You behaved very politely."
+        },
+        {
+          "role": "traveller",
+          "hi": "आपका बहुत धन्यवाद। यहाँ बिताया समय मैं हमेशा याद रखूँगा।",
+          "roman": "Aapkaa bahut dhanyavaad. Yahaan bitaayaa samay main hameshaa yaad rakhoongaa.",
+          "en": "Thank you very much. I will always remember the time I spent here.",
+          "f": {
+            "hi": "आपका बहुत धन्यवाद। यहाँ बिताया समय मैं हमेशा याद रखूँगी।",
+            "roman": "Aapkaa bahut dhanyavaad. Yahaan bitaayaa samay main hameshaa yaad rakhoongee."
+          }
+        },
+        {
+          "role": "host",
+          "hi": "हमें भी आपसे मिलकर बहुत खुशी हुई। जब भी भारत आएँ, हमारे घर ज़रूर आइए।",
+          "roman": "Hamen bhee aapse milkar bahut khushee huee. Jab bhee Bhaarat aaen, hamaare ghar zaroor aaiye.",
+          "en": "We were also very happy to meet you. Whenever you come to India, please do visit our home."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मैं आपका निमंत्रण अवश्य याद रखूँगा। नमस्ते!",
+          "roman": "Jee, main aapkaa nimantran avashya yaad rakhoongaa. Namaste!",
+          "en": "Yes, I will certainly remember your invitation. Namaste!",
+          "f": {
+            "hi": "जी, मैं आपका निमंत्रण अवश्य याद रखूँगी। नमस्ते!",
+            "roman": "Jee, main aapkaa nimantran avashya yaad rakhoongee. Namaste!"
+          }
+        },
+        {
+          "role": "host",
+          "hi": "नमस्ते! आपकी यात्रा सुखद और यादगार हो।",
+          "roman": "Namaste! Aapkee yaatraa sukhad aur yaadgaar ho.",
+          "en": "Namaste! Have a pleasant and memorable journey."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "Replacements applied to the text the voice speaks, never to the text learners read. Longest keys are replaced first. Numbers, ₹ amounts, clock times and Latin acronyms are handled in tools/tts/text.py; add words here when a voice mispronounces them.",
+  "replace": {
+    "–": " ",
+    "—": ", ",
+    "/": " या ",
+    "Wi-Fi": "वाई-फ़ाई",
+    "WiFi": "वाई-फ़ाई",
+    "e-mail": "ई-मेल",
+    " (Medium)": ""
+  }
+}

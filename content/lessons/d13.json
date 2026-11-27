@@ -1,0 +1,759 @@
+{
+  "id": "d13",
+  "day": 13,
+  "status": "review",
+  "title_hi": "स्थानीय व्यक्ति से पहली बार बातचीत",
+  "title_en": "Talking to a local for the first time",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "local": {
+      "hi": "स्थानीय व्यक्ति",
+      "en": "Local person",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "स्थानीय",
+      "roman": "sthaaneey",
+      "en": "local"
+    },
+    {
+      "hi": "स्थानीय व्यक्ति",
+      "roman": "sthaaneey vyakti",
+      "en": "local person"
+    },
+    {
+      "hi": "निवासी",
+      "roman": "nivaasee",
+      "en": "resident"
+    },
+    {
+      "hi": "परिचय",
+      "roman": "parichay",
+      "en": "introduction"
+    },
+    {
+      "hi": "पहली बार",
+      "roman": "pehlee baar",
+      "en": "for the first time"
+    },
+    {
+      "hi": "संस्कृति",
+      "roman": "sanskriti",
+      "en": "culture"
+    },
+    {
+      "hi": "मिलनसार",
+      "roman": "milansaar",
+      "en": "friendly"
+    },
+    {
+      "hi": "प्रसिद्ध",
+      "roman": "prasiddh",
+      "en": "famous"
+    },
+    {
+      "hi": "स्थान",
+      "roman": "sthaan",
+      "en": "place"
+    },
+    {
+      "hi": "दर्शनीय स्थल",
+      "roman": "darshaneey sthal",
+      "en": "tourist attraction"
+    },
+    {
+      "hi": "पुराना शहर",
+      "roman": "puraanaa shahar",
+      "en": "old city"
+    },
+    {
+      "hi": "संग्रहालय",
+      "roman": "sangrahaalay",
+      "en": "museum"
+    },
+    {
+      "hi": "किला",
+      "roman": "kilaa",
+      "en": "fort"
+    },
+    {
+      "hi": "नदी का किनारा",
+      "roman": "nadee kaa kinaaraa",
+      "en": "riverside"
+    },
+    {
+      "hi": "दृश्य",
+      "roman": "drishya",
+      "en": "view"
+    },
+    {
+      "hi": "चौराहा",
+      "roman": "chauraahaa",
+      "en": "intersection"
+    },
+    {
+      "hi": "बस स्टॉप",
+      "roman": "bus stop",
+      "en": "bus stop"
+    },
+    {
+      "hi": "मंदिर",
+      "roman": "mandir",
+      "en": "temple"
+    },
+    {
+      "hi": "रास्ता",
+      "roman": "raastaa",
+      "en": "route, way"
+    },
+    {
+      "hi": "पहचानना",
+      "roman": "pehchaannaa",
+      "en": "to recognize"
+    },
+    {
+      "hi": "स्थानीय भोजन",
+      "roman": "sthaaneey bhojan",
+      "en": "local food"
+    },
+    {
+      "hi": "पारंपरिक व्यंजन",
+      "roman": "paaramparik vyanjan",
+      "en": "traditional dish"
+    },
+    {
+      "hi": "मिठाई",
+      "roman": "mithaaee",
+      "en": "sweet"
+    },
+    {
+      "hi": "शाकाहारी",
+      "roman": "shaakaahaaree",
+      "en": "vegetarian"
+    },
+    {
+      "hi": "भोजनालय",
+      "roman": "bhojanaalay",
+      "en": "restaurant, eatery"
+    },
+    {
+      "hi": "मसालेदार",
+      "roman": "masaaledaar",
+      "en": "spicy"
+    },
+    {
+      "hi": "कम मसाले वाला",
+      "roman": "kam masaale vaalaa",
+      "en": "less spicy"
+    },
+    {
+      "hi": "भाषा",
+      "roman": "bhaashaa",
+      "en": "language"
+    },
+    {
+      "hi": "अभिवादन",
+      "roman": "abhivaadan",
+      "en": "greeting"
+    },
+    {
+      "hi": "सम्मानजनक",
+      "roman": "sammaanjanak",
+      "en": "respectful"
+    },
+    {
+      "hi": "संबोधन",
+      "roman": "sambodhan",
+      "en": "form of address"
+    },
+    {
+      "hi": "सम्मानसूचक शब्द",
+      "roman": "sammaansoochak shabd",
+      "en": "honorific"
+    },
+    {
+      "hi": "त्योहार",
+      "roman": "tyohaar",
+      "en": "festival"
+    },
+    {
+      "hi": "मेला",
+      "roman": "melaa",
+      "en": "fair"
+    },
+    {
+      "hi": "हस्तशिल्प",
+      "roman": "hastashilp",
+      "en": "handicrafts"
+    },
+    {
+      "hi": "स्थानीय कला",
+      "roman": "sthaaneey kalaa",
+      "en": "local art"
+    },
+    {
+      "hi": "बेझिझक",
+      "roman": "bejhijhak",
+      "en": "without hesitation"
+    },
+    {
+      "hi": "यादगार",
+      "roman": "yaadgaar",
+      "en": "memorable"
+    },
+    {
+      "hi": "सिफारिश",
+      "roman": "sifaarish",
+      "en": "recommendation"
+    },
+    {
+      "hi": "सुखद यात्रा",
+      "roman": "sukhad yaatraa",
+      "en": "pleasant journey"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d13s1",
+      "title_hi": "स्थानीय व्यक्ति से पहली बार बातचीत",
+      "title_en": "Meeting a local for the first time",
+      "situation": "You start a conversation with a local person and say where you are from.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते! क्या मैं आपसे कुछ पूछ सकता हूँ?",
+          "roman": "Namaste! Kyaa main aapse kuchh poochh saktaa hoon?",
+          "en": "Hello! May I ask you something?",
+          "f": {
+            "hi": "नमस्ते! क्या मैं आपसे कुछ पूछ सकती हूँ?",
+            "roman": "Namaste! Kyaa main aapse kuchh poochh saktee hoon?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, ज़रूर पूछिए।",
+          "roman": "Jee haan, zaroor poochhiye.",
+          "en": "Yes, of course. Please go ahead."
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं यहाँ पहली बार आया हूँ। क्या आप इसी शहर के रहने वाले हैं?",
+          "roman": "Main yahaan pehlee baar aayaa hoon. Kyaa aap isee shahar ke rahne vaale hain?",
+          "en": "I am here for the first time. Do you live in this city?",
+          "f": {
+            "hi": "मैं यहाँ पहली बार आई हूँ। क्या आप इसी शहर के रहने वाले हैं?",
+            "roman": "Main yahaan pehlee baar aaee hoon. Kyaa aap isee shahar ke rahne vaale hain?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, मैं यहीं रहता हूँ। आप कहाँ से आए हैं?",
+          "roman": "Jee haan, main yaheen rahtaa hoon. Aap kahaan se aae hain?",
+          "en": "Yes, I live here. Where are you from?",
+          "f": {
+            "hi": "जी हाँ, मैं यहीं रहता हूँ। आप कहाँ से आई हैं?",
+            "roman": "Jee haan, main yaheen rahtaa hoon. Aap kahaan se aaee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं जापान से आया हूँ। मैं भारत घूमने आया हूँ।",
+          "roman": "Main Japan se aayaa hoon. Main Bhaarat ghoomne aayaa hoon.",
+          "en": "I am from Japan. I have come to travel around India.",
+          "f": {
+            "hi": "मैं जापान से आई हूँ। मैं भारत घूमने आई हूँ।",
+            "roman": "Main Japan se aaee hoon. Main Bhaarat ghoomne aaee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "बहुत अच्छा! आपको भारत कैसा लग रहा है?",
+          "roman": "Bahut achchhaa! Aapko Bhaarat kaisaa lag rahaa hai?",
+          "en": "That's great! How are you finding India?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे भारत बहुत अच्छा लग रहा है। यहाँ के लोग बहुत मिलनसार हैं।",
+          "roman": "Mujhe Bhaarat bahut achchhaa lag rahaa hai. Yahaan ke log bahut milansaar hain.",
+          "en": "I am really enjoying India. The people here are very friendly."
+        }
+      ]
+    },
+    {
+      "id": "d13s2",
+      "title_hi": "शहर के बारे में जानकारी लेना",
+      "title_en": "Learning about the city",
+      "situation": "You ask the local which places in the city are worth visiting.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मैं इस शहर के बारे में अधिक जानना चाहता हूँ। यहाँ घूमने के लिए कौन-कौन सी जगहें अच्छी हैं?",
+          "roman": "Main is shahar ke baare mein adhik jaannaa chaahtaa hoon. Yahaan ghoomne ke liye kaun-kaun see jagahen achchhee hain?",
+          "en": "I would like to know more about this city. Which places are good to visit here?",
+          "f": {
+            "hi": "मैं इस शहर के बारे में अधिक जानना चाहती हूँ। यहाँ घूमने के लिए कौन-कौन सी जगहें अच्छी हैं?",
+            "roman": "Main is shahar ke baare mein adhik jaannaa chaahtee hoon. Yahaan ghoomne ke liye kaun-kaun see jagahen achchhee hain?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ कई प्रसिद्ध स्थान हैं। आप पुराने शहर, संग्रहालय और किले की यात्रा कर सकते हैं।",
+          "roman": "Yahaan kaee prasiddh sthaan hain. Aap puraane shahar, sangrahaalay aur kile kee yaatraa kar sakte hain.",
+          "en": "There are several famous places here. You can visit the old city, the museum, and the fort.",
+          "f": {
+            "hi": "यहाँ कई प्रसिद्ध स्थान हैं। आप पुराने शहर, संग्रहालय और किले की यात्रा कर सकती हैं।",
+            "roman": "Yahaan kaee prasiddh sthaan hain. Aap puraane shahar, sangrahaalay aur kile kee yaatraa kar saktee hain."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "इनमें से कौन-सी जगह सबसे अधिक प्रसिद्ध है?",
+          "roman": "Inmein se kaun-see jagah sabse adhik prasiddh hai?",
+          "en": "Which of these places is the most famous?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ का पुराना किला बहुत प्रसिद्ध है। वहाँ से शहर का सुंदर दृश्य दिखाई देता है।",
+          "roman": "Yahaan kaa puraanaa kilaa bahut prasiddh hai. Vahaan se shahar kaa sundar drishya dikhaaee detaa hai.",
+          "en": "The old fort is very famous here. You can see a beautiful view of the city from there."
+        },
+        {
+          "role": "traveller",
+          "hi": "वहाँ जाने में कितना समय लगेगा?",
+          "roman": "Vahaan jaane mein kitnaa samay lagegaa?",
+          "en": "How long does it take to get there?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ से लगभग आधे घंटे का रास्ता है।",
+          "roman": "Yahaan se lagbhag aadhe ghante kaa raastaa hai.",
+          "en": "It takes about half an hour from here."
+        }
+      ]
+    },
+    {
+      "id": "d13s3",
+      "title_hi": "स्थानीय व्यक्ति से रास्ता पूछना",
+      "title_en": "Asking a local for directions",
+      "situation": "You ask how to get to the old fort and whether a bus goes there.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या आप मुझे वहाँ जाने का रास्ता बता सकते हैं?",
+          "roman": "Kyaa aap mujhe vahaan jaane kaa raastaa bataa sakte hain?",
+          "en": "Could you tell me how to get there?"
+        },
+        {
+          "role": "local",
+          "hi": "आप इस सड़क पर सीधे जाइए और आगे चौराहे से बाईं ओर मुड़िए।",
+          "roman": "Aap is sadak par seedhe jaaiye aur aage chauraahe se baaeen or mudiye.",
+          "en": "Go straight along this road and turn left at the intersection ahead."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ जाने के लिए बस भी मिलती है?",
+          "roman": "Kyaa vahaan jaane ke liye bus bhee miltee hai?",
+          "en": "Is there also a bus to get there?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, पास के बस स्टॉप से बस मिल जाती है।",
+          "roman": "Jee haan, paas ke bus stop se bus mil jaatee hai.",
+          "en": "Yes, you can take a bus from the nearby bus stop."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या रास्ते में कोई ऐसी जगह है, जिससे मुझे रास्ता पहचानने में आसानी हो?",
+          "roman": "Kyaa raaste mein koee aisee jagah hai, jisse mujhe raastaa pehchaanne mein aasaanee ho?",
+          "en": "Is there any place along the way that will help me recognize the route?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, रास्ते में एक बड़ा मंदिर आएगा। उसके पास ही बस स्टॉप है।",
+          "roman": "Jee haan, raaste mein ek badaa mandir aaegaa. Uske paas hee bus stop hai.",
+          "en": "Yes, you will see a large temple on the way. The bus stop is near it."
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत धन्यवाद। इससे मुझे रास्ता पहचानने में आसानी होगी।",
+          "roman": "Bahut dhanyavaad. Isse mujhe raastaa pehchaanne mein aasaanee hogee.",
+          "en": "Thank you very much. That will make it easier for me to recognize the way."
+        }
+      ]
+    },
+    {
+      "id": "d13s4",
+      "title_hi": "स्थानीय भोजन के बारे में बातचीत",
+      "title_en": "Talking about local food",
+      "situation": "You ask about local food and a good vegetarian restaurant.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "यहाँ का स्थानीय भोजन कैसा है?",
+          "roman": "Yahaan kaa sthaaneey bhojan kaisaa hai?",
+          "en": "What is the local food like here?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ का खाना बहुत स्वादिष्ट है। यहाँ की कुछ मिठाइयाँ और पारंपरिक व्यंजन बहुत प्रसिद्ध हैं।",
+          "roman": "Yahaan kaa khaanaa bahut svaadisht hai. Yahaan kee kuchh mithaaiyaan aur paaramparik vyanjan bahut prasiddh hain.",
+          "en": "The food here is very delicious. Some local sweets and traditional dishes are very famous."
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं शाकाहारी भोजन पसंद करता हूँ। क्या यहाँ अच्छे शाकाहारी भोजनालय मिलेंगे?",
+          "roman": "Main shaakaahaaree bhojan pasand kartaa hoon. Kyaa yahaan achchhe shaakaahaaree bhojanaalay milenge?",
+          "en": "I prefer vegetarian food. Are there good vegetarian restaurants here?",
+          "f": {
+            "hi": "मैं शाकाहारी भोजन पसंद करती हूँ। क्या यहाँ अच्छे शाकाहारी भोजनालय मिलेंगे?",
+            "roman": "Main shaakaahaaree bhojan pasand kartee hoon. Kyaa yahaan achchhe shaakaahaaree bhojanaalay milenge?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, यहाँ कई अच्छे शाकाहारी भोजनालय हैं।",
+          "roman": "Jee haan, yahaan kaee achchhe shaakaahaaree bhojanaalay hain.",
+          "en": "Yes, there are several good vegetarian restaurants here."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आप किसी अच्छे भोजनालय की सिफारिश कर सकते हैं?",
+          "roman": "Kyaa aap kisee achchhe bhojanaalay kee sifaarish kar sakte hain?",
+          "en": "Could you recommend a good restaurant?"
+        },
+        {
+          "role": "local",
+          "hi": "जी, यहाँ से थोड़ी दूर एक अच्छा भोजनालय है। वहाँ स्थानीय व्यंजन भी मिलते हैं।",
+          "roman": "Jee, yahaan se thodee door ek achchhaa bhojanaalay hai. Vahaan sthaaneey vyanjan bhee milte hain.",
+          "en": "Yes, there is a good restaurant a short distance from here. They also serve local dishes."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या वहाँ बहुत मसालेदार खाना मिलता है?",
+          "roman": "Kyaa vahaan bahut masaaledaar khaanaa miltaa hai?",
+          "en": "Is the food there very spicy?"
+        },
+        {
+          "role": "local",
+          "hi": "कुछ व्यंजन मसालेदार होते हैं, लेकिन आप कम मसाले वाला भोजन माँग सकते हैं।",
+          "roman": "Kuchh vyanjan masaaledaar hote hain, lekin aap kam masaale vaalaa bhojan maang sakte hain.",
+          "en": "Some dishes are spicy, but you can ask for less spicy food.",
+          "f": {
+            "hi": "कुछ व्यंजन मसालेदार होते हैं, लेकिन आप कम मसाले वाला भोजन माँग सकती हैं।",
+            "roman": "Kuchh vyanjan masaaledaar hote hain, lekin aap kam masaale vaalaa bhojan maang saktee hain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d13s5",
+      "title_hi": "स्थानीय भाषा के बारे में बातचीत",
+      "title_en": "Talking about the local language",
+      "situation": "You ask which language people speak and ask the local to speak slowly.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "यहाँ के लोग आम तौर पर कौन-सी भाषा बोलते हैं?",
+          "roman": "Yahaan ke log aam taur par kaun-see bhaashaa bolte hain?",
+          "en": "What language do people generally speak here?"
+        },
+        {
+          "role": "local",
+          "hi": "यहाँ हिंदी मुख्य रूप से बोली जाती है। कुछ लोग अंग्रेज़ी भी बोलते हैं।",
+          "roman": "Yahaan Hindi mukhya roop se bolee jaatee hai. Kuchh log angrezee bhee bolte hain.",
+          "en": "Hindi is mainly spoken here. Some people also speak English."
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे हिंदी थोड़ी-बहुत समझ आती है, लेकिन मैं अभी ठीक से बोल नहीं पाता हूँ।",
+          "roman": "Mujhe Hindi thodee-bahut samajh aatee hai, lekin main abhee theek se bol naheen paataa hoon.",
+          "en": "I understand a little Hindi, but I cannot speak it very well yet.",
+          "f": {
+            "hi": "मुझे हिंदी थोड़ी-बहुत समझ आती है, लेकिन मैं अभी ठीक से बोल नहीं पाती हूँ।",
+            "roman": "Mujhe Hindi thodee-bahut samajh aatee hai, lekin main abhee theek se bol naheen paatee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "कोई बात नहीं। आप धीरे-धीरे हिंदी बोलने का अभ्यास कीजिए।",
+          "roman": "Koee baat naheen. Aap dheere-dheere Hindi bolne kaa abhyaas keejiye.",
+          "en": "That's okay. Keep practising speaking Hindi."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आप कृपया थोड़ा धीरे बोल सकते हैं?",
+          "roman": "Kyaa aap kripyaa thodaa dheere bol sakte hain?",
+          "en": "Could you please speak a little slowly?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, बिल्कुल।",
+          "roman": "Jee haan, bilkul.",
+          "en": "Yes, of course."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद। मैं हिंदी सीख रहा हूँ।",
+          "roman": "Dhanyavaad. Main Hindi seekh rahaa hoon.",
+          "en": "Thank you. I am learning Hindi.",
+          "f": {
+            "hi": "धन्यवाद। मैं हिंदी सीख रही हूँ।",
+            "roman": "Dhanyavaad. Main Hindi seekh rahee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d13s6",
+      "title_hi": "स्थानीय संस्कृति और रीति-रिवाजों के बारे में पूछना",
+      "title_en": "Asking about local culture and customs",
+      "situation": "You ask how people greet each other and how to address older people politely.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मैं यहाँ की संस्कृति और रीति-रिवाजों के बारे में जानना चाहता हूँ।",
+          "roman": "Main yahaan kee sanskriti aur reeti-rivaajon ke baare mein jaannaa chaahtaa hoon.",
+          "en": "I would like to know about the culture and customs here.",
+          "f": {
+            "hi": "मैं यहाँ की संस्कृति और रीति-रिवाजों के बारे में जानना चाहती हूँ।",
+            "roman": "Main yahaan kee sanskriti aur reeti-rivaajon ke baare mein jaannaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "ज़रूर। आप क्या जानना चाहते हैं?",
+          "roman": "Zaroor. Aap kyaa jaannaa chaahte hain?",
+          "en": "Certainly. What would you like to know?",
+          "f": {
+            "hi": "ज़रूर। आप क्या जानना चाहती हैं?",
+            "roman": "Zaroor. Aap kyaa jaannaa chaahtee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "यहाँ लोगों का अभिवादन करने का सामान्य तरीका क्या है?",
+          "roman": "Yahaan logon kaa abhivaadan karne kaa saamaanya tareekaa kyaa hai?",
+          "en": "What is the usual way of greeting people here?"
+        },
+        {
+          "role": "local",
+          "hi": "नमस्ते करना यहाँ अभिवादन का एक सम्मानजनक तरीका है।",
+          "roman": "Namaste karnaa yahaan abhivaadan kaa ek sammaanjanak tareekaa hai.",
+          "en": "Saying \"Namaste\" is a respectful way of greeting people here."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या किसी बड़े व्यक्ति से बात करते समय कोई विशेष संबोधन करना चाहिए?",
+          "roman": "Kyaa kisee bade vyakti se baat karte samay koee vishesh sambodhan karnaa chaahiye?",
+          "en": "Should I use any special form of address when speaking to an elderly person?"
+        },
+        {
+          "role": "local",
+          "hi": "आप ‘जी’, ‘श्रीमान’ या ‘मैडम’ जैसे सम्मानसूचक शब्दों का प्रयोग कर सकते हैं।",
+          "roman": "Aap 'jee', 'shreemaan' yaa 'madam' jaise sammaansoochak shabdon kaa prayog kar sakte hain.",
+          "en": "You can use respectful words such as \"Ji\", \"Mr.\" or \"Madam\".",
+          "f": {
+            "hi": "आप ‘जी’, ‘श्रीमान’ या ‘मैडम’ जैसे सम्मानसूचक शब्दों का प्रयोग कर सकती हैं।",
+            "roman": "Aap 'jee', 'shreemaan' yaa 'madam' jaise sammaansoochak shabdon kaa prayog kar saktee hain."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "समझ गया। मैं इसका ध्यान रखूँगा।",
+          "roman": "Samajh gayaa. Main iskaa dhyaan rakhoongaa.",
+          "en": "I understand. I will keep that in mind.",
+          "f": {
+            "hi": "समझ गई। मैं इसका ध्यान रखूँगी।",
+            "roman": "Samajh gaee. Main iskaa dhyaan rakhoongee."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d13s7",
+      "title_hi": "स्थानीय त्योहार और मेले के बारे में पूछना",
+      "title_en": "Asking about local festivals and fairs",
+      "situation": "You hear about a big local fair next week and whether visitors can join.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या यहाँ कोई स्थानीय त्योहार या मेला भी लगता है?",
+          "roman": "Kyaa yahaan koee sthaaneey tyohaar yaa melaa bhee lagtaa hai?",
+          "en": "Is there any local festival or fair here?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, अगले सप्ताह यहाँ एक बड़ा स्थानीय मेला लगने वाला है।",
+          "roman": "Jee haan, agle saptaah yahaan ek badaa sthaaneey melaa lagne vaalaa hai.",
+          "en": "Yes, a big local fair is going to be held here next week."
+        },
+        {
+          "role": "traveller",
+          "hi": "वह मेला कहाँ लगेगा?",
+          "roman": "Voh melaa kahaan lagegaa?",
+          "en": "Where will the fair be held?"
+        },
+        {
+          "role": "local",
+          "hi": "शहर के मुख्य मैदान में।",
+          "roman": "Shahar ke mukhya maidaan mein.",
+          "en": "At the main ground in the city."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या बाहर से आने वाले लोग भी उसमें शामिल हो सकते हैं?",
+          "roman": "Kyaa baahar se aane vaale log bhee usmein shaamil ho sakte hain?",
+          "en": "Can visitors from outside also take part in it?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, बिल्कुल। वहाँ स्थानीय कला, हस्तशिल्प और भोजन की कई चीज़ें देखने को मिलेंगी।",
+          "roman": "Jee haan, bilkul. Vahaan sthaaneey kalaa, hastashilp aur bhojan kee kaee cheezen dekhne ko milengee.",
+          "en": "Yes, of course. You will see local art, handicrafts, and many kinds of local food there."
+        },
+        {
+          "role": "traveller",
+          "hi": "यह तो बहुत अच्छा रहेगा। मैं वहाँ ज़रूर जाना चाहूँगा।",
+          "roman": "Yeh to bahut achchhaa rahegaa. Main vahaan zaroor jaanaa chaahoongaa.",
+          "en": "That sounds great. I would definitely like to go there.",
+          "f": {
+            "hi": "यह तो बहुत अच्छा रहेगा। मैं वहाँ ज़रूर जाना चाहूँगी।",
+            "roman": "Yeh to bahut achchhaa rahegaa. Main vahaan zaroor jaanaa chaahoongee."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d13s8",
+      "title_hi": "स्थानीय व्यक्ति से पता पूछना",
+      "title_en": "Asking a local for an address",
+      "situation": "You show the local an address and they show you the route on your phone.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "माफ़ कीजिए, क्या आप मेरी थोड़ी मदद कर सकते हैं?",
+          "roman": "Maaf keejiye, kyaa aap meree thodee madad kar sakte hain?",
+          "en": "Excuse me, could you help me a little?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ, बताइए।",
+          "roman": "Jee haan, bataaiye.",
+          "en": "Yes, certainly. What do you need?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे इस पते पर जाना है, लेकिन मुझे समझ नहीं आ रहा कि वहाँ कैसे जाऊँ।",
+          "roman": "Mujhe is pate par jaanaa hai, lekin mujhe samajh naheen aa rahaa ki vahaan kaise jaaoon.",
+          "en": "I need to go to this address, but I don't know how to get there."
+        },
+        {
+          "role": "local",
+          "hi": "आप अपना मोबाइल दिखाइए। मैं नक्शे पर रास्ता बता देता हूँ।",
+          "roman": "Aap apnaa mobile dikhaaiye. Main naqshe par raastaa bataa detaa hoon.",
+          "en": "Show me your mobile phone. I will show you the route on the map."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, यह रहा।",
+          "roman": "Jee, yeh rahaa.",
+          "en": "Yes, here it is."
+        },
+        {
+          "role": "local",
+          "hi": "आप यहाँ से सीधे जाइए। फिर दाईं ओर मुड़िए। आपका गंतव्य वहाँ से बहुत दूर नहीं है।",
+          "roman": "Aap yahaan se seedhe jaaiye. Phir daaeen or mudiye. Aapkaa gantavya vahaan se bahut door naheen hai.",
+          "en": "Go straight from here and then turn right. Your destination is not very far from there."
+        },
+        {
+          "role": "traveller",
+          "hi": "आपकी बहुत कृपा है। आपने मेरी बहुत मदद की।",
+          "roman": "Aapkee bahut kripaa hai. Aapne meree bahut madad kee.",
+          "en": "That is very kind of you. You have helped me a lot."
+        },
+        {
+          "role": "local",
+          "hi": "कोई बात नहीं। आपकी यात्रा सुखद हो।",
+          "roman": "Koee baat naheen. Aapkee yaatraa sukhad ho.",
+          "en": "It's all right. Have a pleasant journey."
+        }
+      ]
+    },
+    {
+      "id": "d13s9",
+      "title_hi": "बातचीत समाप्त करना",
+      "title_en": "Ending the conversation",
+      "situation": "You thank the local and say goodbye.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "आपसे बात करके मुझे इस शहर और यहाँ के लोगों के बारे में बहुत कुछ जानने को मिला।",
+          "roman": "Aapse baat karke mujhe is shahar aur yahaan ke logon ke baare mein bahut kuchh jaanne ko milaa.",
+          "en": "I have learned a lot about this city and its people by talking to you."
+        },
+        {
+          "role": "local",
+          "hi": "मुझे खुशी हुई कि मैं आपकी मदद कर सका।",
+          "roman": "Mujhe khushee huee ki main aapkee madad kar sakaa.",
+          "en": "I am glad I could help you."
+        },
+        {
+          "role": "traveller",
+          "hi": "आपका बहुत-बहुत धन्यवाद।",
+          "roman": "Aapkaa bahut-bahut dhanyavaad.",
+          "en": "Thank you very much."
+        },
+        {
+          "role": "local",
+          "hi": "आपका स्वागत है।",
+          "roman": "Aapkaa svaagat hai.",
+          "en": "You are welcome."
+        },
+        {
+          "role": "traveller",
+          "hi": "आपकी सहायता मैं हमेशा याद रखूँगा।",
+          "roman": "Aapkee sahaaytaa main hameshaa yaad rakhoongaa.",
+          "en": "I will always remember your help.",
+          "f": {
+            "hi": "आपकी सहायता मैं हमेशा याद रखूँगी।",
+            "roman": "Aapkee sahaaytaa main hameshaa yaad rakhoongee."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "मुझे आशा है कि आपकी यात्रा सुखद और यादगार रहेगी।",
+          "roman": "Mujhe aashaa hai ki aapkee yaatraa sukhad aur yaadgaar rahegee.",
+          "en": "I hope you have a pleasant and memorable journey."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद। नमस्ते!",
+          "roman": "Dhanyavaad. Namaste!",
+          "en": "Thank you. Namaste!"
+        },
+        {
+          "role": "local",
+          "hi": "नमस्ते!",
+          "roman": "Namaste!",
+          "en": "Namaste!"
+        }
+      ]
+    }
+  ]
+}

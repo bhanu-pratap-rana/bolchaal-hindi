@@ -1,0 +1,117 @@
+{
+  "_comment": "Lessons name voice SLOTS (male_1, male_2, female_1, female_2). A profile maps slots to real voices. Switch TTS provider by building with another profile; cache keys change only for lines whose voice changed. Voice names checked on official docs 3 Nov 2026 (Azure hi-IN list; Indic Parler-TTS card).",
+  "profiles": {
+    "demo-piper": {
+      "male_1": {
+        "provider": "piper",
+        "model": "hi_IN-pratham-medium",
+        "label": "Pratham",
+        "gender": "m",
+        "licence": "CC BY-NC-SA 4.0 (dataset: AI4Bharat)",
+        "commercial": false
+      },
+      "male_2": {
+        "provider": "piper",
+        "model": "hi_IN-rohan-medium",
+        "label": "Rohan",
+        "gender": "m",
+        "licence": "IIT Madras IndicTTS licence",
+        "commercial": true
+      },
+      "female_1": {
+        "provider": "piper",
+        "model": "hi_IN-priyamvada-medium",
+        "label": "Priyamvada",
+        "gender": "f",
+        "licence": "CC BY-NC-SA 4.0 (dataset: AI4Bharat)",
+        "commercial": false
+      },
+      "female_2": {
+        "provider": "piper",
+        "model": "hi_IN-priyamvada-medium",
+        "label": "Priyamvada (higher)",
+        "gender": "f",
+        "licence": "CC BY-NC-SA 4.0 (dataset: AI4Bharat)",
+        "commercial": false,
+        "pitch": 1.09,
+        "note": "Demo only: the one Piper Hindi female voice, pitch-shifted so two women in a scene sound different."
+      }
+    },
+    "launch-parler": {
+      "male_1": {
+        "provider": "parler",
+        "speaker": "Rohit",
+        "label": "Rohit",
+        "gender": "m",
+        "licence": "Apache-2.0 (check model card)",
+        "commercial": true,
+        "description": "Rohit speaks at a moderate pace in a clear, friendly voice. The recording is very high quality with no background noise.",
+        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+      },
+      "male_2": {
+        "provider": "parler",
+        "speaker": "Aman",
+        "label": "Aman",
+        "gender": "m",
+        "licence": "Apache-2.0 (check model card)",
+        "commercial": true,
+        "description": "Aman speaks at a moderate pace in a calm, polite voice. The recording is very high quality with no background noise.",
+        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+      },
+      "female_1": {
+        "provider": "parler",
+        "speaker": "Divya",
+        "label": "Divya",
+        "gender": "f",
+        "licence": "Apache-2.0 (check model card)",
+        "commercial": true,
+        "description": "Divya speaks at a moderate pace in a clear, warm voice. The recording is very high quality with no background noise.",
+        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+      },
+      "female_2": {
+        "provider": "parler",
+        "speaker": "Rani",
+        "label": "Rani",
+        "gender": "f",
+        "licence": "Apache-2.0 (check model card)",
+        "commercial": true,
+        "description": "Rani speaks at a moderate pace in a bright, friendly voice. The recording is very high quality with no background noise.",
+        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+      }
+    },
+    "launch-azure": {
+      "male_1": {
+        "provider": "azure",
+        "voice": "hi-IN-MadhurNeural",
+        "label": "Madhur",
+        "gender": "m",
+        "licence": "Azure AI Speech terms",
+        "commercial": true
+      },
+      "male_2": {
+        "provider": "azure",
+        "voice": "hi-IN-AaravNeural",
+        "label": "Aarav",
+        "gender": "m",
+        "licence": "Azure AI Speech terms",
+        "commercial": true
+      },
+      "female_1": {
+        "provider": "azure",
+        "voice": "hi-IN-SwaraNeural",
+        "label": "Swara",
+        "gender": "f",
+        "licence": "Azure AI Speech terms",
+        "commercial": true
+      },
+      "female_2": {
+        "provider": "azure",
+        "voice": "hi-IN-AnanyaNeural",
+        "label": "Ananya",
+        "gender": "f",
+        "licence": "Azure AI Speech terms",
+        "commercial": true
+      }
+    }
+  }
+}

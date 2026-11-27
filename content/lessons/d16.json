@@ -1,0 +1,345 @@
+{
+  "id": "d16",
+  "day": 16,
+  "status": "review",
+  "title_hi": "भारतीय संस्कृति से परिचय : रीति-रिवाज और शिष्टाचार",
+  "title_en": "Indian customs and etiquette",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "friend": {
+      "hi": "मित्र",
+      "en": "Friend",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "सांस्कृतिक परिस्थिति",
+      "roman": "saanskritik paristhiti",
+      "en": "cultural situation"
+    },
+    {
+      "hi": "मंदिर",
+      "roman": "mandir",
+      "en": "temple"
+    },
+    {
+      "hi": "धार्मिक स्थल",
+      "roman": "dhaarmik sthal",
+      "en": "religious place"
+    },
+    {
+      "hi": "प्रवेश",
+      "roman": "pravesh",
+      "en": "entry"
+    },
+    {
+      "hi": "प्रवेश के नियम",
+      "roman": "pravesh ke niyam",
+      "en": "rules for entry"
+    },
+    {
+      "hi": "जूते-चप्पल",
+      "roman": "joote-chappal",
+      "en": "shoes and slippers"
+    },
+    {
+      "hi": "जूता-घर",
+      "roman": "jootaa-ghar",
+      "en": "shoe counter"
+    },
+    {
+      "hi": "पूजा",
+      "roman": "poojaa",
+      "en": "worship"
+    },
+    {
+      "hi": "आरती",
+      "roman": "aartee",
+      "en": "aarti (prayer ceremony)"
+    },
+    {
+      "hi": "धार्मिक कार्यक्रम",
+      "roman": "dhaarmik kaaryakram",
+      "en": "religious ceremony"
+    },
+    {
+      "hi": "शिष्टाचार",
+      "roman": "shishtaachaar",
+      "en": "etiquette"
+    },
+    {
+      "hi": "रीति-रिवाज",
+      "roman": "reeti-rivaaj",
+      "en": "customs and traditions"
+    },
+    {
+      "hi": "परंपरा",
+      "roman": "paramparaa",
+      "en": "tradition"
+    },
+    {
+      "hi": "समारोह",
+      "roman": "samaaroh",
+      "en": "ceremony"
+    },
+    {
+      "hi": "अभिवादन",
+      "roman": "abhivaadan",
+      "en": "greeting"
+    },
+    {
+      "hi": "नमस्ते",
+      "roman": "namaste",
+      "en": "namaste (hello)"
+    },
+    {
+      "hi": "नमस्कार",
+      "roman": "namaskaar",
+      "en": "namaskar (hello)"
+    },
+    {
+      "hi": "संबोधन",
+      "roman": "sambodhan",
+      "en": "form of address"
+    },
+    {
+      "hi": "सम्मानसूचक शब्द",
+      "roman": "sammaansoochak shabd",
+      "en": "honorific terms"
+    },
+    {
+      "hi": "श्रद्धा",
+      "roman": "shraddhaa",
+      "en": "devotion"
+    },
+    {
+      "hi": "पोशाक",
+      "roman": "poshaak",
+      "en": "dress/attire"
+    },
+    {
+      "hi": "निर्देश",
+      "roman": "nirdesh",
+      "en": "instructions"
+    },
+    {
+      "hi": "बाधा डालना",
+      "roman": "baadhaa daalnaa",
+      "en": "to disturb"
+    },
+    {
+      "hi": "विनम्रता से",
+      "roman": "vinamrataa se",
+      "en": "politely"
+    },
+    {
+      "hi": "सम्मान करना",
+      "roman": "sammaan karnaa",
+      "en": "to respect"
+    },
+    {
+      "hi": "पालन करना",
+      "roman": "paalan karnaa",
+      "en": "to follow/observe"
+    },
+    {
+      "hi": "शामिल होना",
+      "roman": "shaamil honaa",
+      "en": "to participate/attend"
+    },
+    {
+      "hi": "सांस्कृतिक विविधता",
+      "roman": "saanskritik vividhtaa",
+      "en": "cultural diversity"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d16s1",
+      "title_hi": "सांस्कृतिक परिस्थितियाँ",
+      "title_en": "Cultural situations",
+      "situation": "You visit a famous temple with an Indian friend and learn about entry rules, shoes, worship times and customs.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या हम इस मंदिर के अंदर जा सकते हैं?",
+          "roman": "Kyaa hum is mandir ke andar jaa sakte hain?",
+          "en": "Can we go inside this temple?"
+        },
+        {
+          "role": "friend",
+          "hi": "हाँ, बिल्कुल। लेकिन मंदिर में प्रवेश करने से पहले कुछ नियमों का पालन करना होता है।",
+          "roman": "Haan, bilkul. Lekin mandir mein pravesh karne se pehle kuchh niyamon kaa paalan karnaa hotaa hai.",
+          "en": "Yes, certainly. But we have to follow some rules before entering the temple."
+        },
+        {
+          "role": "traveller",
+          "hi": "कौन-कौन से नियम हैं?",
+          "roman": "Kaun-kaun se niyam hain?",
+          "en": "What are the rules?"
+        },
+        {
+          "role": "friend",
+          "hi": "सबसे पहले हमें अपने जूते-चप्पल बाहर उतारने होंगे। यहाँ जूते रखने के लिए अलग स्थान बना हुआ है।",
+          "roman": "Sabse pehle hamen apne joote-chappal baahar utaarne honge. Yahaan joote rakhne ke liye alag sthaan banaa huaa hai.",
+          "en": "First of all, we have to take off our shoes and slippers outside. There is a separate place here for keeping footwear."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या मैं अपने जूते यहाँ रख सकता हूँ?",
+          "roman": "Kyaa main apne joote yahaan rakh saktaa hoon?",
+          "en": "Can I leave my shoes here?",
+          "f": {
+            "hi": "क्या मैं अपने जूते यहाँ रख सकती हूँ?",
+            "roman": "Kyaa main apne joote yahaan rakh saktee hoon?"
+          }
+        },
+        {
+          "role": "friend",
+          "hi": "हाँ, आप इन्हें जूता-घर में रख सकते हैं। वहाँ से आपको एक पर्ची मिल जाएगी।",
+          "roman": "Haan, aap inhen jootaa-ghar mein rakh sakte hain. Vahaan se aapko ek parchee mil jaaegee.",
+          "en": "Yes, you can leave them at the shoe counter. You will receive a token from there.",
+          "f": {
+            "hi": "हाँ, आप इन्हें जूता-घर में रख सकती हैं। वहाँ से आपको एक पर्ची मिल जाएगी।",
+            "roman": "Haan, aap inhen jootaa-ghar mein rakh saktee hain. Vahaan se aapko ek parchee mil jaaegee."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मंदिर के अंदर हमें किस तरह का व्यवहार करना चाहिए?",
+          "roman": "Mandir ke andar hamen kis tarah kaa vyavahaar karnaa chaahiye?",
+          "en": "How should we behave inside the temple?"
+        },
+        {
+          "role": "friend",
+          "hi": "हमें शांत रहना चाहिए और धार्मिक गतिविधियों का सम्मान करना चाहिए। ऊँची आवाज़ में बात करना या किसी की पूजा में बाधा डालना उचित नहीं है।",
+          "roman": "Hamen shaant rahnaa chaahiye aur dhaarmik gatividhiyon kaa sammaan karnaa chaahiye. Oonchee aavaaz mein baat karnaa yaa kisee kee poojaa mein baadhaa daalnaa uchit naheen hai.",
+          "en": "We should remain quiet and respect the religious activities. Speaking loudly or disturbing someone during worship is not appropriate."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या मंदिर के अंदर किसी विशेष पोशाक का नियम है?",
+          "roman": "Kyaa mandir ke andar kisee vishesh poshaak kaa niyam hai?",
+          "en": "Is there any specific dress code inside the temple?"
+        },
+        {
+          "role": "friend",
+          "hi": "कुछ मंदिरों में पोशाक को लेकर विशेष नियम होते हैं। इसलिए किसी भी धार्मिक स्थल पर जाने से पहले उसके नियमों के बारे में पूछ लेना अच्छा होता है।",
+          "roman": "Kuchh mandiron mein poshaak ko lekar vishesh niyam hote hain. Isliye kisee bhee dhaarmik sthal par jaane se pehle uske niyamon ke baare mein poochh lenaa achchhaa hotaa hai.",
+          "en": "Some temples have specific rules regarding dress. Therefore, it is a good idea to ask about the rules before visiting any religious place."
+        },
+        {
+          "role": "traveller",
+          "hi": "यहाँ पूजा कब होती है?",
+          "roman": "Yahaan poojaa kab hotee hai?",
+          "en": "When does the worship take place here?"
+        },
+        {
+          "role": "friend",
+          "hi": "सुबह और शाम पूजा तथा आरती होती है। अगर आप चाहें तो हम शाम की आरती में शामिल हो सकते हैं।",
+          "roman": "Subah aur shaam poojaa tathaa aartee hotee hai. Agar aap chaahen to hum shaam kee aartee mein shaamil ho sakte hain.",
+          "en": "Worship and the evening prayer ceremony, or aarti, take place in the morning and evening. If you like, we can attend the evening aarti."
+        },
+        {
+          "role": "traveller",
+          "hi": "हाँ, मुझे भारतीय धार्मिक परंपराओं को समझने में बहुत रुचि है। क्या मैं आरती में शामिल हो सकता हूँ?",
+          "roman": "Haan, mujhe Bhaarteey dhaarmik paramparaaon ko samajhne mein bahut ruchi hai. Kyaa main aartee mein shaamil ho saktaa hoon?",
+          "en": "Yes, I am very interested in understanding Indian religious traditions. Can I join the aarti?",
+          "f": {
+            "hi": "हाँ, मुझे भारतीय धार्मिक परंपराओं को समझने में बहुत रुचि है। क्या मैं आरती में शामिल हो सकती हूँ?",
+            "roman": "Haan, mujhe Bhaarteey dhaarmik paramparaaon ko samajhne mein bahut ruchi hai. Kyaa main aartee mein shaamil ho saktee hoon?"
+          }
+        },
+        {
+          "role": "friend",
+          "hi": "अवश्य। आपको केवल वहाँ की परंपराओं और निर्देशों का सम्मान करना होगा।",
+          "roman": "Avashya. Aapko keval vahaan kee paramparaaon aur nirdeshon kaa sammaan karnaa hogaa.",
+          "en": "Certainly. You only need to respect the traditions and instructions there."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आरती के दौरान हाथ जोड़ना आवश्यक है?",
+          "roman": "Kyaa aartee ke dauraan haath jodnaa aavashyak hai?",
+          "en": "Is it necessary to fold one's hands during the aarti?"
+        },
+        {
+          "role": "friend",
+          "hi": "आवश्यक नहीं है। आप अपनी श्रद्धा के अनुसार शामिल हो सकते हैं। यदि आपको किसी रीति के बारे में जानकारी न हो, तो आप मुझसे पूछ सकते हैं।",
+          "roman": "Aavashyak naheen hai. Aap apnee shraddhaa ke anusaar shaamil ho sakte hain. Yadi aapko kisee reeti ke baare mein jaankaaree na ho, to aap mujhse poochh sakte hain.",
+          "en": "It is not necessary. You may participate according to your own beliefs. If you do not know about a particular custom, you can ask me.",
+          "f": {
+            "hi": "आवश्यक नहीं है। आप अपनी श्रद्धा के अनुसार शामिल हो सकती हैं। यदि आपको किसी रीति के बारे में जानकारी न हो, तो आप मुझसे पूछ सकती हैं।",
+            "roman": "Aavashyak naheen hai. Aap apnee shraddhaa ke anusaar shaamil ho saktee hain. Yadi aapko kisee reeti ke baare mein jaankaaree na ho, to aap mujhse poochh saktee hain."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "भारत में लोग एक-दूसरे का अभिवादन कैसे करते हैं?",
+          "roman": "Bhaarat mein log ek-doosre kaa abhivaadan kaise karte hain?",
+          "en": "How do people greet one another in India?"
+        },
+        {
+          "role": "friend",
+          "hi": "सामान्यतः लोग “नमस्ते” या “नमस्कार” कहते हैं। बड़ों को संबोधित करते समय सम्मानसूचक शब्दों का प्रयोग किया जाता है, जैसे “जी”, “श्रीमान” या “मैडम”।",
+          "roman": "Saamaanyatah log “Namaste” yaa “Namaskaar” kahte hain. Badon ko sambodhit karte samay sammaansoochak shabdon kaa prayog kiyaa jaataa hai, jaise “jee”, “shreemaan” yaa “madam”.",
+          "en": "Generally, people say “Namaste” or “Namaskar.” When addressing elders, respectful forms of address are used, such as “ji,” “Mr.,” or “Madam.”"
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या किसी समारोह में शामिल होने के भी कुछ नियम होते हैं?",
+          "roman": "Kyaa kisee samaaroh mein shaamil hone ke bhee kuchh niyam hote hain?",
+          "en": "Are there also certain rules for attending a ceremony?"
+        },
+        {
+          "role": "friend",
+          "hi": "हाँ। समारोह के प्रकार के अनुसार अलग-अलग रीति-रिवाज हो सकते हैं। वहाँ के वातावरण और परंपराओं को देखकर उसी के अनुसार व्यवहार करना चाहिए।",
+          "roman": "Haan. Samaaroh ke prakaar ke anusaar alag-alag reeti-rivaaj ho sakte hain. Vahaan ke vaataavaran aur paramparaaon ko dekhkar usee ke anusaar vyavahaar karnaa chaahiye.",
+          "en": "Yes. Different ceremonies may have different customs and traditions. We should observe the atmosphere and traditions there and behave accordingly."
+        },
+        {
+          "role": "traveller",
+          "hi": "यदि मुझे किसी भारतीय रीति-रिवाज के बारे में जानकारी न हो, तो क्या मैं पूछ सकता हूँ?",
+          "roman": "Yadi mujhe kisee Bhaarteey reeti-rivaaj ke baare mein jaankaaree na ho, to kyaa main poochh saktaa hoon?",
+          "en": "If I do not know about an Indian custom, may I ask about it?",
+          "f": {
+            "hi": "यदि मुझे किसी भारतीय रीति-रिवाज के बारे में जानकारी न हो, तो क्या मैं पूछ सकती हूँ?",
+            "roman": "Yadi mujhe kisee Bhaarteey reeti-rivaaj ke baare mein jaankaaree na ho, to kyaa main poochh saktee hoon?"
+          }
+        },
+        {
+          "role": "friend",
+          "hi": "बिल्कुल। किसी रीति-रिवाज के बारे में विनम्रता से पूछना अच्छा तरीका है। इससे हमें भारतीय संस्कृति को समझने में भी सहायता मिलती है।",
+          "roman": "Bilkul. Kisee reeti-rivaaj ke baare mein vinamrataa se poochhnaa achchhaa tareekaa hai. Isse hamen Bhaarteey sanskriti ko samajhne mein bhee sahaayataa miltee hai.",
+          "en": "Certainly. Asking politely about a custom is a good approach. It also helps us understand Indian culture better."
+        },
+        {
+          "role": "traveller",
+          "hi": "धन्यवाद! आज मुझे मंदिर के साथ-साथ भारतीय संस्कृति के बारे में भी बहुत कुछ जानने को मिला।",
+          "roman": "Dhanyavaad! Aaj mujhe mandir ke saath-saath Bhaarteey sanskriti ke baare mein bhee bahut kuchh jaanne ko milaa.",
+          "en": "Thank you! Today I learned a lot not only about the temple but also about Indian culture."
+        },
+        {
+          "role": "friend",
+          "hi": "आपका स्वागत है। भारत की सांस्कृतिक विविधता को समझने के लिए ऐसे अनुभव बहुत उपयोगी होते हैं।",
+          "roman": "Aapkaa svaagat hai. Bhaarat kee saanskritik vividhtaa ko samajhne ke liye aise anubhav bahut upyogee hote hain.",
+          "en": "You are welcome. Such experiences are very useful for understanding India's cultural diversity."
+        }
+      ]
+    }
+  ]
+}

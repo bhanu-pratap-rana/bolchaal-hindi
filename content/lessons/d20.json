@@ -1,0 +1,293 @@
+{
+  "id": "d20",
+  "day": 20,
+  "status": "review",
+  "title_hi": "स्थानीय व्यक्ति से भारतीय त्योहार के बारे में पूछना",
+  "title_en": "Asking about an Indian festival",
+  "roles": {
+    "tourist": {
+      "hi": "पर्यटक",
+      "en": "Tourist",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "local": {
+      "hi": "स्थानीय व्यक्ति",
+      "en": "Local person",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "त्योहार",
+      "roman": "tyohaar",
+      "en": "festival"
+    },
+    {
+      "hi": "दीपावली",
+      "roman": "Deepaavalee",
+      "en": "Diwali"
+    },
+    {
+      "hi": "त्योहार मनाना",
+      "roman": "tyohaar manaanaa",
+      "en": "to celebrate a festival"
+    },
+    {
+      "hi": "परंपरा",
+      "roman": "paramparaa",
+      "en": "tradition"
+    },
+    {
+      "hi": "रीति-रिवाज",
+      "roman": "reeti-rivaaj",
+      "en": "customs"
+    },
+    {
+      "hi": "तैयारी",
+      "roman": "taiyaaree",
+      "en": "preparation"
+    },
+    {
+      "hi": "प्रकाश",
+      "roman": "prakaash",
+      "en": "light"
+    },
+    {
+      "hi": "आनंद",
+      "roman": "aanand",
+      "en": "joy"
+    },
+    {
+      "hi": "दीप/दीपक",
+      "roman": "deep/deepak",
+      "en": "lamp"
+    },
+    {
+      "hi": "सजावट",
+      "roman": "sajaavat",
+      "en": "decoration"
+    },
+    {
+      "hi": "रंगोली",
+      "roman": "rangolee",
+      "en": "rangoli"
+    },
+    {
+      "hi": "पूजा",
+      "roman": "poojaa",
+      "en": "worship"
+    },
+    {
+      "hi": "मिठाई",
+      "roman": "mithaaee",
+      "en": "sweet"
+    },
+    {
+      "hi": "पकवान",
+      "roman": "pakvaan",
+      "en": "dish"
+    },
+    {
+      "hi": "शुभकामना",
+      "roman": "shubhkaamnaa",
+      "en": "greeting/best wishes"
+    },
+    {
+      "hi": "कार्यक्रम",
+      "roman": "kaaryakram",
+      "en": "programme/event"
+    },
+    {
+      "hi": "मेला",
+      "roman": "melaa",
+      "en": "fair"
+    },
+    {
+      "hi": "सांस्कृतिक कार्यक्रम",
+      "roman": "saanskritik kaaryakram",
+      "en": "cultural programme"
+    },
+    {
+      "hi": "आमंत्रित करना",
+      "roman": "aamantrit karnaa",
+      "en": "to invite"
+    },
+    {
+      "hi": "शामिल होना",
+      "roman": "shaamil honaa",
+      "en": "to participate"
+    },
+    {
+      "hi": "धार्मिक भावना",
+      "roman": "dhaarmik bhaavnaa",
+      "en": "religious sentiment"
+    },
+    {
+      "hi": "सम्मान करना",
+      "roman": "sammaan karnaa",
+      "en": "to respect"
+    },
+    {
+      "hi": "सूचना केंद्र",
+      "roman": "soochnaa kendra",
+      "en": "information centre"
+    },
+    {
+      "hi": "त्योहार की शुभकामनाएँ",
+      "roman": "tyohaar kee shubhkaamnaaen",
+      "en": "festival greetings"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d20s1",
+      "title_hi": "स्थानीय व्यक्ति से भारतीय त्योहार के बारे में पूछना",
+      "title_en": "Asking about an Indian festival",
+      "situation": "You ask a local person about Diwali: its traditions, food and how you can take part.",
+      "lines": [
+        {
+          "role": "tourist",
+          "hi": "नमस्ते! क्या आप मुझे बता सकते हैं कि इस समय यहाँ कौन-सा त्योहार मनाया जा रहा है?",
+          "roman": "Namaste! Kyaa aap mujhe bataa sakte hain ki is samay yahaan kaun-saa tyohaar manaayaa jaa rahaa hai?",
+          "en": "Namaste! Could you tell me which festival is being celebrated here at this time?"
+        },
+        {
+          "role": "local",
+          "hi": "नमस्ते! जी हाँ। यहाँ इन दिनों दीपावली का त्योहार मनाने की तैयारी चल रही है।",
+          "roman": "Namaste! Jee haan. Yahaan in dinon Deepaavalee kaa tyohaar manaane kee taiyaaree chal rahee hai.",
+          "en": "Namaste! Yes. People here are preparing to celebrate Diwali these days."
+        },
+        {
+          "role": "tourist",
+          "hi": "दीपावली के बारे में मैंने सुना है। यह त्योहार क्यों मनाया जाता है?",
+          "roman": "Deepaavalee ke baare mein mainne sunaa hai. Yeh tyohaar kyon manaayaa jaataa hai?",
+          "en": "I have heard about Diwali. Why is this festival celebrated?"
+        },
+        {
+          "role": "local",
+          "hi": "दीपावली भारत के प्रमुख त्योहारों में से एक है। इसे प्रकाश और आनंद का त्योहार माना जाता है। इस अवसर पर लोग अपने घरों की सफाई और सजावट करते हैं तथा दीप जलाते हैं।",
+          "roman": "Deepaavalee Bhaarat ke pramukh tyohaaron mein se ek hai. Ise prakaash aur aanand kaa tyohaar maanaa jaataa hai. Is avsar par log apne gharon kee safaaee aur sajaavat karte hain tathaa deep jalaate hain.",
+          "en": "Diwali is one of the major festivals of India. It is considered a festival of light and joy. On this occasion, people clean and decorate their homes and light lamps."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या इस त्योहार की कोई विशेष परंपराएँ हैं?",
+          "roman": "Kyaa is tyohaar kee koee vishesh paramparaaen hain?",
+          "en": "Are there any special traditions associated with this festival?"
+        },
+        {
+          "role": "local",
+          "hi": "जी हाँ। लोग घरों में दीपक जलाते हैं, रंगोली बनाते हैं, नए कपड़े पहनते हैं और परिवार के साथ पूजा करते हैं। लोग एक-दूसरे को मिठाइयाँ और शुभकामनाएँ भी देते हैं।",
+          "roman": "Jee haan. Log gharon mein deepak jalaate hain, rangolee banaate hain, nae kapde pahante hain aur parivaar ke saath poojaa karte hain. Log ek-doosre ko mithaaiyaan aur shubhkaamnaaen bhee dete hain.",
+          "en": "Yes. People light lamps in their homes, make rangoli designs, wear new clothes, and perform worship with their families. They also exchange sweets and greetings with one another."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या इस अवसर पर कोई विशेष भोजन भी बनाया जाता है?",
+          "roman": "Kyaa is avsar par koee vishesh bhojan bhee banaayaa jaataa hai?",
+          "en": "Is any special food prepared on this occasion?"
+        },
+        {
+          "role": "local",
+          "hi": "हाँ। घरों में तरह-तरह की मिठाइयाँ और पकवान बनाए जाते हैं। लोग अपने मित्रों और रिश्तेदारों के साथ इन्हें बाँटते भी हैं।",
+          "roman": "Haan. Gharon mein tarah-tarah kee mithaaiyaan aur pakvaan banaae jaate hain. Log apne mitron aur rishtedaaron ke saath inhen baantte bhee hain.",
+          "en": "Yes. Different kinds of sweets and dishes are prepared at home. People also share them with their friends and relatives."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या पर्यटक भी इस त्योहार में शामिल हो सकते हैं?",
+          "roman": "Kyaa paryatak bhee is tyohaar mein shaamil ho sakte hain?",
+          "en": "Can tourists also participate in this festival?"
+        },
+        {
+          "role": "local",
+          "hi": "बिल्कुल। आप भी दीपावली के कार्यक्रमों में शामिल हो सकते हैं। बस स्थानीय परंपराओं और धार्मिक भावनाओं का सम्मान करना चाहिए।",
+          "roman": "Bilkul. Aap bhee Deepaavalee ke kaaryakramon mein shaamil ho sakte hain. Bas sthaaneey paramparaaon aur dhaarmik bhaavnaaon kaa sammaan karnaa chaahiye.",
+          "en": "Certainly. You can also participate in the Diwali celebrations. You should simply respect the local traditions and religious sentiments.",
+          "f": {
+            "hi": "बिल्कुल। आप भी दीपावली के कार्यक्रमों में शामिल हो सकती हैं। बस स्थानीय परंपराओं और धार्मिक भावनाओं का सम्मान करना चाहिए।",
+            "roman": "Bilkul. Aap bhee Deepaavalee ke kaaryakramon mein shaamil ho saktee hain. Bas sthaaneey paramparaaon aur dhaarmik bhaavnaaon kaa sammaan karnaa chaahiye."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या मैं किसी परिवार के साथ दीपावली की पूजा में शामिल हो सकता हूँ?",
+          "roman": "Kyaa main kisee parivaar ke saath Deepaavalee kee poojaa mein shaamil ho saktaa hoon?",
+          "en": "Can I join a family for Diwali worship?",
+          "f": {
+            "hi": "क्या मैं किसी परिवार के साथ दीपावली की पूजा में शामिल हो सकती हूँ?",
+            "roman": "Kyaa main kisee parivaar ke saath Deepaavalee kee poojaa mein shaamil ho saktee hoon?"
+          }
+        },
+        {
+          "role": "local",
+          "hi": "यदि परिवार आपको आमंत्रित करे, तो आप अवश्य शामिल हो सकते हैं। पूजा के समय उनके निर्देशों का पालन करना उचित होगा।",
+          "roman": "Yadi parivaar aapko aamantrit kare, to aap avashya shaamil ho sakte hain. Poojaa ke samay unke nirdeshon kaa paalan karnaa uchit hogaa.",
+          "en": "If a family invites you, you certainly can. It would be appropriate to follow their instructions during the worship.",
+          "f": {
+            "hi": "यदि परिवार आपको आमंत्रित करे, तो आप अवश्य शामिल हो सकती हैं। पूजा के समय उनके निर्देशों का पालन करना उचित होगा।",
+            "roman": "Yadi parivaar aapko aamantrit kare, to aap avashya shaamil ho saktee hain. Poojaa ke samay unke nirdeshon kaa paalan karnaa uchit hogaa."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "दीपावली के दौरान क्या यहाँ कोई विशेष कार्यक्रम भी आयोजित किए जाते हैं?",
+          "roman": "Deepaavalee ke dauraan kyaa yahaan koee vishesh kaaryakram bhee aayojit kie jaate hain?",
+          "en": "Are any special events organized here during Diwali?"
+        },
+        {
+          "role": "local",
+          "hi": "हाँ। कई जगह सांस्कृतिक कार्यक्रम, मेले और अन्य आयोजन होते हैं। आप स्थानीय पर्यटन कार्यालय या सूचना केंद्र से इनके बारे में जानकारी ले सकते हैं।",
+          "roman": "Haan. Kaee jagah saanskritik kaaryakram, mele aur anya aayojan hote hain. Aap sthaaneey paryatan kaaryaalay yaa soochnaa kendra se inke baare mein jaankaaree le sakte hain.",
+          "en": "Yes. Cultural programs, fairs, and other events are organized at many places. You can get information about them from the local tourism office or information center.",
+          "f": {
+            "hi": "हाँ। कई जगह सांस्कृतिक कार्यक्रम, मेले और अन्य आयोजन होते हैं। आप स्थानीय पर्यटन कार्यालय या सूचना केंद्र से इनके बारे में जानकारी ले सकती हैं।",
+            "roman": "Haan. Kaee jagah saanskritik kaaryakram, mele aur anya aayojan hote hain. Aap sthaaneey paryatan kaaryaalay yaa soochnaa kendra se inke baare mein jaankaaree le saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत अच्छा! मैं भारतीय त्योहारों और परंपराओं को करीब से समझना चाहता हूँ।",
+          "roman": "Bahut achchhaa! Main Bhaarteey tyohaaron aur paramparaaon ko kareeb se samajhnaa chaahtaa hoon.",
+          "en": "Very good! I would like to understand Indian festivals and traditions more closely.",
+          "f": {
+            "hi": "बहुत अच्छा! मैं भारतीय त्योहारों और परंपराओं को करीब से समझना चाहती हूँ।",
+            "roman": "Bahut achchhaa! Main Bhaarteey tyohaaron aur paramparaaon ko kareeb se samajhnaa chaahtee hoon."
+          }
+        },
+        {
+          "role": "local",
+          "hi": "यह बहुत अच्छी बात है। त्योहारों में शामिल होकर आप भारतीय संस्कृति और लोगों के जीवन को बेहतर ढंग से समझ सकते हैं।",
+          "roman": "Yeh bahut achchhee baat hai. Tyohaaron mein shaamil hokar aap Bhaarteey sanskriti aur logon ke jeevan ko behtar dhang se samajh sakte hain.",
+          "en": "That is a very good idea. By participating in festivals, you can understand Indian culture and people's way of life better.",
+          "f": {
+            "hi": "यह बहुत अच्छी बात है। त्योहारों में शामिल होकर आप भारतीय संस्कृति और लोगों के जीवन को बेहतर ढंग से समझ सकती हैं।",
+            "roman": "Yeh bahut achchhee baat hai. Tyohaaron mein shaamil hokar aap Bhaarteey sanskriti aur logon ke jeevan ko behtar dhang se samajh saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "जानकारी देने के लिए आपका बहुत धन्यवाद।",
+          "roman": "Jaankaaree dene ke liye aapkaa bahut dhanyavaad.",
+          "en": "Thank you very much for the information."
+        },
+        {
+          "role": "local",
+          "hi": "आपका स्वागत है। आपको दीपावली की बहुत-बहुत शुभकामनाएँ!",
+          "roman": "Aapkaa svaagat hai. Aapko Deepaavalee kee bahut-bahut shubhkaamnaaen!",
+          "en": "You are welcome. Wishing you a very happy Diwali!"
+        }
+      ]
+    }
+  ]
+}

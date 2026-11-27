@@ -1,0 +1,992 @@
+{
+  "id": "d12",
+  "day": 12,
+  "status": "review",
+  "title_hi": "आपातकाल में सहायता",
+  "title_en": "Getting help in an emergency",
+  "roles": {
+    "traveller": {
+      "hi": "यात्री",
+      "en": "Traveller",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "police_officer": {
+      "hi": "पुलिस अधिकारी",
+      "en": "Police officer",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "hotel_staff": {
+      "hi": "होटल कर्मचारी",
+      "en": "Hotel staff",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "operator": {
+      "hi": "ऑपरेटर",
+      "en": "Emergency operator",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "passer_by": {
+      "hi": "राहगीर",
+      "en": "Passer-by",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "कृपया मेरी सहायता कीजिए।",
+      "roman": "Kripyaa meree sahaaytaa keejiye.",
+      "en": "Please help me."
+    },
+    {
+      "hi": "पुलिस को बुलाइए।",
+      "roman": "Police ko bulaaiye.",
+      "en": "Please call the police."
+    },
+    {
+      "hi": "एम्बुलेंस बुलाइए।",
+      "roman": "Ambulance bulaaiye.",
+      "en": "Please call an ambulance."
+    },
+    {
+      "hi": "मेरा पासपोर्ट खो गया है।",
+      "roman": "Meraa passport kho gayaa hai.",
+      "en": "I have lost my passport."
+    },
+    {
+      "hi": "मेरा मोबाइल चोरी हो गया है।",
+      "roman": "Meraa mobile choree ho gayaa hai.",
+      "en": "My mobile phone has been stolen."
+    },
+    {
+      "hi": "मेरा सामान चोरी हो गया है।",
+      "roman": "Meraa saamaan choree ho gayaa hai.",
+      "en": "My belongings have been stolen."
+    },
+    {
+      "hi": "यहाँ दुर्घटना हुई है।",
+      "roman": "Yahaan durghatnaa huee hai.",
+      "en": "There has been an accident here."
+    },
+    {
+      "hi": "कोई घायल है।",
+      "roman": "Koee ghaayal hai.",
+      "en": "Someone is injured."
+    },
+    {
+      "hi": "मुझे डॉक्टर की आवश्यकता है।",
+      "roman": "Mujhe doctor kee aavashyaktaa hai.",
+      "en": "I need a doctor."
+    },
+    {
+      "hi": "मुझे पुलिस थाने जाना है।",
+      "roman": "Mujhe police thaane jaanaa hai.",
+      "en": "I need to go to the police station."
+    },
+    {
+      "hi": "मुझे यहाँ सुरक्षित महसूस नहीं हो रहा है।",
+      "roman": "Mujhe yahaan surakshit mahsoos naheen ho rahaa hai.",
+      "en": "I do not feel safe here."
+    },
+    {
+      "hi": "कृपया जल्दी कीजिए।",
+      "roman": "Kripyaa jaldee keejiye.",
+      "en": "Please hurry."
+    },
+    {
+      "hi": "क्या आप अंग्रेज़ी बोलते हैं?",
+      "roman": "Kyaa aap angrezee bolte hain?",
+      "en": "Do you speak English?"
+    },
+    {
+      "hi": "कृपया धीरे बोलिए।",
+      "roman": "Kripyaa dheere boliye.",
+      "en": "Please speak slowly."
+    },
+    {
+      "hi": "मुझे समझ नहीं आ रहा है।",
+      "roman": "Mujhe samajh naheen aa rahaa hai.",
+      "en": "I don't understand."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d12s1",
+      "title_hi": "रास्ता भटक जाना",
+      "title_en": "Lost on the way to your hotel",
+      "situation": "You are lost and ask a police officer the way back to your hotel.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "नमस्ते, क्या आप मेरी सहायता कर सकते हैं?",
+          "roman": "Namaste, kyaa aap meree sahaaytaa kar sakte hain?",
+          "en": "Hello, could you please help me?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "जी, बताइए क्या समस्या है?",
+          "roman": "Jee, bataaiye kyaa samasyaa hai?",
+          "en": "Yes. What is the problem?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मैं रास्ता भटक गया हूँ। मुझे अपने होटल का रास्ता नहीं मिल रहा है।",
+          "roman": "Main raastaa bhatak gayaa hoon. Mujhe apne hotel kaa raastaa naheen mil rahaa hai.",
+          "en": "I have lost my way. I cannot find the way to my hotel.",
+          "f": {
+            "hi": "मैं रास्ता भटक गई हूँ। मुझे अपने होटल का रास्ता नहीं मिल रहा है।",
+            "roman": "Main raastaa bhatak gaee hoon. Mujhe apne hotel kaa raastaa naheen mil rahaa hai."
+          }
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपके होटल का नाम क्या है?",
+          "roman": "Aapke hotel kaa naam kyaa hai?",
+          "en": "What is the name of your hotel?"
+        },
+        {
+          "role": "traveller",
+          "hi": "होटल का नाम ‘रॉयल पैलेस’ है। यह उसका पता है।",
+          "roman": "Hotel kaa naam 'Royal Palace' hai. Yeh uskaa pataa hai.",
+          "en": "The hotel is called 'Royal Palace'. Here is its address."
+        },
+        {
+          "role": "police_officer",
+          "hi": "ठीक है। आप इस सड़क पर सीधे जाइए और चौराहे से दाईं ओर मुड़िए।",
+          "roman": "Theek hai. Aap is sadak par seedhe jaaiye aur chauraahe se daaeen or mudiye.",
+          "en": "Okay. Go straight along this road and turn right at the intersection."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या होटल यहाँ से बहुत दूर है?",
+          "roman": "Kyaa hotel yahaan se bahut door hai?",
+          "en": "Is the hotel far from here?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "नहीं, लगभग दस मिनट की दूरी पर है।",
+          "roman": "Naheen, lagbhag das minute kee dooree par hai.",
+          "en": "No, it is about ten minutes from here."
+        },
+        {
+          "role": "traveller",
+          "hi": "बहुत धन्यवाद।",
+          "roman": "Bahut dhanyavaad.",
+          "en": "Thank you very much."
+        }
+      ]
+    },
+    {
+      "id": "d12s2",
+      "title_hi": "किसी व्यक्ति द्वारा परेशान किया जाना",
+      "title_en": "Being followed",
+      "situation": "Someone has been following you, so you ask a police officer for help.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "पुलिस अधिकारी, कृपया मेरी मदद कीजिए।",
+          "roman": "Police adhikaaree, kripyaa meree madad keejiye.",
+          "en": "Officer, please help me."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या हुआ?",
+          "roman": "Kyaa huaa?",
+          "en": "What happened?"
+        },
+        {
+          "role": "traveller",
+          "hi": "एक व्यक्ति काफी देर से मेरा पीछा कर रहा है।",
+          "roman": "Ek vyakti kaafee der se meraa peechhaa kar rahaa hai.",
+          "en": "A person has been following me for quite some time."
+        },
+        {
+          "role": "police_officer",
+          "hi": "वह व्यक्ति कहाँ है?",
+          "roman": "Voh vyakti kahaan hai?",
+          "en": "Where is that person?"
+        },
+        {
+          "role": "traveller",
+          "hi": "वह सामने खड़ा है। मुझे डर लग रहा है।",
+          "roman": "Voh saamne khadaa hai. Mujhe dar lag rahaa hai.",
+          "en": "He is standing over there. I am scared."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आप चिंता न करें। आप हमारे साथ आइए।",
+          "roman": "Aap chintaa na karen. Aap hamaare saath aaiye.",
+          "en": "Don't worry. Come with us."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या मैं यहाँ सुरक्षित हूँ?",
+          "roman": "Kyaa main yahaan surakshit hoon?",
+          "en": "Am I safe here?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "जी, आप सुरक्षित हैं। हम आपकी सहायता करेंगे।",
+          "roman": "Jee, aap surakshit hain. Hum aapkee sahaaytaa karenge.",
+          "en": "Yes, you are safe. We will help you.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d12s3",
+      "title_hi": "सामान या दस्तावेज़ खो जाना",
+      "title_en": "Lost belongings or documents",
+      "situation": "You have lost your bag and passport and report it to the police.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा बैग और पासपोर्ट खो गया है। मुझे पुलिस में शिकायत दर्ज करानी है।",
+          "roman": "Meraa bag aur passport kho gayaa hai. Mujhe police mein shikaayat darj karaanee hai.",
+          "en": "I have lost my bag and passport. I want to file a complaint with the police."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपका बैग कहाँ खोया?",
+          "roman": "Aapkaa bag kahaan khoyaa?",
+          "en": "Where did you lose your bag?"
+        },
+        {
+          "role": "traveller",
+          "hi": "रेलवे स्टेशन पर।",
+          "roman": "Railway station par.",
+          "en": "At the railway station."
+        },
+        {
+          "role": "police_officer",
+          "hi": "कृपया अपना पहचान-पत्र दिखाइए और घटना का विवरण बताइए।",
+          "roman": "Kripyaa apnaa pehchaan-patra dikhaaiye aur ghatnaa kaa vivran bataaiye.",
+          "en": "Please show me your identity card and tell me what happened."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, यह मेरा पहचान-पत्र है।",
+          "roman": "Jee, yeh meraa pehchaan-patra hai.",
+          "en": "Yes, here is my identity card."
+        }
+      ]
+    },
+    {
+      "id": "d12s4",
+      "title_hi": "मोबाइल कहीं गिर जाना",
+      "title_en": "Dropping your phone",
+      "situation": "You have lost your phone and describe it to the police.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा मोबाइल फोन खो गया है।",
+          "roman": "Meraa mobile phone kho gayaa hai.",
+          "en": "I have lost my mobile phone."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपने उसे आख़िरी बार कहाँ इस्तेमाल किया था?",
+          "roman": "Aapne use aakhiree baar kahaan istemaal kiyaa thaa?",
+          "en": "Where did you last use it?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मैंने उसे मेट्रो स्टेशन पर इस्तेमाल किया था।",
+          "roman": "Maine use metro station par istemaal kiyaa thaa.",
+          "en": "I used it at the metro station."
+        },
+        {
+          "role": "police_officer",
+          "hi": "मोबाइल का रंग और मॉडल क्या है?",
+          "roman": "Mobile kaa rang aur model kyaa hai?",
+          "en": "What is the colour and model of the phone?"
+        },
+        {
+          "role": "traveller",
+          "hi": "वह काले रंग का है और उसका मॉडल यह है।",
+          "roman": "Voh kaale rang kaa hai aur uskaa model yeh hai.",
+          "en": "It is black, and this is the model."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या आपको लगता है कि वह चोरी हुआ है या कहीं गिर गया है?",
+          "roman": "Kyaa aapko lagtaa hai ki voh choree huaa hai yaa kaheen gir gayaa hai?",
+          "en": "Do you think it was stolen or that you dropped it somewhere?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे निश्चित रूप से पता नहीं है। शायद वह कहीं गिर गया है।",
+          "roman": "Mujhe nishchit roop se pataa naheen hai. Shaayad voh kaheen gir gayaa hai.",
+          "en": "I am not sure. I may have dropped it somewhere."
+        }
+      ]
+    },
+    {
+      "id": "d12s5",
+      "title_hi": "मोबाइल चोरी होने की आशंका",
+      "title_en": "A phone that may have been stolen",
+      "situation": "Your phone is missing from your pocket after a crowd, and the police tell you what to do.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा मोबाइल मेरी जेब से गायब हो गया है।",
+          "roman": "Meraa mobile meree jeb se gaayab ho gayaa hai.",
+          "en": "My mobile phone is missing from my pocket."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपको कब पता चला?",
+          "roman": "Aapko kab pataa chalaa?",
+          "en": "When did you notice it?"
+        },
+        {
+          "role": "traveller",
+          "hi": "भीड़ में से निकलने के बाद।",
+          "roman": "Bheed mein se nikalne ke baad.",
+          "en": "After I came out of the crowded area."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या आपके मोबाइल में कोई महत्त्वपूर्ण जानकारी थी?",
+          "roman": "Kyaa aapke mobile mein koee mahattvapoorn jaankaaree thee?",
+          "en": "Did your phone contain any important information?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मेरे बैंक और ई-मेल से संबंधित जानकारी थी।",
+          "roman": "Jee, mere bank aur e-mail se sambandhit jaankaaree thee.",
+          "en": "Yes, it contained information related to my bank and email."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपको तुरंत अपने बैंक खाते और मोबाइल सिम को सुरक्षित करना चाहिए।",
+          "roman": "Aapko turant apne bank khaate aur mobile SIM ko surakshit karnaa chaahiye.",
+          "en": "You should immediately secure your bank account and mobile SIM."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या मैं इसकी शिकायत दर्ज करा सकता हूँ?",
+          "roman": "Kyaa main iskee shikaayat darj karaa saktaa hoon?",
+          "en": "Can I file a complaint about it?",
+          "f": {
+            "hi": "क्या मैं इसकी शिकायत दर्ज करा सकती हूँ?",
+            "roman": "Kyaa main iskee shikaayat darj karaa saktee hoon?"
+          }
+        },
+        {
+          "role": "police_officer",
+          "hi": "जी हाँ, हम आपकी शिकायत दर्ज करेंगे।",
+          "roman": "Jee haan, hum aapkee shikaayat darj karenge.",
+          "en": "Yes, we will register your complaint.",
+          "gender_ok": true
+        }
+      ]
+    },
+    {
+      "id": "d12s6",
+      "title_hi": "मोबाइल वापस पाने की कोशिश",
+      "title_en": "Trying to get your phone back",
+      "situation": "You ask whether your lost phone can be tracked.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या खोए हुए मोबाइल को ट्रैक किया जा सकता है?",
+          "roman": "Kyaa khoe hue mobile ko track kiyaa jaa saktaa hai?",
+          "en": "Can the lost phone be tracked?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "यदि आपके पास मोबाइल का विवरण और आवश्यक जानकारी है, तो शिकायत में उसे दर्ज कर सकते हैं।",
+          "roman": "Yadi aapke paas mobile kaa vivran aur aavashyak jaankaaree hai, to shikaayat mein use darj kar sakte hain.",
+          "en": "If you have the phone details and the necessary information, you can include them in the complaint.",
+          "f": {
+            "hi": "यदि आपके पास मोबाइल का विवरण और आवश्यक जानकारी है, तो शिकायत में उसे दर्ज कर सकती हैं।",
+            "roman": "Yadi aapke paas mobile kaa vivran aur aavashyak jaankaaree hai, to shikaayat mein use darj kar saktee hain."
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "मेरे पास मोबाइल का बिल और पहचान संख्या है।",
+          "roman": "Mere paas mobile kaa bill aur pehchaan sankhyaa hai.",
+          "en": "I have the phone bill and identification number."
+        },
+        {
+          "role": "police_officer",
+          "hi": "उन्हें शिकायत के साथ संलग्न कर दीजिए।",
+          "roman": "Unhen shikaayat ke saath sanlagn kar deejiye.",
+          "en": "Please attach them to the complaint."
+        }
+      ]
+    },
+    {
+      "id": "d12s7",
+      "title_hi": "पासपोर्ट खो जाना",
+      "title_en": "Losing your passport",
+      "situation": "You report your lost passport to the police and give your details.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पासपोर्ट खो गया है। मुझे पुलिस में शिकायत दर्ज करानी है।",
+          "roman": "Meraa passport kho gayaa hai. Mujhe police mein shikaayat darj karaanee hai.",
+          "en": "I have lost my passport. I want to file a complaint with the police."
+        },
+        {
+          "role": "police_officer",
+          "hi": "पासपोर्ट कहाँ खोया?",
+          "roman": "Passport kahaan khoyaa?",
+          "en": "Where did you lose your passport?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे लगता है कि होटल से बाज़ार जाते समय खो गया।",
+          "roman": "Mujhe lagtaa hai ki hotel se baazaar jaate samay kho gayaa.",
+          "en": "I think I lost it while going from the hotel to the market."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपके पास पासपोर्ट की कोई प्रति है?",
+          "roman": "Aapke paas passport kee koee prati hai?",
+          "en": "Do you have a copy of your passport?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मेरे मोबाइल में उसकी एक प्रति है।",
+          "roman": "Jee, mere mobile mein uskee ek prati hai.",
+          "en": "Yes, I have a copy on my phone."
+        },
+        {
+          "role": "police_officer",
+          "hi": "ठीक है। अपना नाम, राष्ट्रीयता और पासपोर्ट संख्या बताइए।",
+          "roman": "Theek hai. Apnaa naam, raashtreeyataa aur passport sankhyaa bataaiye.",
+          "en": "Okay. Tell me your name, nationality, and passport number."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, ये सभी विवरण यहाँ हैं।",
+          "roman": "Jee, ye sabhee vivran yahaan hain.",
+          "en": "Yes, all the details are here."
+        }
+      ]
+    },
+    {
+      "id": "d12s8",
+      "title_hi": "पासपोर्ट चोरी होने की आशंका",
+      "title_en": "A passport that may have been stolen",
+      "situation": "Your passport is missing from your bag and you think someone took it.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पासपोर्ट मेरे बैग में था, लेकिन अब नहीं है।",
+          "roman": "Meraa passport mere bag mein thaa, lekin ab naheen hai.",
+          "en": "My passport was in my bag, but it is not there now."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या आपका बैग खुला हुआ था?",
+          "roman": "Kyaa aapkaa bag khulaa huaa thaa?",
+          "en": "Was your bag open?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मुझे लगता है कि किसी ने बैग से पासपोर्ट निकाल लिया।",
+          "roman": "Jee, mujhe lagtaa hai ki kisee ne bag se passport nikaal liyaa.",
+          "en": "Yes, I think someone took the passport from my bag."
+        },
+        {
+          "role": "police_officer",
+          "hi": "हम आपकी शिकायत दर्ज करेंगे।",
+          "roman": "Hum aapkee shikaayat darj karenge.",
+          "en": "We will register your complaint.",
+          "gender_ok": true
+        },
+        {
+          "role": "traveller",
+          "hi": "इसके बाद मुझे क्या करना होगा?",
+          "roman": "Iske baad mujhe kyaa karnaa hogaa?",
+          "en": "What should I do after that?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपको अपने देश के दूतावास या वाणिज्य दूतावास से संपर्क करना चाहिए।",
+          "roman": "Aapko apne desh ke dootaavaas yaa vaanijya dootaavaas se sampark karnaa chaahiye.",
+          "en": "You should contact your country's embassy or consulate."
+        }
+      ]
+    },
+    {
+      "id": "d12s9",
+      "title_hi": "आगे की यात्रा की समस्या",
+      "title_en": "Worried about your next trip",
+      "situation": "You have lost your passport and have a trip next week.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पासपोर्ट खो गया है और मेरी अगले सप्ताह की यात्रा है। मैं क्या करूँ?",
+          "roman": "Meraa passport kho gayaa hai aur meree agle saptaah kee yaatraa hai. Main kyaa karoon?",
+          "en": "I have lost my passport and I have a trip next week. What should I do?",
+          "gender_ok": true
+        },
+        {
+          "role": "police_officer",
+          "hi": "पहले पुलिस रिपोर्ट की प्रति ले लीजिए। उसके बाद अपने दूतावास से संपर्क कीजिए।",
+          "roman": "Pehle police report kee prati le leejiye. Uske baad apne dootaavaas se sampark keejiye.",
+          "en": "First, get a copy of the police report. Then contact your embassy."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या दूतावास मुझे यात्रा के लिए आवश्यक दस्तावेज़ दे सकता है?",
+          "roman": "Kyaa dootaavaas mujhe yaatraa ke liye aavashyak dastaavez de saktaa hai?",
+          "en": "Can the embassy provide me with the documents required for travel?"
+        },
+        {
+          "role": "police_officer",
+          "hi": "इस बारे में आपको दूतावास से जानकारी मिल जाएगी।",
+          "roman": "Is baare mein aapko dootaavaas se jaankaaree mil jaaegee.",
+          "en": "You can get information about this from the embassy."
+        }
+      ]
+    },
+    {
+      "id": "d12s10",
+      "title_hi": "होटल में चोरी",
+      "title_en": "Theft at the hotel",
+      "situation": "Some of your things have been stolen from your hotel room.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरे कमरे से कुछ सामान चोरी हो गया है।",
+          "roman": "Mere kamre se kuchh saamaan choree ho gayaa hai.",
+          "en": "Some of my belongings have been stolen from my room."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "क्या-क्या सामान चोरी हुआ है?",
+          "roman": "Kyaa-kyaa saamaan choree huaa hai?",
+          "en": "What items have been stolen?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मेरा कैमरा, घड़ी और कुछ पैसे।",
+          "roman": "Meraa camera, ghadee aur kuchh paise.",
+          "en": "My camera, watch, and some money."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "आपने सामान आख़िरी बार कब देखा था?",
+          "roman": "Aapne saamaan aakhiree baar kab dekhaa thaa?",
+          "en": "When did you last see them?"
+        },
+        {
+          "role": "traveller",
+          "hi": "आज सुबह।",
+          "roman": "Aaj subah.",
+          "en": "This morning."
+        },
+        {
+          "role": "hotel_staff",
+          "hi": "हम तुरंत प्रबंधक और सुरक्षा अधिकारी को सूचित करते हैं।",
+          "roman": "Hum turant prabandhak aur surakshaa adhikaaree ko soochit karte hain.",
+          "en": "We will immediately inform the manager and security officer."
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे पुलिस में भी शिकायत दर्ज करानी है।",
+          "roman": "Mujhe police mein bhee shikaayat darj karaanee hai.",
+          "en": "I also want to file a complaint with the police."
+        }
+      ]
+    },
+    {
+      "id": "d12s11",
+      "title_hi": "सार्वजनिक स्थान पर चोरी",
+      "title_en": "Theft in a public place",
+      "situation": "Your wallet was stolen at a crowded bus station.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा पर्स चोरी हो गया है।",
+          "roman": "Meraa purse choree ho gayaa hai.",
+          "en": "My wallet has been stolen."
+        },
+        {
+          "role": "police_officer",
+          "hi": "चोरी कहाँ हुई?",
+          "roman": "Choree kahaan huee?",
+          "en": "Where did the theft take place?"
+        },
+        {
+          "role": "traveller",
+          "hi": "बस अड्डे पर। वहाँ बहुत भीड़ थी।",
+          "roman": "Bus adde par. Vahaan bahut bheed thee.",
+          "en": "At the bus station. It was very crowded there."
+        },
+        {
+          "role": "police_officer",
+          "hi": "पर्स में क्या-क्या था?",
+          "roman": "Purse mein kyaa-kyaa thaa?",
+          "en": "What was in the wallet?"
+        },
+        {
+          "role": "traveller",
+          "hi": "पैसे, मेरा पहचान-पत्र और बैंक कार्ड थे।",
+          "roman": "Paise, meraa pehchaan-patra aur bank card the.",
+          "en": "It contained money, my identity card, and a bank card."
+        },
+        {
+          "role": "police_officer",
+          "hi": "कृपया चोरी हुए सामान की पूरी सूची दीजिए।",
+          "roman": "Kripyaa choree hue saamaan kee pooree soochee deejiye.",
+          "en": "Please provide a complete list of the stolen items."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मैं सूची बना देता हूँ।",
+          "roman": "Jee, main soochee banaa detaa hoon.",
+          "en": "Yes, I will make a list.",
+          "f": {
+            "hi": "जी, मैं सूची बना देती हूँ।",
+            "roman": "Jee, main soochee banaa detee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d12s12",
+      "title_hi": "बैंक कार्ड चोरी होना",
+      "title_en": "A stolen bank card",
+      "situation": "Your bank card was stolen too, and the police tell you to block it.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरा बैंक कार्ड भी चोरी हो गया है।",
+          "roman": "Meraa bank card bhee choree ho gayaa hai.",
+          "en": "My bank card has also been stolen."
+        },
+        {
+          "role": "police_officer",
+          "hi": "क्या आपने बैंक को इसकी सूचना दी है?",
+          "roman": "Kyaa aapne bank ko iskee soochnaa dee hai?",
+          "en": "Have you informed the bank?"
+        },
+        {
+          "role": "traveller",
+          "hi": "अभी नहीं।",
+          "roman": "Abhee naheen.",
+          "en": "Not yet."
+        },
+        {
+          "role": "police_officer",
+          "hi": "आपको तुरंत बैंक से संपर्क करके कार्ड बंद करवाना चाहिए।",
+          "roman": "Aapko turant bank se sampark karke card band karvaanaa chaahiye.",
+          "en": "You should contact the bank immediately and have the card blocked."
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मैं अभी बैंक को फोन करता हूँ।",
+          "roman": "Jee, main abhee bank ko phone kartaa hoon.",
+          "en": "Yes, I will call the bank now.",
+          "f": {
+            "hi": "जी, मैं अभी बैंक को फोन करती हूँ।",
+            "roman": "Jee, main abhee bank ko phone kartee hoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d12s13",
+      "title_hi": "स्वयं दुर्घटना का शिकार होना",
+      "title_en": "When you are in an accident",
+      "situation": "Your taxi has crashed and you call the emergency operator.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "मेरी टैक्सी का एक्सीडेंट हो गया है।",
+          "roman": "Meree taxi kaa accident ho gayaa hai.",
+          "en": "My taxi has been involved in an accident."
+        },
+        {
+          "role": "operator",
+          "hi": "आप कहाँ हैं?",
+          "roman": "Aap kahaan hain?",
+          "en": "Where are you?"
+        },
+        {
+          "role": "traveller",
+          "hi": "हम हाइवे पर हैं। मुझे सही स्थान का पता नहीं है।",
+          "roman": "Hum highway par hain. Mujhe sahee sthaan kaa pataa naheen hai.",
+          "en": "We are on the highway. I don't know the exact location."
+        },
+        {
+          "role": "operator",
+          "hi": "क्या आपको चोट लगी है?",
+          "roman": "Kyaa aapko chot lagee hai?",
+          "en": "Are you injured?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे हाथ में चोट लगी है और ड्राइवर के सिर पर चोट लगी है।",
+          "roman": "Mujhe haath mein chot lagee hai aur driver ke sir par chot lagee hai.",
+          "en": "I have an injury on my arm, and the driver has an injury on his head."
+        },
+        {
+          "role": "operator",
+          "hi": "चिंता न करें। एम्बुलेंस भेजी जा रही है।",
+          "roman": "Chintaa na karen. Ambulance bhejee jaa rahee hai.",
+          "en": "Don't worry. An ambulance is being sent."
+        },
+        {
+          "role": "traveller",
+          "hi": "ठीक है। हम यहीं रहेंगे।",
+          "roman": "Theek hai. Hum yaheen rahenge.",
+          "en": "Okay. We will stay here."
+        }
+      ]
+    },
+    {
+      "id": "d12s14",
+      "title_hi": "दुर्घटना के बाद सहायता",
+      "title_en": "Getting help after an accident",
+      "situation": "After the accident, you ask a passer-by to help until the ambulance comes.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "क्या आप एम्बुलेंस के आने तक मेरी सहायता कर सकते हैं?",
+          "roman": "Kyaa aap ambulance ke aane tak meree sahaaytaa kar sakte hain?",
+          "en": "Could you help me until the ambulance arrives?"
+        },
+        {
+          "role": "passer_by",
+          "hi": "जी, मैं आपकी सहायता करता हूँ।",
+          "roman": "Jee, main aapkee sahaaytaa kartaa hoon.",
+          "en": "Yes, I will help you."
+        },
+        {
+          "role": "traveller",
+          "hi": "कृपया मेरे परिवार को फोन कर दीजिए।",
+          "roman": "Kripyaa mere parivaar ko phone kar deejiye.",
+          "en": "Please call my family."
+        },
+        {
+          "role": "passer_by",
+          "hi": "आपके पास उनका नंबर है?",
+          "roman": "Aapke paas unkaa number hai?",
+          "en": "Do you have their number?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, यह नंबर मेरे मोबाइल में है।",
+          "roman": "Jee, yeh number mere mobile mein hai.",
+          "en": "Yes, the number is saved on my phone."
+        }
+      ]
+    },
+    {
+      "id": "d12s15",
+      "title_hi": "अचानक तबीयत खराब होना",
+      "title_en": "Suddenly feeling unwell",
+      "situation": "You suddenly feel ill in the street and ask a passer-by for help.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "कृपया मेरी मदद कीजिए। मेरी तबीयत अचानक खराब हो गई है।",
+          "roman": "Kripyaa meree madad keejiye. Meree tabeeyat achaanak kharaab ho gaee hai.",
+          "en": "Please help me. I have suddenly become unwell."
+        },
+        {
+          "role": "passer_by",
+          "hi": "आपको क्या परेशानी हो रही है?",
+          "roman": "Aapko kyaa pareshaanee ho rahee hai?",
+          "en": "What problem are you having?"
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे चक्कर आ रहा है और साँस लेने में परेशानी हो रही है।",
+          "roman": "Mujhe chakkar aa rahaa hai aur saans lene mein pareshaanee ho rahee hai.",
+          "en": "I feel dizzy and I am having difficulty breathing."
+        },
+        {
+          "role": "passer_by",
+          "hi": "क्या आपको डॉक्टर या एम्बुलेंस चाहिए?",
+          "roman": "Kyaa aapko doctor yaa ambulance chaahiye?",
+          "en": "Do you need a doctor or an ambulance?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, कृपया एम्बुलेंस बुला दीजिए।",
+          "roman": "Jee, kripyaa ambulance bulaa deejiye.",
+          "en": "Yes, please call an ambulance."
+        },
+        {
+          "role": "passer_by",
+          "hi": "आप चिंता न करें। मैं अभी एम्बुलेंस बुलाता हूँ।",
+          "roman": "Aap chintaa na karen. Main abhee ambulance bulaataa hoon.",
+          "en": "Don't worry. I will call an ambulance right away."
+        }
+      ]
+    },
+    {
+      "id": "d12s16",
+      "title_hi": "रास्ता भटक जाना",
+      "title_en": "Asking a passer-by the way",
+      "situation": "You are lost and ask a passer-by how to reach an address.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?",
+          "roman": "Maaf keejiye, kyaa aap meree madad kar sakte hain?",
+          "en": "Excuse me, could you help me?"
+        },
+        {
+          "role": "passer_by",
+          "hi": "जी, बताइए।",
+          "roman": "Jee, bataaiye.",
+          "en": "Yes, tell me."
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे इस पते पर जाना है, लेकिन मुझे रास्ता नहीं पता।",
+          "roman": "Mujhe is pate par jaanaa hai, lekin mujhe raastaa naheen pataa.",
+          "en": "I need to go to this address, but I don't know the way."
+        },
+        {
+          "role": "passer_by",
+          "hi": "आप यहाँ से सीधे जाइए और अगले चौराहे पर बाईं ओर मुड़िए।",
+          "roman": "Aap yahaan se seedhe jaaiye aur agle chauraahe par baaeen or mudiye.",
+          "en": "Go straight from here and turn left at the next intersection."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आप मुझे रास्ता नक्शे पर दिखा सकते हैं?",
+          "roman": "Kyaa aap mujhe raastaa naqshe par dikhaa sakte hain?",
+          "en": "Could you show me the way on the map?"
+        },
+        {
+          "role": "passer_by",
+          "hi": "जी, मैं आपको नक्शे पर दिखाता हूँ।",
+          "roman": "Jee, main aapko naqshe par dikhaataa hoon.",
+          "en": "Yes, I will show you on the map."
+        }
+      ]
+    },
+    {
+      "id": "d12s17",
+      "title_hi": "भाषा संबंधी समस्या",
+      "title_en": "A language problem",
+      "situation": "You don't understand much Hindi and ask a passer-by for help in English.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "माफ़ कीजिए, मुझे हिंदी ठीक से समझ नहीं आती।",
+          "roman": "Maaf keejiye, mujhe Hindi theek se samajh naheen aatee.",
+          "en": "Excuse me, I don't understand Hindi very well."
+        },
+        {
+          "role": "passer_by",
+          "hi": "क्या आप अंग्रेज़ी बोलते हैं?",
+          "roman": "Kyaa aap angrezee bolte hain?",
+          "en": "Do you speak English?",
+          "f": {
+            "hi": "क्या आप अंग्रेज़ी बोलती हैं?",
+            "roman": "Kyaa aap angrezee boltee hain?"
+          }
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, मैं अंग्रेज़ी बोलता हूँ। क्या आप मेरी सहायता कर सकते हैं?",
+          "roman": "Jee, main angrezee boltaa hoon. Kyaa aap meree sahaaytaa kar sakte hain?",
+          "en": "Yes, I speak English. Could you help me?",
+          "f": {
+            "hi": "जी, मैं अंग्रेज़ी बोलती हूँ। क्या आप मेरी सहायता कर सकते हैं?",
+            "roman": "Jee, main angrezee boltee hoon. Kyaa aap meree sahaaytaa kar sakte hain?"
+          }
+        },
+        {
+          "role": "passer_by",
+          "hi": "जी, बताइए आपको क्या चाहिए।",
+          "roman": "Jee, bataaiye aapko kyaa chaahiye.",
+          "en": "Yes. Tell me what you need."
+        },
+        {
+          "role": "traveller",
+          "hi": "मुझे पुलिस थाने का रास्ता जानना है।",
+          "roman": "Mujhe police thaane kaa raastaa jaannaa hai.",
+          "en": "I need to know the way to the police station."
+        },
+        {
+          "role": "passer_by",
+          "hi": "मैं आपको वहाँ तक पहुँचने में मदद करता हूँ।",
+          "roman": "Main aapko vahaan tak pahunchne mein madad kartaa hoon.",
+          "en": "I will help you get there."
+        }
+      ]
+    },
+    {
+      "id": "d12s18",
+      "title_hi": "डर या असुरक्षा की स्थिति",
+      "title_en": "Feeling unsafe",
+      "situation": "You feel unsafe because someone is following you, and a passer-by helps.",
+      "lines": [
+        {
+          "role": "traveller",
+          "hi": "कृपया मेरी मदद कीजिए। मुझे यहाँ सुरक्षित महसूस नहीं हो रहा है।",
+          "roman": "Kripyaa meree madad keejiye. Mujhe yahaan surakshit mahsoos naheen ho rahaa hai.",
+          "en": "Please help me. I don't feel safe here."
+        },
+        {
+          "role": "passer_by",
+          "hi": "क्या कोई आपको परेशान कर रहा है?",
+          "roman": "Kyaa koee aapko pareshaan kar rahaa hai?",
+          "en": "Is someone bothering you?"
+        },
+        {
+          "role": "traveller",
+          "hi": "जी, एक व्यक्ति मेरा पीछा कर रहा है।",
+          "roman": "Jee, ek vyakti meraa peechhaa kar rahaa hai.",
+          "en": "Yes, someone is following me."
+        },
+        {
+          "role": "passer_by",
+          "hi": "आप मेरे साथ आइए। हम किसी सुरक्षित स्थान पर चलते हैं।",
+          "roman": "Aap mere saath aaiye. Hum kisee surakshit sthaan par chalte hain.",
+          "en": "Come with me. Let's go to a safe place."
+        },
+        {
+          "role": "traveller",
+          "hi": "क्या आप कृपया पुलिस को फोन कर सकते हैं?",
+          "roman": "Kyaa aap kripyaa police ko phone kar sakte hain?",
+          "en": "Could you please call the police?"
+        },
+        {
+          "role": "passer_by",
+          "hi": "जी, मैं अभी पुलिस को फोन करता हूँ।",
+          "roman": "Jee, main abhee police ko phone kartaa hoon.",
+          "en": "Yes, I will call the police right away."
+        }
+      ]
+    }
+  ]
+}

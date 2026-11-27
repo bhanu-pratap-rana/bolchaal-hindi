@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+.env
+.cache/
+voices/
+source/
+dist/
+review/
+test-results/
+playwright-report/
+__pycache__/
+.wrangler/

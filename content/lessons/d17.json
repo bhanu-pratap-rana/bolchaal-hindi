@@ -1,0 +1,392 @@
+{
+  "id": "d17",
+  "day": 17,
+  "status": "review",
+  "title_hi": "पर्यटक के रूप में विशेष अनुभव",
+  "title_en": "Special experiences as a tourist",
+  "roles": {
+    "tourist": {
+      "hi": "पर्यटक",
+      "en": "Tourist",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "guide": {
+      "hi": "गाइड",
+      "en": "Guide",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "पर्यटक",
+      "roman": "paryatak",
+      "en": "tourist"
+    },
+    {
+      "hi": "पर्यटन",
+      "roman": "paryatan",
+      "en": "tourism"
+    },
+    {
+      "hi": "स्थानीय अनुभव",
+      "roman": "sthaaneey anubhav",
+      "en": "local experience"
+    },
+    {
+      "hi": "टूर गाइड",
+      "roman": "tour guide",
+      "en": "tour guide"
+    },
+    {
+      "hi": "स्थानीय गाइड",
+      "roman": "sthaaneey guide",
+      "en": "local guide"
+    },
+    {
+      "hi": "गाइड बुक करना",
+      "roman": "guide book karnaa",
+      "en": "to book a guide"
+    },
+    {
+      "hi": "ऐतिहासिक स्थल",
+      "roman": "aitihaasik sthal",
+      "en": "historical site"
+    },
+    {
+      "hi": "ऐतिहासिक किला",
+      "roman": "aitihaasik kilaa",
+      "en": "historic fort"
+    },
+    {
+      "hi": "संग्रहालय",
+      "roman": "sangrahaalay",
+      "en": "museum"
+    },
+    {
+      "hi": "स्मारक",
+      "roman": "smaarak",
+      "en": "monument"
+    },
+    {
+      "hi": "ऐतिहासिक इमारत",
+      "roman": "aitihaasik imaarat",
+      "en": "historic building"
+    },
+    {
+      "hi": "इतिहास",
+      "roman": "itihaas",
+      "en": "history"
+    },
+    {
+      "hi": "वास्तुकला",
+      "roman": "vaastukalaa",
+      "en": "architecture"
+    },
+    {
+      "hi": "ऐतिहासिक घटना",
+      "roman": "aitihaasik ghatnaa",
+      "en": "historical event"
+    },
+    {
+      "hi": "दस्तावेज",
+      "roman": "dastaavez",
+      "en": "document"
+    },
+    {
+      "hi": "प्रवेश टिकट",
+      "roman": "pravesh ticket",
+      "en": "entry ticket"
+    },
+    {
+      "hi": "प्रवेश के नियम",
+      "roman": "pravesh ke niyam",
+      "en": "rules for entry"
+    },
+    {
+      "hi": "अनुमति",
+      "roman": "anumati",
+      "en": "permission"
+    },
+    {
+      "hi": "फोटोग्राफी",
+      "roman": "photography",
+      "en": "photography"
+    },
+    {
+      "hi": "तस्वीर लेना",
+      "roman": "tasveer lenaa",
+      "en": "to take photographs"
+    },
+    {
+      "hi": "निर्देश",
+      "roman": "nirdesh",
+      "en": "instructions"
+    },
+    {
+      "hi": "स्थानीय मेला",
+      "roman": "sthaaneey melaa",
+      "en": "local fair"
+    },
+    {
+      "hi": "सांस्कृतिक कार्यक्रम",
+      "roman": "saanskritik kaaryakram",
+      "en": "cultural event"
+    },
+    {
+      "hi": "हस्तशिल्प",
+      "roman": "hastashilp",
+      "en": "handicrafts"
+    },
+    {
+      "hi": "स्थानीय कला",
+      "roman": "sthaaneey kalaa",
+      "en": "local art"
+    },
+    {
+      "hi": "जानकारी उपलब्ध होना",
+      "roman": "jaankaaree upalabdh honaa",
+      "en": "information being available"
+    },
+    {
+      "hi": "आयोजित किया जाना",
+      "roman": "aayojit kiyaa jaanaa",
+      "en": "to be held/organised"
+    },
+    {
+      "hi": "रास्ता बताना",
+      "roman": "raastaa bataanaa",
+      "en": "to give directions"
+    },
+    {
+      "hi": "यात्रा की योजना बनाना",
+      "roman": "yaatraa kee yojnaa banaanaa",
+      "en": "to plan a tour"
+    },
+    {
+      "hi": "यादगार",
+      "roman": "yaadgaar",
+      "en": "memorable"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d17s1",
+      "title_hi": "पर्यटक के रूप में विशेष अनुभव",
+      "title_en": "Special experiences as a tourist",
+      "situation": "In a historic city you hire a local guide and ask about the fort, the museum and a local fair.",
+      "lines": [
+        {
+          "role": "tourist",
+          "hi": "नमस्कार! मैं इस शहर के प्रमुख ऐतिहासिक स्थलों को देखना चाहता हूँ। क्या आप मेरी सहायता कर सकते हैं?",
+          "roman": "Namaskaar! Main is shahar ke pramukh aitihaasik sthalon ko dekhnaa chaahtaa hoon. Kyaa aap meree sahaayataa kar sakte hain?",
+          "en": "Namaste! I would like to see the major historical sites in this city. Could you help me?",
+          "f": {
+            "hi": "नमस्कार! मैं इस शहर के प्रमुख ऐतिहासिक स्थलों को देखना चाहती हूँ। क्या आप मेरी सहायता कर सकते हैं?",
+            "roman": "Namaskaar! Main is shahar ke pramukh aitihaasik sthalon ko dekhnaa chaahtee hoon. Kyaa aap meree sahaayataa kar sakte hain?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "नमस्कार! अवश्य। मैं स्थानीय गाइड हूँ। यदि आप चाहें तो मैं आपको प्रमुख ऐतिहासिक स्थलों की यात्रा करा सकता हूँ।",
+          "roman": "Namaskaar! Avashya. Main sthaaneey guide hoon. Yadi aap chaahen to main aapko pramukh aitihaasik sthalon kee yaatraa karaa saktaa hoon.",
+          "en": "Namaste! Certainly. I am a local guide. If you wish, I can take you on a tour of the major historical sites."
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत अच्छा। मैं एक स्थानीय गाइड बुक करना चाहता हूँ। आपकी सेवाएँ कितने समय के लिए उपलब्ध हैं?",
+          "roman": "Bahut achchhaa. Main ek sthaaneey guide book karnaa chaahtaa hoon. Aapkee sevaaen kitne samay ke liye upalabdh hain?",
+          "en": "Very good. I would like to book a local guide. How long are your services available?",
+          "f": {
+            "hi": "बहुत अच्छा। मैं एक स्थानीय गाइड बुक करना चाहती हूँ। आपकी सेवाएँ कितने समय के लिए उपलब्ध हैं?",
+            "roman": "Bahut achchhaa. Main ek sthaaneey guide book karnaa chaahtee hoon. Aapkee sevaaen kitne samay ke liye upalabdh hain?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "मैं आधे दिन या पूरे दिन के लिए गाइड की सेवा देता हूँ। आप अपनी सुविधा के अनुसार समय चुन सकते हैं।",
+          "roman": "Main aadhe din yaa poore din ke liye guide kee sevaa detaa hoon. Aap apnee suvidhaa ke anusaar samay chun sakte hain.",
+          "en": "I provide guide services for half a day or a full day. You can choose a time according to your convenience.",
+          "f": {
+            "hi": "मैं आधे दिन या पूरे दिन के लिए गाइड की सेवा देता हूँ। आप अपनी सुविधा के अनुसार समय चुन सकती हैं।",
+            "roman": "Main aadhe din yaa poore din ke liye guide kee sevaa detaa hoon. Aap apnee suvidhaa ke anusaar samay chun saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "मैं आधे दिन की यात्रा करना चाहता हूँ। इस दौरान कौन-कौन से स्थान देखे जा सकते हैं?",
+          "roman": "Main aadhe din kee yaatraa karnaa chaahtaa hoon. Is dauraan kaun-kaun se sthaan dekhe jaa sakte hain?",
+          "en": "I would like to take a half-day tour. Which places can we see during this time?",
+          "f": {
+            "hi": "मैं आधे दिन की यात्रा करना चाहती हूँ। इस दौरान कौन-कौन से स्थान देखे जा सकते हैं?",
+            "roman": "Main aadhe din kee yaatraa karnaa chaahtee hoon. Is dauraan kaun-kaun se sthaan dekhe jaa sakte hain?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "हम पहले पुराने किले और उसके आसपास के ऐतिहासिक भवन देख सकते हैं। इसके बाद हम स्थानीय संग्रहालय जाएँगे।",
+          "roman": "Hum pehle puraane kile aur uske aaspaas ke aitihaasik bhavan dekh sakte hain. Iske baad hum sthaaneey sangrahaalay jaaenge.",
+          "en": "First, we can visit the old fort and the historical buildings around it. After that, we will visit the local museum.",
+          "gender_ok": true
+        },
+        {
+          "role": "tourist",
+          "hi": "इस किले के बारे में कुछ जानकारी दीजिए।",
+          "roman": "Is kile ke baare mein kuchh jaankaaree deejiye.",
+          "en": "Please tell me something about this fort."
+        },
+        {
+          "role": "guide",
+          "hi": "यह किला इस क्षेत्र के इतिहास और स्थापत्य कला की दृष्टि से बहुत महत्त्वपूर्ण है। यहाँ आपको पुराने भवन, शिलालेख और ऐतिहासिक वस्तुएँ देखने को मिलेंगी।",
+          "roman": "Yeh kilaa is kshetra ke itihaas aur sthaapatya kalaa kee drishti se bahut mahattvapoorn hai. Yahaan aapko puraane bhavan, shilaalekh aur aitihaasik vastuen dekhne ko milengee.",
+          "en": "This fort is very important from the point of view of the history and architecture of this region. Here you will see old buildings, inscriptions, and historical objects."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या मैं किले के अंदर फोटो ले सकता हूँ?",
+          "roman": "Kyaa main kile ke andar photo le saktaa hoon?",
+          "en": "Can I take photographs inside the fort?",
+          "f": {
+            "hi": "क्या मैं किले के अंदर फोटो ले सकती हूँ?",
+            "roman": "Kyaa main kile ke andar photo le saktee hoon?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "कुछ स्थानों पर फोटो लेने की अनुमति है, लेकिन कुछ हिस्सों में फोटोग्राफी प्रतिबंधित है। प्रवेश से पहले वहाँ लगे निर्देशों को देख लेना चाहिए।",
+          "roman": "Kuchh sthaanon par photo lene kee anumati hai, lekin kuchh hisson mein photography pratibandhit hai. Pravesh se pehle vahaan lage nirdeshon ko dekh lenaa chaahiye.",
+          "en": "Photography is allowed in some places, but it is restricted in certain sections. You should check the instructions displayed there before entering."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या फोटो लेने के लिए अलग से कोई शुल्क देना पड़ता है?",
+          "roman": "Kyaa photo lene ke liye alag se koee shulk denaa padtaa hai?",
+          "en": "Do I have to pay an additional fee for taking photographs?"
+        },
+        {
+          "role": "guide",
+          "hi": "कुछ ऐतिहासिक स्थलों और संग्रहालयों में फोटोग्राफी के लिए अलग शुल्क हो सकता है। टिकट लेते समय इसकी जानकारी मिल जाएगी।",
+          "roman": "Kuchh aitihaasik sthalon aur sangrahaalayon mein photography ke liye alag shulk ho saktaa hai. Ticket lete samay iskee jaankaaree mil jaaegee.",
+          "en": "Some historical sites and museums may charge a separate photography fee. You will get this information when you purchase the ticket."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या इस संग्रहालय में अंग्रेज़ी में भी जानकारी उपलब्ध है?",
+          "roman": "Kyaa is sangrahaalay mein Angrezee mein bhee jaankaaree upalabdh hai?",
+          "en": "Is information also available in English in this museum?"
+        },
+        {
+          "role": "guide",
+          "hi": "हाँ, कई वस्तुओं के बारे में हिंदी और अंग्रेज़ी दोनों भाषाओं में जानकारी दी गई है। यदि आपको किसी वस्तु के बारे में अधिक जानकारी चाहिए, तो संग्रहालय के कर्मचारी से पूछ सकते हैं।",
+          "roman": "Haan, kaee vastuon ke baare mein Hindee aur Angrezee donon bhaashaaon mein jaankaaree dee gaee hai. Yadi aapko kisee vastu ke baare mein adhik jaankaaree chaahiye, to sangrahaalay ke karmchaaree se poochh sakte hain.",
+          "en": "Yes, information about many objects is provided in both Hindi and English. If you need more information about any object, you can ask a member of the museum staff.",
+          "f": {
+            "hi": "हाँ, कई वस्तुओं के बारे में हिंदी और अंग्रेज़ी दोनों भाषाओं में जानकारी दी गई है। यदि आपको किसी वस्तु के बारे में अधिक जानकारी चाहिए, तो संग्रहालय के कर्मचारी से पूछ सकती हैं।",
+            "roman": "Haan, kaee vastuon ke baare mein Hindee aur Angrezee donon bhaashaaon mein jaankaaree dee gaee hai. Yadi aapko kisee vastu ke baare mein adhik jaankaaree chaahiye, to sangrahaalay ke karmchaaree se poochh saktee hain."
+          }
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या संग्रहालय में प्रवेश के लिए कोई विशेष नियम हैं?",
+          "roman": "Kyaa sangrahaalay mein pravesh ke liye koee vishesh niyam hain?",
+          "en": "Are there any special rules for entering the museum?"
+        },
+        {
+          "role": "guide",
+          "hi": "हाँ। यहाँ कुछ वस्तुओं को छूना मना है। तेज आवाज़ में बात करना और फ्लैश का इस्तेमाल करना भी कुछ स्थानों पर प्रतिबंधित है।",
+          "roman": "Haan. Yahaan kuchh vastuon ko chhoonaa manaa hai. Tez aavaaz mein baat karnaa aur flash kaa istemaal karnaa bhee kuchh sthaanon par pratibandhit hai.",
+          "en": "Yes. Touching some of the objects is prohibited here. Speaking loudly and using flash photography are also restricted in some areas."
+        },
+        {
+          "role": "tourist",
+          "hi": "समझ गया। क्या इस सप्ताह यहाँ कोई स्थानीय कार्यक्रम या मेला आयोजित हो रहा है?",
+          "roman": "Samajh gayaa. Kyaa is saptaah yahaan koee sthaaneey kaaryakram yaa melaa aayojit ho rahaa hai?",
+          "en": "I understand. Is there any local event or fair taking place here this week?",
+          "f": {
+            "hi": "समझ गई। क्या इस सप्ताह यहाँ कोई स्थानीय कार्यक्रम या मेला आयोजित हो रहा है?",
+            "roman": "Samajh gaee. Kyaa is saptaah yahaan koee sthaaneey kaaryakram yaa melaa aayojit ho rahaa hai?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "जी हाँ। इस सप्ताह शहर में एक पारंपरिक स्थानीय मेला आयोजित किया जा रहा है।",
+          "roman": "Jee haan. Is saptaah shahar mein ek paaramparik sthaaneey melaa aayojit kiyaa jaa rahaa hai.",
+          "en": "Yes. A traditional local fair is being held in the city this week."
+        },
+        {
+          "role": "tourist",
+          "hi": "वह मेला कहाँ और कब लगता है?",
+          "roman": "Voh melaa kahaan aur kab lagtaa hai?",
+          "en": "Where and when is the fair held?"
+        },
+        {
+          "role": "guide",
+          "hi": "मेला मुख्य बाजार के पास शाम चार बजे से शुरू होता है और रात तक चलता है।",
+          "roman": "Melaa mukhya baazaar ke paas shaam chaar baje se shuroo hotaa hai aur raat tak chaltaa hai.",
+          "en": "The fair starts near the main market at four in the afternoon and continues until night."
+        },
+        {
+          "role": "tourist",
+          "hi": "वहाँ क्या-क्या देखने को मिलेगा?",
+          "roman": "Vahaan kyaa-kyaa dekhne ko milegaa?",
+          "en": "What will I get to see there?"
+        },
+        {
+          "role": "guide",
+          "hi": "वहाँ स्थानीय हस्तशिल्प, पारंपरिक भोजन, लोक संगीत और सांस्कृतिक कार्यक्रम देखने को मिलेंगे।",
+          "roman": "Vahaan sthaaneey hastashilp, paaramparik bhojan, lok sangeet aur saanskritik kaaryakram dekhne ko milenge.",
+          "en": "You will see local handicrafts, traditional food, folk music, and cultural programmes there."
+        },
+        {
+          "role": "tourist",
+          "hi": "क्या वहाँ जाने के लिए कोई प्रवेश शुल्क है?",
+          "roman": "Kyaa vahaan jaane ke liye koee pravesh shulk hai?",
+          "en": "Is there any entrance fee to visit the fair?"
+        },
+        {
+          "role": "guide",
+          "hi": "नहीं, मेले में प्रवेश निःशुल्क है। हालांकि, खाने-पीने और कुछ वस्तुओं की खरीदारी के लिए अलग से भुगतान करना होगा।",
+          "roman": "Naheen, mele mein pravesh nihshulk hai. Haalaanki, khaane-peene aur kuchh vastuon kee khareedaaree ke liye alag se bhugtaan karnaa hogaa.",
+          "en": "No, entry to the fair is free. However, you will have to pay separately for food and for purchasing some items."
+        },
+        {
+          "role": "tourist",
+          "hi": "बहुत अच्छा! मैं इस मेले में भी जाना चाहूँगा। क्या आप वहाँ भी मेरे साथ चलेंगे?",
+          "roman": "Bahut achchhaa! Main is mele mein bhee jaanaa chaahoongaa. Kyaa aap vahaan bhee mere saath chalenge?",
+          "en": "Very good! I would also like to visit this fair. Will you come with me there as well?",
+          "f": {
+            "hi": "बहुत अच्छा! मैं इस मेले में भी जाना चाहूँगी। क्या आप वहाँ भी मेरे साथ चलेंगे?",
+            "roman": "Bahut achchhaa! Main is mele mein bhee jaanaa chaahoongee. Kyaa aap vahaan bhee mere saath chalenge?"
+          }
+        },
+        {
+          "role": "guide",
+          "hi": "अवश्य। इससे आपको स्थानीय संस्कृति और जीवन-शैली को करीब से समझने का अवसर मिलेगा।",
+          "roman": "Avashya. Isse aapko sthaaneey sanskriti aur jeevan-shailee ko kareeb se samajhne kaa avsar milegaa.",
+          "en": "Certainly. This will give you an opportunity to understand the local culture and way of life more closely."
+        },
+        {
+          "role": "tourist",
+          "hi": "आपकी सहायता के लिए धन्यवाद। आपकी जानकारी से मेरी यात्रा और भी रोचक हो जाएगी।",
+          "roman": "Aapkee sahaayataa ke liye dhanyavaad. Aapkee jaankaaree se meree yaatraa aur bhee rochak ho jaaegee.",
+          "en": "Thank you for your help. Your information will make my trip even more interesting."
+        },
+        {
+          "role": "guide",
+          "hi": "आपका स्वागत है। मुझे खुशी है कि आपको यहाँ की ऐतिहासिक और सांस्कृतिक विरासत में रुचि है।",
+          "roman": "Aapkaa svaagat hai. Mujhe khushee hai ki aapko yahaan kee aitihaasik aur saanskritik viraasat mein ruchi hai.",
+          "en": "You are welcome. I am glad that you are interested in the historical and cultural heritage of this place."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "id": "d08",
+  "day": 8,
+  "status": "review",
+  "title_hi": "टैक्सी और ऑटो-रिक्शा",
+  "title_en": "Taxi and auto-rickshaw",
+  "roles": {
+    "passenger": {
+      "hi": "यात्री",
+      "en": "Passenger",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "driver": {
+      "hi": "चालक",
+      "en": "Driver",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "किराया",
+      "roman": "kiraayaa",
+      "en": "fare"
+    },
+    {
+      "hi": "के अनुसार",
+      "roman": "ke anusaar",
+      "en": "according to"
+    },
+    {
+      "hi": "बैठिए",
+      "roman": "baithiye",
+      "en": "please sit / get in"
+    },
+    {
+      "hi": "थोड़ा कम",
+      "roman": "thodaa kam",
+      "en": "a little less"
+    },
+    {
+      "hi": "भुगतान",
+      "roman": "bhugtaan",
+      "en": "payment"
+    },
+    {
+      "hi": "पहुँच",
+      "roman": "pahunch",
+      "en": "arrive (पहुँचना)"
+    },
+    {
+      "hi": "पता",
+      "roman": "pataa",
+      "en": "address"
+    },
+    {
+      "hi": "रास्ता",
+      "roman": "raastaa",
+      "en": "way, route"
+    },
+    {
+      "hi": "टैक्सी",
+      "roman": "taxi",
+      "en": "taxi"
+    },
+    {
+      "hi": "कैब",
+      "roman": "cab",
+      "en": "cab"
+    },
+    {
+      "hi": "ऑटो-रिक्शा",
+      "roman": "auto-rickshaw",
+      "en": "auto-rickshaw"
+    },
+    {
+      "hi": "चालक",
+      "roman": "chaalak",
+      "en": "driver"
+    },
+    {
+      "hi": "यात्री",
+      "roman": "yaatree",
+      "en": "passenger"
+    },
+    {
+      "hi": "बुकिंग",
+      "roman": "booking",
+      "en": "booking"
+    },
+    {
+      "hi": "मीटर",
+      "roman": "meter",
+      "en": "meter"
+    },
+    {
+      "hi": "मुख्य सड़क",
+      "roman": "mukhya sadak",
+      "en": "main road"
+    },
+    {
+      "hi": "ट्रैफ़िक",
+      "roman": "traffic",
+      "en": "traffic"
+    },
+    {
+      "hi": "गंतव्य",
+      "roman": "gantavya",
+      "en": "destination"
+    },
+    {
+      "hi": "ऑनलाइन भुगतान",
+      "roman": "online bhugtaan",
+      "en": "online payment"
+    },
+    {
+      "hi": "नकद",
+      "roman": "naqad",
+      "en": "cash"
+    },
+    {
+      "hi": "रुकना",
+      "roman": "ruknaa",
+      "en": "to stop"
+    },
+    {
+      "hi": "इंतज़ार करना",
+      "roman": "intazaar karnaa",
+      "en": "to wait"
+    },
+    {
+      "hi": "सामान",
+      "roman": "saamaan",
+      "en": "luggage"
+    },
+    {
+      "hi": "बैग",
+      "roman": "bag",
+      "en": "bag"
+    },
+    {
+      "hi": "धन्यवाद",
+      "roman": "dhanyavaad",
+      "en": "thank you"
+    },
+    {
+      "hi": "शुभ यात्रा",
+      "roman": "shubh yaatraa",
+      "en": "have a pleasant journey"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d08s1",
+      "title_hi": "टैक्सी लेना",
+      "title_en": "Taking a taxi",
+      "situation": "You hail a taxi to India Gate.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "नमस्कार! मुझे इंडिया गेट जाना है।",
+          "roman": "Namaskaar! Mujhe India Gate jaanaa hai.",
+          "en": "Hello! I want to go to India Gate."
+        },
+        {
+          "role": "driver",
+          "hi": "आइए, बैठिए।",
+          "roman": "Aaiye, baithiye.",
+          "en": "Please get in."
+        },
+        {
+          "role": "passenger",
+          "hi": "कितना किराया लगेगा?",
+          "roman": "Kitnaa kiraayaa lagegaa?",
+          "en": "How much will the fare be?"
+        },
+        {
+          "role": "driver",
+          "hi": "मीटर के अनुसार किराया लगेगा।",
+          "roman": "Meter ke anusaar kiraayaa lagegaa.",
+          "en": "The fare will be by the meter."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है।",
+          "roman": "Theek hai.",
+          "en": "All right."
+        }
+      ]
+    },
+    {
+      "id": "d08s2",
+      "title_hi": "ऑटो-रिक्शा लेना",
+      "title_en": "Taking an auto-rickshaw",
+      "situation": "You ask an auto driver to take you to the railway station.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या आप रेलवे स्टेशन चलेंगे?",
+          "roman": "Kyaa aap railway station chalenge?",
+          "en": "Will you go to the railway station?"
+        },
+        {
+          "role": "driver",
+          "hi": "जी हाँ, बैठ जाइए।",
+          "roman": "Jee haan, baith jaaiye.",
+          "en": "Yes, please get in."
+        },
+        {
+          "role": "passenger",
+          "hi": "कितना किराया होगा?",
+          "roman": "Kitnaa kiraayaa hogaa?",
+          "en": "How much will the fare be?"
+        },
+        {
+          "role": "driver",
+          "hi": "दो सौ रुपये।",
+          "roman": "Do sau rupaye.",
+          "en": "Two hundred rupees."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है।",
+          "roman": "Theek hai.",
+          "en": "All right."
+        }
+      ]
+    },
+    {
+      "id": "d08s3",
+      "title_hi": "किराया तय करना",
+      "title_en": "Agreeing on the fare",
+      "situation": "You ask the driver to lower the fare a little.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "किराया थोड़ा कम कर दीजिए।",
+          "roman": "Kiraayaa thodaa kam kar deejiye.",
+          "en": "Could you reduce the fare a little?"
+        },
+        {
+          "role": "driver",
+          "hi": "ठीक है, एक सौ अस्सी रुपये दे दीजिए।",
+          "roman": "Theek hai, ek sau assee rupaye de deejiye.",
+          "en": "All right. Please pay one hundred and eighty rupees."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s4",
+      "title_hi": "यात्रा पूरी करना",
+      "title_en": "Arriving and paying",
+      "situation": "You reach your stop and pay online.",
+      "lines": [
+        {
+          "role": "driver",
+          "hi": "हम पहुँच गए हैं।",
+          "roman": "Hum pahunch gae hain.",
+          "en": "We have arrived."
+        },
+        {
+          "role": "passenger",
+          "hi": "कितना किराया हुआ?",
+          "roman": "Kitnaa kiraayaa huaa?",
+          "en": "How much is the fare?"
+        },
+        {
+          "role": "driver",
+          "hi": "एक सौ पचास रुपये।",
+          "roman": "Ek sau pachaas rupaye.",
+          "en": "One hundred and fifty rupees."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या मैं ऑनलाइन भुगतान कर सकता हूँ?",
+          "roman": "Kyaa main online bhugtaan kar saktaa hoon?",
+          "en": "Can I pay online?",
+          "f": {
+            "hi": "क्या मैं ऑनलाइन भुगतान कर सकती हूँ?",
+            "roman": "Kyaa main online bhugtaan kar saktee hoon?"
+          }
+        },
+        {
+          "role": "driver",
+          "hi": "जी हाँ।",
+          "roman": "Jee haan.",
+          "en": "Yes, you can."
+        },
+        {
+          "role": "passenger",
+          "hi": "भुगतान हो गया।",
+          "roman": "Bhugtaan ho gayaa.",
+          "en": "The payment has gone through."
+        },
+        {
+          "role": "driver",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s5",
+      "title_hi": "चालक रास्ता नहीं जानता",
+      "title_en": "When the driver doesn't know the way",
+      "situation": "The driver isn't sure of the address, so you guide him.",
+      "lines": [
+        {
+          "role": "driver",
+          "hi": "मुझे यह पता ठीक से नहीं मालूम।",
+          "roman": "Mujhe yeh pataa theek se naheen maaloom.",
+          "en": "I don't know this address very well."
+        },
+        {
+          "role": "passenger",
+          "hi": "कोई बात नहीं। मैं आपको रास्ता बता देता हूँ।",
+          "roman": "Koee baat naheen. Main aapko raastaa bataa detaa hoon.",
+          "en": "That's all right. I'll show you the way.",
+          "f": {
+            "hi": "कोई बात नहीं। मैं आपको रास्ता बता देती हूँ।",
+            "roman": "Koee baat naheen. Main aapko raastaa bataa detee hoon."
+          }
+        },
+        {
+          "role": "driver",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s6",
+      "title_hi": "ऑनलाइन कैब बुक करना",
+      "title_en": "Meeting your online cab",
+      "situation": "Your booked cab arrives and the driver checks the booking name.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मैंने ऑनलाइन कैब बुक की है।",
+          "roman": "Mainne online cab book kee hai.",
+          "en": "I have booked a cab online."
+        },
+        {
+          "role": "driver",
+          "hi": "आपका नाम क्या है?",
+          "roman": "Aapkaa naam kyaa hai?",
+          "en": "What is your name?"
+        },
+        {
+          "role": "passenger",
+          "hi": "मेरा नाम डेविड है।",
+          "roman": "Meraa naam David hai.",
+          "en": "My name is David."
+        },
+        {
+          "role": "driver",
+          "hi": "जी, आपकी ही बुकिंग है। बैठ जाइए।",
+          "roman": "Jee, aapkee hee booking hai. Baith jaaiye.",
+          "en": "Yes, this booking is for you. Please get in."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s7",
+      "title_hi": "मीटर से चलने के लिए कहना",
+      "title_en": "Asking for the meter",
+      "situation": "You ask the driver to charge by the meter.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या आप मीटर से चलेंगे?",
+          "roman": "Kyaa aap meter se chalenge?",
+          "en": "Will you go by the meter?"
+        },
+        {
+          "role": "driver",
+          "hi": "जी हाँ, बिल्कुल।",
+          "roman": "Jee haan, bilkul.",
+          "en": "Yes, certainly."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s8",
+      "title_hi": "रास्ते में रुकना",
+      "title_en": "Stopping on the way",
+      "situation": "You ask the driver to wait for you for two minutes.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "कृपया यहाँ दो मिनट रुकिए।",
+          "roman": "Kripyaa yahaan do minute rukiye.",
+          "en": "Please stop here for two minutes."
+        },
+        {
+          "role": "driver",
+          "hi": "ठीक है, मैं यहीं इंतज़ार करता हूँ।",
+          "roman": "Theek hai, main yaheen intazaar kartaa hoon.",
+          "en": "All right. I'll wait here."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s9",
+      "title_hi": "गाड़ी खराब हो जाना",
+      "title_en": "The car breaks down",
+      "situation": "The car stops working on the way and the driver arranges another one.",
+      "lines": [
+        {
+          "role": "driver",
+          "hi": "गाड़ी अचानक बंद हो गई है।",
+          "roman": "Gaadee achaanak band ho gaee hai.",
+          "en": "The vehicle has suddenly broken down."
+        },
+        {
+          "role": "passenger",
+          "hi": "अब क्या करेंगे?",
+          "roman": "Ab kyaa karenge?",
+          "en": "What shall we do now?"
+        },
+        {
+          "role": "driver",
+          "hi": "मैं दूसरी गाड़ी बुला देता हूँ।",
+          "roman": "Main doosree gaadee bulaa detaa hoon.",
+          "en": "I'll arrange another vehicle."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है।",
+          "roman": "Theek hai.",
+          "en": "All right."
+        }
+      ]
+    },
+    {
+      "id": "d08s10",
+      "title_hi": "ज़्यादा किराया माँगना",
+      "title_en": "Being asked for too much",
+      "situation": "The driver asks for more than the fare shown in the app.",
+      "lines": [
+        {
+          "role": "driver",
+          "hi": "पाँच सौ रुपये दीजिए।",
+          "roman": "Paanch sau rupaye deejiye.",
+          "en": "Please pay five hundred rupees."
+        },
+        {
+          "role": "passenger",
+          "hi": "लेकिन ऐप पर तो तीन सौ रुपये दिख रहे हैं।",
+          "roman": "Lekin app par to teen sau rupaye dikh rahe hain.",
+          "en": "But the app shows three hundred rupees."
+        },
+        {
+          "role": "driver",
+          "hi": "ठीक है, आप वही दे दीजिए।",
+          "roman": "Theek hai, aap vahee de deejiye.",
+          "en": "All right. You may pay that amount."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s11",
+      "title_hi": "सामान गाड़ी में छूट जाना",
+      "title_en": "Leaving your bag in the car",
+      "situation": "You realise you have left your bag in the car.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरा बैग गाड़ी में रह गया है।",
+          "roman": "Meraa bag gaadee mein rah gayaa hai.",
+          "en": "I left my bag in the vehicle."
+        },
+        {
+          "role": "driver",
+          "hi": "चिंता मत कीजिए। देखिए, बैग पीछे की सीट पर रखा है।",
+          "roman": "Chintaa mat keejiye. Dekhiye, bag peechhe kee seat par rakhaa hai.",
+          "en": "Don't worry. Your bag is on the back seat."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "d08s12",
+      "title_hi": "मोबाइल गुम हो जाना",
+      "title_en": "Losing your phone",
+      "situation": "You can't find your phone in the car.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरा मोबाइल नहीं मिल रहा है।",
+          "roman": "Meraa mobile naheen mil rahaa hai.",
+          "en": "I can't find my mobile phone."
+        },
+        {
+          "role": "driver",
+          "hi": "क्या आपने सीट के नीचे देखा?",
+          "roman": "Kyaa aapne seat ke neeche dekhaa?",
+          "en": "Have you looked under the seat?"
+        },
+        {
+          "role": "passenger",
+          "hi": "जी, मिल गया। धन्यवाद।",
+          "roman": "Jee, mil gayaa. Dhanyavaad.",
+          "en": "Yes, I found it. Thank you."
+        },
+        {
+          "role": "driver",
+          "hi": "कोई बात नहीं।",
+          "roman": "Koee baat naheen.",
+          "en": "You're welcome."
+        }
+      ]
+    },
+    {
+      "id": "d08s13",
+      "title_hi": "रास्ता बदलना",
+      "title_en": "Changing the route",
+      "situation": "The road is jammed, so you ask for another route.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "इस रास्ते पर बहुत ट्रैफ़िक है। क्या कोई दूसरा रास्ता है?",
+          "roman": "Is raaste par bahut traffic hai. Kyaa koee doosraa raastaa hai?",
+          "en": "There is a lot of traffic on this road. Is there another route?"
+        },
+        {
+          "role": "driver",
+          "hi": "जी हाँ, एक दूसरा रास्ता है।",
+          "roman": "Jee haan, ek doosraa raastaa hai.",
+          "en": "Yes, there is another route."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है, उसी रास्ते से चलिए।",
+          "roman": "Theek hai, usee raaste se chaliye.",
+          "en": "All right. Please take that route."
+        }
+      ]
+    },
+    {
+      "id": "d08s14",
+      "title_hi": "तबीयत खराब होना",
+      "title_en": "Feeling unwell",
+      "situation": "You feel ill during the ride and ask to go to a hospital.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी तबीयत ठीक नहीं लग रही है।",
+          "roman": "Meree tabeeyat theek naheen lag rahee hai.",
+          "en": "I'm not feeling well."
+        },
+        {
+          "role": "driver",
+          "hi": "क्या मैं आपको अस्पताल ले चलूँ?",
+          "roman": "Kyaa main aapko aspataal le chaloon?",
+          "en": "Shall I take you to a hospital?"
+        },
+        {
+          "role": "passenger",
+          "hi": "जी, कृपया जल्दी चलिए।",
+          "roman": "Jee, kripyaa jaldee chaliye.",
+          "en": "Yes, please. Hurry."
+        },
+        {
+          "role": "driver",
+          "hi": "घबराइए नहीं, हम अभी पहुँच जाते हैं।",
+          "roman": "Ghabraaiye naheen, hum abhee pahunch jaate hain.",
+          "en": "Don't worry. We'll be there soon."
+        }
+      ]
+    },
+    {
+      "id": "d08s15",
+      "title_hi": "जल्दी पहुँचने का अनुरोध",
+      "title_en": "Asking the driver to hurry",
+      "situation": "You are about to miss your train and ask the driver to go faster.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी ट्रेन छूटने वाली है। कृपया जल्दी चलिए।",
+          "roman": "Meree train chhootne vaalee hai. Kripyaa jaldee chaliye.",
+          "en": "My train is about to leave. Please drive quickly."
+        },
+        {
+          "role": "driver",
+          "hi": "मैं पूरी कोशिश करूँगा, लेकिन सुरक्षित तरीके से चलाऊँगा।",
+          "roman": "Main pooree koshish karoongaa, lekin surakshit tareeke se chalaaoongaa.",
+          "en": "I'll do my best, but I'll drive safely."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    }
+  ]
+}

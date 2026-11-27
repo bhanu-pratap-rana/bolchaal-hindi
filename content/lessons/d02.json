@@ -1,0 +1,535 @@
+{
+  "id": "d02",
+  "day": 2,
+  "status": "review",
+  "title_hi": "एयरपोर्ट पर प्रस्थान",
+  "title_en": "Departing from the airport",
+  "roles": {
+    "passenger": {
+      "hi": "यात्री",
+      "en": "Passenger",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "staff": {
+      "hi": "कर्मचारी",
+      "en": "Airport staff",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_2"
+      }
+    },
+    "security_officer": {
+      "hi": "सुरक्षा अधिकारी",
+      "en": "Security officer",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    },
+    "announcer": {
+      "hi": "घोषणा",
+      "en": "Announcement",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_1"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "प्रस्थान",
+      "roman": "prasthaan",
+      "en": "departure"
+    },
+    {
+      "hi": "आगमन",
+      "roman": "aagman",
+      "en": "arrival"
+    },
+    {
+      "hi": "बोर्डिंग पास",
+      "roman": "boarding pass",
+      "en": "boarding pass"
+    },
+    {
+      "hi": "चेक-इन",
+      "roman": "check-in",
+      "en": "check-in"
+    },
+    {
+      "hi": "सुरक्षा जाँच",
+      "roman": "surakshaa jaanch",
+      "en": "security check"
+    },
+    {
+      "hi": "प्रस्थान द्वार/गेट",
+      "roman": "prasthaan dvaar / gate",
+      "en": "boarding gate"
+    },
+    {
+      "hi": "अतिरिक्त सामान",
+      "roman": "atirikt saamaan",
+      "en": "excess baggage"
+    },
+    {
+      "hi": "सामान",
+      "roman": "saamaan",
+      "en": "baggage, luggage"
+    },
+    {
+      "hi": "उड़ान",
+      "roman": "udaan",
+      "en": "flight"
+    },
+    {
+      "hi": "विलंब",
+      "roman": "vilamb",
+      "en": "delay"
+    },
+    {
+      "hi": "समय पर",
+      "roman": "samay par",
+      "en": "on time"
+    },
+    {
+      "hi": "घोषणा",
+      "roman": "ghoshnaa",
+      "en": "announcement"
+    },
+    {
+      "hi": "व्हीलचेयर",
+      "roman": "wheelchair",
+      "en": "wheelchair"
+    },
+    {
+      "hi": "चिकित्सा सहायता",
+      "roman": "chikitsaa sahaayataa",
+      "en": "medical assistance"
+    },
+    {
+      "hi": "पासपोर्ट",
+      "roman": "passport",
+      "en": "passport"
+    },
+    {
+      "hi": "टिकट",
+      "roman": "ticket",
+      "en": "ticket"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d02s1",
+      "title_hi": "प्रस्थान टर्मिनल का पता पूछना",
+      "title_en": "Finding the departure terminal",
+      "situation": "You arrive at the airport and ask a staff member where to go for your flight to Mumbai.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "नमस्कार, प्रस्थान टर्मिनल कहाँ है?",
+          "roman": "Namaskaar, prasthaan terminal kahaan hai?",
+          "en": "Excuse me, where is the departure terminal?"
+        },
+        {
+          "role": "staff",
+          "hi": "आपका गंतव्य कौन-सा है?",
+          "roman": "Aapkaa gantavya kaun-saa hai?",
+          "en": "What is your destination?"
+        },
+        {
+          "role": "passenger",
+          "hi": "मैं मुंबई जा रहा हूँ।",
+          "roman": "Main Mumbaee jaa rahaa hoon.",
+          "en": "I am traveling to Mumbai.",
+          "f": {
+            "hi": "मैं मुंबई जा रही हूँ।",
+            "roman": "Main Mumbaee jaa rahee hoon."
+          }
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया टर्मिनल–2 में जाइए।",
+          "roman": "Kripyaa terminal do mein jaaiye.",
+          "en": "Please go to Terminal 2."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "आपकी यात्रा शुभ हो।",
+          "roman": "Aapkee yaatraa shubh ho.",
+          "en": "Have a pleasant journey."
+        }
+      ]
+    },
+    {
+      "id": "d02s2",
+      "title_hi": "चेक-इन काउंटर पर",
+      "title_en": "At the check-in counter",
+      "situation": "You check in for your flight and hand over one suitcase.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "नमस्कार, मुझे चेक-इन करना है।",
+          "roman": "Namaskaar, mujhe check-in karnaa hai.",
+          "en": "Hello, I would like to check in."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया अपना पासपोर्ट और टिकट दीजिए।",
+          "roman": "Kripyaa apnaa passport aur ticket deejiye.",
+          "en": "May I have your passport and ticket, please?"
+        },
+        {
+          "role": "passenger",
+          "hi": "यह लीजिए।",
+          "roman": "Yeh leejiye.",
+          "en": "Here they are."
+        },
+        {
+          "role": "staff",
+          "hi": "क्या आपके पास कोई चेक-इन सामान है?",
+          "roman": "Kyaa aapke paas koee check-in saamaan hai?",
+          "en": "Do you have any checked baggage?"
+        },
+        {
+          "role": "passenger",
+          "hi": "जी, एक सूटकेस है।",
+          "roman": "Jee, ek suitcase hai.",
+          "en": "Yes, I have one suitcase."
+        },
+        {
+          "role": "staff",
+          "hi": "आपका बोर्डिंग पास तैयार है।",
+          "roman": "Aapkaa boarding pass taiyaar hai.",
+          "en": "Your boarding pass is ready."
+        }
+      ]
+    },
+    {
+      "id": "d02s3",
+      "title_hi": "सीट बदलने का अनुरोध",
+      "title_en": "Asking for a window seat",
+      "situation": "You ask the check-in staff for a window seat.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "क्या मुझे खिड़की वाली सीट मिल सकती है?",
+          "roman": "Kyaa mujhe khidkee vaalee seat mil saktee hai?",
+          "en": "Could I have a window seat, please?"
+        },
+        {
+          "role": "staff",
+          "hi": "मैं देखता हूँ।",
+          "roman": "Main dekhtaa hoon.",
+          "en": "Let me check."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "जी, एक सीट उपलब्ध है।",
+          "roman": "Jee, ek seat uplabdh hai.",
+          "en": "Yes, one is available."
+        },
+        {
+          "role": "passenger",
+          "hi": "बहुत धन्यवाद।",
+          "roman": "Bahut dhanyavaad.",
+          "en": "Thank you very much."
+        }
+      ]
+    },
+    {
+      "id": "d02s4",
+      "title_hi": "अतिरिक्त सामान का शुल्क",
+      "title_en": "Paying for excess baggage",
+      "situation": "Your baggage is over the weight limit and you ask how much to pay.",
+      "lines": [
+        {
+          "role": "staff",
+          "hi": "आपका सामान निर्धारित सीमा से अधिक है।",
+          "roman": "Aapkaa saamaan nirdhaarit seemaa se adhik hai.",
+          "en": "Your baggage exceeds the allowed weight limit."
+        },
+        {
+          "role": "passenger",
+          "hi": "कितना अतिरिक्त वजन है?",
+          "roman": "Kitnaa atirikt vajan hai?",
+          "en": "How much extra weight do I have?"
+        },
+        {
+          "role": "staff",
+          "hi": "चार किलोग्राम।",
+          "roman": "Chaar kilogram.",
+          "en": "You have four kilograms of excess baggage."
+        },
+        {
+          "role": "passenger",
+          "hi": "मुझे कितना शुल्क देना होगा?",
+          "roman": "Mujhe kitnaa shulk denaa hogaa?",
+          "en": "How much do I need to pay?"
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया भुगतान काउंटर पर शुल्क जमा कर दीजिए।",
+          "roman": "Kripyaa bhugtaan counter par shulk jamaa kar deejiye.",
+          "en": "Please pay the excess baggage fee at the payment counter."
+        }
+      ]
+    },
+    {
+      "id": "d02s5",
+      "title_hi": "सुरक्षा जाँच",
+      "title_en": "Security check",
+      "situation": "A security officer tells you what to put in the trays.",
+      "lines": [
+        {
+          "role": "security_officer",
+          "hi": "कृपया अपना लैपटॉप और मोबाइल अलग ट्रे में रखिए।",
+          "roman": "Kripyaa apnaa laptop aur mobile alag tray mein rakhiye.",
+          "en": "Please place your laptop and mobile phone in a separate tray."
+        },
+        {
+          "role": "passenger",
+          "hi": "जी।",
+          "roman": "Jee.",
+          "en": "Certainly."
+        },
+        {
+          "role": "security_officer",
+          "hi": "अपनी जेब की सभी धातु की वस्तुएँ भी निकाल दीजिए।",
+          "roman": "Apnee jeb kee sabhee dhaatu kee vastuen bhee nikaal deejiye.",
+          "en": "Please remove all metal items from your pockets."
+        },
+        {
+          "role": "passenger",
+          "hi": "ठीक है।",
+          "roman": "Theek hai.",
+          "en": "Okay."
+        },
+        {
+          "role": "security_officer",
+          "hi": "धन्यवाद, अब आप आगे जा सकते हैं।",
+          "roman": "Dhanyavaad, ab aap aage jaa sakte hain.",
+          "en": "Thank you. You may proceed now.",
+          "f": {
+            "hi": "धन्यवाद, अब आप आगे जा सकती हैं।",
+            "roman": "Dhanyavaad, ab aap aage jaa saktee hain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d02s6",
+      "title_hi": "बोर्डिंग पास खो जाना",
+      "title_en": "Lost boarding pass",
+      "situation": "You have lost your boarding pass and ask for a new one.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरा बोर्डिंग पास खो गया है।",
+          "roman": "Meraa boarding pass kho gayaa hai.",
+          "en": "I have lost my boarding pass."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया अपना पासपोर्ट दिखाइए।",
+          "roman": "Kripyaa apnaa passport dikhaaiye.",
+          "en": "Please show me your passport."
+        },
+        {
+          "role": "passenger",
+          "hi": "यह लीजिए।",
+          "roman": "Yeh leejiye.",
+          "en": "Here it is."
+        },
+        {
+          "role": "staff",
+          "hi": "मैं नया बोर्डिंग पास जारी कर देता हूँ।",
+          "roman": "Main nayaa boarding pass jaaree kar detaa hoon.",
+          "en": "I will issue a new boarding pass for you."
+        }
+      ]
+    },
+    {
+      "id": "d02s7",
+      "title_hi": "उड़ान में देरी",
+      "title_en": "Flight delay",
+      "situation": "You ask when your flight will leave and learn it is delayed.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी उड़ान कब रवाना होगी?",
+          "roman": "Meree udaan kab ravaanaa hogee?",
+          "en": "When will my flight depart?"
+        },
+        {
+          "role": "staff",
+          "hi": "उड़ान लगभग एक घंटे विलंब से चलेगी।",
+          "roman": "Udaan lagbhag ek ghante vilamb se chalegee.",
+          "en": "Your flight has been delayed by about one hour."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या कोई नई सूचना मिलेगी?",
+          "roman": "Kyaa koee naee soochnaa milegee?",
+          "en": "Will there be any further updates?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी, घोषणा कर दी जाएगी।",
+          "roman": "Jee, ghoshnaa kar dee jaaegee.",
+          "en": "Yes, an announcement will be made."
+        }
+      ]
+    },
+    {
+      "id": "d02s8",
+      "title_hi": "गेट का पता पूछना",
+      "title_en": "Finding the boarding gate",
+      "situation": "You ask which gate your flight leaves from and how to get there.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी उड़ान का गेट कौन-सा है?",
+          "roman": "Meree udaan kaa gate kaun-saa hai?",
+          "en": "Which gate is my flight departing from?"
+        },
+        {
+          "role": "staff",
+          "hi": "आपका गेट संख्या 18 है।",
+          "roman": "Aapkaa gate sankhyaa athaarah hai.",
+          "en": "Your flight will depart from Gate 18."
+        },
+        {
+          "role": "passenger",
+          "hi": "वहाँ कैसे जाऊँ?",
+          "roman": "Vahaan kaise jaaoon?",
+          "en": "How do I get there?"
+        },
+        {
+          "role": "staff",
+          "hi": "सीधे जाइए और दाईं ओर मुड़ जाइए।",
+          "roman": "Seedhe jaaiye aur daaeen or mud jaaiye.",
+          "en": "Go straight ahead and then turn right."
+        }
+      ]
+    },
+    {
+      "id": "d02s9",
+      "title_hi": "व्हीलचेयर या विशेष सहायता",
+      "title_en": "Asking for a wheelchair",
+      "situation": "You need a wheelchair to reach the boarding gate.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मुझे व्हीलचेयर की आवश्यकता है।",
+          "roman": "Mujhe wheelchair kee aavashyaktaa hai.",
+          "en": "I need a wheelchair, please."
+        },
+        {
+          "role": "staff",
+          "hi": "अवश्य। मैं तुरंत व्यवस्था करता हूँ।",
+          "roman": "Avashya. Main turant vyavasthaa kartaa hoon.",
+          "en": "Certainly. I will arrange one for you immediately."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        },
+        {
+          "role": "staff",
+          "hi": "हमारा कर्मचारी आपको बोर्डिंग गेट तक ले जाएगा।",
+          "roman": "Hamaaraa karmchaaree aapko boarding gate tak le jaaegaa.",
+          "en": "One of our staff members will assist you to the boarding gate."
+        }
+      ]
+    },
+    {
+      "id": "d02s10",
+      "title_hi": "स्वास्थ्य संबंधी समस्या",
+      "title_en": "Feeling unwell",
+      "situation": "You feel dizzy at the airport and tell a staff member.",
+      "lines": [
+        {
+          "role": "passenger",
+          "hi": "मेरी तबीयत ठीक नहीं लग रही है।",
+          "roman": "Meree tabeeyat theek naheen lag rahee hai.",
+          "en": "I am not feeling well."
+        },
+        {
+          "role": "staff",
+          "hi": "आपको क्या परेशानी है?",
+          "roman": "Aapko kyaa pareshaanee hai?",
+          "en": "What seems to be the problem?"
+        },
+        {
+          "role": "passenger",
+          "hi": "मुझे चक्कर आ रहे हैं।",
+          "roman": "Mujhe chakkar aa rahe hain.",
+          "en": "I feel dizzy."
+        },
+        {
+          "role": "staff",
+          "hi": "कृपया बैठिए। मैं चिकित्सा दल को बुलाता हूँ।",
+          "roman": "Kripyaa baithiye. Main chikitsaa dal ko bulaataa hoon.",
+          "en": "Please have a seat. I will call the medical team."
+        }
+      ]
+    },
+    {
+      "id": "d02s11",
+      "title_hi": "अंतिम बोर्डिंग घोषणा",
+      "title_en": "Final boarding call",
+      "situation": "You hear the final boarding announcement and check with a staff member.",
+      "lines": [
+        {
+          "role": "announcer",
+          "hi": "यात्रियों से अनुरोध है कि वे तुरंत बोर्डिंग गेट संख्या 12 पर पहुँचें।",
+          "roman": "Yaatriyon se anurodh hai ki ve turant boarding gate sankhyaa baarah par pahunchen.",
+          "en": "Passengers are requested to proceed immediately to Boarding Gate 12."
+        },
+        {
+          "role": "passenger",
+          "hi": "क्या बोर्डिंग शुरू हो गई है?",
+          "roman": "Kyaa boarding shuroo ho gaee hai?",
+          "en": "Has boarding started?"
+        },
+        {
+          "role": "staff",
+          "hi": "जी हाँ, कृपया शीघ्र आइए।",
+          "roman": "Jee haan, kripyaa sheeghra aaiye.",
+          "en": "Yes, it has. Please proceed quickly."
+        },
+        {
+          "role": "passenger",
+          "hi": "धन्यवाद।",
+          "roman": "Dhanyavaad.",
+          "en": "Thank you."
+        }
+      ]
+    }
+  ]
+}

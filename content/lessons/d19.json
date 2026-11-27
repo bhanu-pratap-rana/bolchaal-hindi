@@ -1,0 +1,381 @@
+{
+  "id": "d19",
+  "day": 19,
+  "status": "review",
+  "title_hi": "भारतीय परिवार के घर अतिथि बनना",
+  "title_en": "Being a guest in an Indian home",
+  "roles": {
+    "student": {
+      "hi": "विद्यार्थी",
+      "en": "Student",
+      "learner": true,
+      "grammar": "learner",
+      "voice": {
+        "m": "male_1",
+        "f": "female_1"
+      }
+    },
+    "friend": {
+      "hi": "मित्र",
+      "en": "Friend",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_1",
+        "f": "male_2"
+      }
+    },
+    "mother": {
+      "hi": "माता",
+      "en": "Mother",
+      "learner": false,
+      "grammar": "f",
+      "voice": {
+        "m": "female_2",
+        "f": "female_2"
+      }
+    },
+    "father": {
+      "hi": "पिता",
+      "en": "Father",
+      "learner": false,
+      "grammar": "m",
+      "voice": {
+        "m": "male_2",
+        "f": "male_1"
+      }
+    },
+    "family": {
+      "hi": "परिवार",
+      "en": "Family",
+      "learner": false,
+      "grammar": "neutral",
+      "voice": {
+        "m": "female_2",
+        "f": "female_2"
+      }
+    }
+  },
+  "vocab": [
+    {
+      "hi": "अतिथि",
+      "roman": "atithi",
+      "en": "guest"
+    },
+    {
+      "hi": "निमंत्रण",
+      "roman": "nimantran",
+      "en": "invitation"
+    },
+    {
+      "hi": "आतिथ्य",
+      "roman": "aatithya",
+      "en": "hospitality"
+    },
+    {
+      "hi": "स्वागत",
+      "roman": "svaagat",
+      "en": "welcome"
+    },
+    {
+      "hi": "परिवार",
+      "roman": "parivaar",
+      "en": "family"
+    },
+    {
+      "hi": "परिवार के सदस्य",
+      "roman": "parivaar ke sadasya",
+      "en": "family members"
+    },
+    {
+      "hi": "माता-पिता",
+      "roman": "maataa-pitaa",
+      "en": "parents"
+    },
+    {
+      "hi": "परिचय करना",
+      "roman": "parichay karnaa",
+      "en": "to introduce"
+    },
+    {
+      "hi": "सम्मान",
+      "roman": "sammaan",
+      "en": "respect"
+    },
+    {
+      "hi": "सुविधा",
+      "roman": "suvidhaa",
+      "en": "comfort"
+    },
+    {
+      "hi": "रीति-रिवाज",
+      "roman": "reeti-rivaaj",
+      "en": "customs"
+    },
+    {
+      "hi": "परंपरा",
+      "roman": "paramparaa",
+      "en": "tradition"
+    },
+    {
+      "hi": "जूते उतारना",
+      "roman": "joote utaarnaa",
+      "en": "to take off shoes"
+    },
+    {
+      "hi": "भोजन",
+      "roman": "bhojan",
+      "en": "meal/food"
+    },
+    {
+      "hi": "भारतीय व्यंजन",
+      "roman": "Bhaarteey vyanjan",
+      "en": "Indian dish"
+    },
+    {
+      "hi": "पारंपरिक",
+      "roman": "paaramparik",
+      "en": "traditional"
+    },
+    {
+      "hi": "चखना",
+      "roman": "chakhnaa",
+      "en": "to taste"
+    },
+    {
+      "hi": "संकोच करना",
+      "roman": "sankoch karnaa",
+      "en": "to hesitate"
+    },
+    {
+      "hi": "समय बिताना",
+      "roman": "samay bitaanaa",
+      "en": "to spend time"
+    },
+    {
+      "hi": "आतिथ्य-सत्कार",
+      "roman": "aatithya-satkaar",
+      "en": "hospitality"
+    },
+    {
+      "hi": "पारिवारिक जीवन",
+      "roman": "paarivaarik jeevan",
+      "en": "family life"
+    },
+    {
+      "hi": "अगली बार",
+      "roman": "aglee baar",
+      "en": "next time"
+    },
+    {
+      "hi": "फिर आइएगा",
+      "roman": "phir aaiyegaa",
+      "en": "please come again"
+    },
+    {
+      "hi": "शुभ यात्रा",
+      "roman": "shubh yaatraa",
+      "en": "have a safe journey"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "d19s1",
+      "title_hi": "भारतीय परिवार के घर अतिथि बनना",
+      "title_en": "Being a guest in an Indian home",
+      "situation": "You visit an Indian friend's home, meet the family and share a meal.",
+      "lines": [
+        {
+          "role": "friend",
+          "hi": "नमस्ते! आइए, आपका स्वागत है। हमें बहुत खुशी हुई कि आप हमारे घर आए।",
+          "roman": "Namaste! Aaiye, aapkaa svaagat hai. Hamen bahut khushee huee ki aap hamaare ghar aae.",
+          "en": "Namaste! Please come in. Welcome. We are very happy that you came to our home.",
+          "f": {
+            "hi": "नमस्ते! आइए, आपका स्वागत है। हमें बहुत खुशी हुई कि आप हमारे घर आईं।",
+            "roman": "Namaste! Aaiye, aapkaa svaagat hai. Hamen bahut khushee huee ki aap hamaare ghar aaeen."
+          }
+        },
+        {
+          "role": "student",
+          "hi": "नमस्ते! मुझे भी बहुत खुशी है। आपके निमंत्रण के लिए बहुत धन्यवाद।",
+          "roman": "Namaste! Mujhe bhee bahut khushee hai. Aapke nimantran ke liye bahut dhanyavaad.",
+          "en": "Namaste! I am very happy too. Thank you very much for inviting me."
+        },
+        {
+          "role": "friend",
+          "hi": "आइए, पहले आप मेरे परिवार के सदस्यों से मिलिए। ये मेरे माता-पिता हैं और ये मेरी बहन हैं।",
+          "roman": "Aaiye, pehle aap mere parivaar ke sadasyon se miliye. Ye mere maataa-pitaa hain aur ye meree bahan hain.",
+          "en": "Come, let me first introduce you to my family members. These are my parents, and this is my sister."
+        },
+        {
+          "role": "student",
+          "hi": "नमस्ते अंकल! नमस्ते आंटी! आपसे मिलकर बहुत खुशी हुई।",
+          "roman": "Namaste uncle! Namaste aunty! Aapse milkar bahut khushee huee.",
+          "en": "Namaste, Uncle! Namaste, Auntie! It is very nice to meet you."
+        },
+        {
+          "role": "mother",
+          "hi": "नमस्ते बेटा। आइए, आराम से बैठिए। यात्रा में आपको कोई परेशानी तो नहीं हुई?",
+          "roman": "Namaste betaa. Aaiye, aaraam se baithiye. Yaatraa mein aapko koee pareshaanee to naheen huee?",
+          "en": "Namaste, dear. Please sit comfortably. Did you have any trouble during the journey?"
+        },
+        {
+          "role": "student",
+          "hi": "नहीं, कोई परेशानी नहीं हुई। आपका घर बहुत सुंदर है।",
+          "roman": "Naheen, koee pareshaanee naheen huee. Aapkaa ghar bahut sundar hai.",
+          "en": "No, I did not have any trouble. Your home is very beautiful."
+        },
+        {
+          "role": "mother",
+          "hi": "धन्यवाद। आप कुछ पीना पसंद करेंगे—चाय, कॉफी या पानी?",
+          "roman": "Dhanyavaad. Aap kuchh peenaa pasand karenge—chaay, coffee yaa paanee?",
+          "en": "Thank you. Would you like something to drink—tea, coffee, or water?",
+          "f": {
+            "hi": "धन्यवाद। आप कुछ पीना पसंद करेंगी—चाय, कॉफी या पानी?",
+            "roman": "Dhanyavaad. Aap kuchh peenaa pasand karengee—chaay, coffee yaa paanee?"
+          }
+        },
+        {
+          "role": "student",
+          "hi": "धन्यवाद। मैं चाय लेना पसंद करूँगा।",
+          "roman": "Dhanyavaad. Main chaay lenaa pasand karoongaa.",
+          "en": "Thank you. I would like to have tea.",
+          "f": {
+            "hi": "धन्यवाद। मैं चाय लेना पसंद करूँगी।",
+            "roman": "Dhanyavaad. Main chaay lenaa pasand karoongee."
+          }
+        },
+        {
+          "role": "friend",
+          "hi": "हमारे यहाँ अतिथि का स्वागत करना बहुत महत्त्वपूर्ण माना जाता है। आप हमारे लिए विशेष अतिथि हैं।",
+          "roman": "Hamaare yahaan atithi kaa svaagat karnaa bahut mahattvapoorn maanaa jaataa hai. Aap hamaare liye vishesh atithi hain.",
+          "en": "In our culture, welcoming guests is considered very important. You are a special guest for us."
+        },
+        {
+          "role": "student",
+          "hi": "यह जानकर मुझे बहुत अच्छा लगा। भारतीय परिवारों में अतिथियों का स्वागत किस तरह किया जाता है?",
+          "roman": "Yeh jaankar mujhe bahut achchhaa lagaa. Bhaarteey parivaaron mein atithiyon kaa svaagat kis tarah kiyaa jaataa hai?",
+          "en": "I am very happy to know that. How are guests usually welcomed in Indian families?"
+        },
+        {
+          "role": "father",
+          "hi": "सामान्यतः अतिथि का प्रेम और सम्मान के साथ स्वागत किया जाता है। उन्हें बैठने के लिए स्थान दिया जाता है और उनकी सुविधा का ध्यान रखा जाता है।",
+          "roman": "Saamaanyatah atithi kaa prem aur sammaan ke saath svaagat kiyaa jaataa hai. Unhen baithne ke liye sthaan diyaa jaataa hai aur unkee suvidhaa kaa dhyaan rakhaa jaataa hai.",
+          "en": "Generally, guests are welcomed with love and respect. They are offered a place to sit, and their comfort is taken care of."
+        },
+        {
+          "role": "student",
+          "hi": "क्या मुझे घर में प्रवेश करते समय जूते उतारने चाहिए?",
+          "roman": "Kyaa mujhe ghar mein pravesh karte samay joote utaarne chaahiye?",
+          "en": "Should I take off my shoes when entering the house?"
+        },
+        {
+          "role": "friend",
+          "hi": "हाँ, हमारे घर में हम बाहर जूते उतारकर अंदर आते हैं। आप भी अपने जूते यहाँ रख सकते हैं।",
+          "roman": "Haan, hamaare ghar mein hum baahar joote utaarkar andar aate hain. Aap bhee apne joote yahaan rakh sakte hain.",
+          "en": "Yes, in our home we take off our shoes outside before coming in. You can also leave your shoes here.",
+          "f": {
+            "hi": "हाँ, हमारे घर में हम बाहर जूते उतारकर अंदर आते हैं। आप भी अपने जूते यहाँ रख सकती हैं।",
+            "roman": "Haan, hamaare ghar mein hum baahar joote utaarkar andar aate hain. Aap bhee apne joote yahaan rakh saktee hain."
+          }
+        },
+        {
+          "role": "student",
+          "hi": "ठीक है। मुझे आपके घर के रीति-रिवाजों के बारे में जानकर अच्छा लग रहा है।",
+          "roman": "Theek hai. Mujhe aapke ghar ke reeti-rivaajon ke baare mein jaankar achchhaa lag rahaa hai.",
+          "en": "All right. I am enjoying learning about your family's customs and traditions."
+        },
+        {
+          "role": "mother",
+          "hi": "अब आप भोजन कीजिए। मैंने आपके लिए कुछ भारतीय व्यंजन बनाए हैं।",
+          "roman": "Ab aap bhojan keejiye. Mainne aapke liye kuchh Bhaarteey vyanjan banaae hain.",
+          "en": "Now, please have some food. I have prepared some Indian dishes for you."
+        },
+        {
+          "role": "student",
+          "hi": "बहुत धन्यवाद। सब कुछ बहुत स्वादिष्ट लग रहा है। क्या मैं खाने से पहले कुछ पूछ सकता हूँ?",
+          "roman": "Bahut dhanyavaad. Sab kuchh bahut svaadisht lag rahaa hai. Kyaa main khaane se pehle kuchh poochh saktaa hoon?",
+          "en": "Thank you very much. Everything looks delicious. May I ask something before eating?",
+          "f": {
+            "hi": "बहुत धन्यवाद। सब कुछ बहुत स्वादिष्ट लग रहा है। क्या मैं खाने से पहले कुछ पूछ सकती हूँ?",
+            "roman": "Bahut dhanyavaad. Sab kuchh bahut svaadisht lag rahaa hai. Kyaa main khaane se pehle kuchh poochh saktee hoon?"
+          }
+        },
+        {
+          "role": "mother",
+          "hi": "जी हाँ, बिल्कुल पूछिए।",
+          "roman": "Jee haan, bilkul poochhiye.",
+          "en": "Yes, of course. Please ask."
+        },
+        {
+          "role": "student",
+          "hi": "ये कौन-सा व्यंजन है?",
+          "roman": "Ye kaun-saa vyanjan hai?",
+          "en": "What dish is this?"
+        },
+        {
+          "role": "mother",
+          "hi": "यह एक पारंपरिक भारतीय व्यंजन है। आप इसे थोड़ा चखकर देखिए।",
+          "roman": "Yeh ek paaramparik Bhaarteey vyanjan hai. Aap ise thodaa chakhkar dekhiye.",
+          "en": "This is a traditional Indian dish. Please taste a little."
+        },
+        {
+          "role": "student",
+          "hi": "बहुत अच्छा है। मैं थोड़ा और ले सकता हूँ?",
+          "roman": "Bahut achchhaa hai. Main thodaa aur le saktaa hoon?",
+          "en": "It is very good. May I have a little more?",
+          "f": {
+            "hi": "बहुत अच्छा है। मैं थोड़ा और ले सकती हूँ?",
+            "roman": "Bahut achchhaa hai. Main thodaa aur le saktee hoon?"
+          }
+        },
+        {
+          "role": "mother",
+          "hi": "बिल्कुल। संकोच मत कीजिए।",
+          "roman": "Bilkul. Sankoch mat keejiye.",
+          "en": "Of course. Please don't hesitate."
+        },
+        {
+          "role": "student",
+          "hi": "आपका बहुत-बहुत धन्यवाद। मुझे आपके परिवार के साथ समय बिताकर बहुत अच्छा लगा।",
+          "roman": "Aapkaa bahut-bahut dhanyavaad. Mujhe aapke parivaar ke saath samay bitaakar bahut achchhaa lagaa.",
+          "en": "Thank you very much. I really enjoyed spending time with your family."
+        },
+        {
+          "role": "friend",
+          "hi": "हमें भी बहुत खुशी हुई। आप जब चाहें हमारे घर आ सकते हैं।",
+          "roman": "Hamen bhee bahut khushee huee. Aap jab chaahen hamaare ghar aa sakte hain.",
+          "en": "We are very happy too. You can come to our home whenever you like.",
+          "f": {
+            "hi": "हमें भी बहुत खुशी हुई। आप जब चाहें हमारे घर आ सकती हैं।",
+            "roman": "Hamen bhee bahut khushee huee. Aap jab chaahen hamaare ghar aa saktee hain."
+          }
+        },
+        {
+          "role": "student",
+          "hi": "धन्यवाद। आज मुझे भारतीय परिवार के आतिथ्य और पारिवारिक जीवन को करीब से समझने का अवसर मिला।",
+          "roman": "Dhanyavaad. Aaj mujhe Bhaarteey parivaar ke aatithya aur paarivaarik jeevan ko kareeb se samajhne kaa avsar milaa.",
+          "en": "Thank you. Today I had an opportunity to understand Indian family hospitality and family life more closely."
+        },
+        {
+          "role": "father",
+          "hi": "हमें भी खुशी है कि आपको यहाँ अच्छा लगा। अगली बार फिर आइएगा।",
+          "roman": "Hamen bhee khushee hai ki aapko yahaan achchhaa lagaa. Aglee baar phir aaiyegaa.",
+          "en": "We are also happy that you enjoyed being here. Please come again next time."
+        },
+        {
+          "role": "student",
+          "hi": "अवश्य। फिर मिलेंगे। नमस्ते!",
+          "roman": "Avashya. Phir milenge. Namaste!",
+          "en": "Certainly. See you again. Namaste!"
+        },
+        {
+          "role": "family",
+          "hi": "नमस्ते! शुभ यात्रा।",
+          "roman": "Namaste! Shubh yaatraa.",
+          "en": "Namaste! Have a safe journey."
+        }
+      ]
+    }
+  ]
+}
