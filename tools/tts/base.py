@@ -34,17 +34,22 @@ class TTSProvider(ABC):
         """Return a complete WAV file (bytes) for one line of Hindi text."""
 
 
-def get_provider(name: str) -> TTSProvider:
+def get_provider_class(name: str) -> type[TTSProvider]:
+    """The provider class, without loading its model (its `settings` are enough for cache keys)."""
     if name == "piper":
         from .piper_tts import PiperProvider
-        return PiperProvider()
+        return PiperProvider
     if name == "azure":
         from .azure_tts import AzureProvider
-        return AzureProvider()
+        return AzureProvider
     if name == "kokoro":
         from .kokoro_tts import KokoroProvider
-        return KokoroProvider()
+        return KokoroProvider
     if name == "parler":
         from .parler_tts import ParlerProvider
-        return ParlerProvider()
+        return ParlerProvider
     raise ValueError(f"Unknown TTS provider: {name}")
+
+
+def get_provider(name: str) -> TTSProvider:
+    return get_provider_class(name)()

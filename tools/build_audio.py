@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from tts import cache_key, get_provider  # noqa: E402
+from tts import cache_key, get_provider, get_provider_class  # noqa: E402
 from tts.text import leftover_latin, scene_fingerprint, to_speech  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -74,13 +74,15 @@ def main() -> int:
 
     def clip(slot: str, spoken: str) -> Path:
         spec = profile[slot]
-        prov = providers.setdefault(spec["provider"], get_provider(spec["provider"]))
-        key = cache_key(spec, prov.settings, spoken)
+        # Load each model once, and only when a clip is missing (a fully cached build loads none).
+        key = cache_key(spec, get_provider_class(spec["provider"]).settings, spoken)
         mp3 = CLIPS / f"{key}.mp3"
         if mp3.exists():
             stats["cached"] += 1
         else:
-            wav = prov.synthesize(spoken, spec)
+            if spec["provider"] not in providers:
+                providers[spec["provider"]] = get_provider(spec["provider"])
+            wav = providers[spec["provider"]].synthesize(spoken, spec)
             mp3.write_bytes(ff(["-f", "wav", "-i", "-", "-af", post_filter(spec), "-ac", "1", "-ar", str(SR),
                                 "-b:a", "48k", "-f", "mp3", "-"], wav))
             stats["synthesised"] += 1
@@ -149,7 +151,7 @@ def main() -> int:
                 f.unlink()
     for w in warnings:
         print("WARN ", w)
-    print(stats, f"{len(lessons)} lessons -> {man_path.relative_to(ROOT)}")
+    print(stats, f"{len(lessons)} lessons -> {man_path}")
     return 0
 
 

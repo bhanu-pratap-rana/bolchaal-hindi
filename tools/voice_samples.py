@@ -53,7 +53,9 @@ def main() -> int:
     for slot, spec in profile.items():
         if a.slots and slot not in a.slots:
             continue
-        prov = providers.setdefault(spec["provider"], get_provider(spec["provider"]))
+        if spec["provider"] not in providers:  # load each model once
+            providers[spec["provider"]] = get_provider(spec["provider"])
+        prov = providers[spec["provider"]]
         expected = "male" if spec["gender"] == "m" else "female"
         if not a.styles:
             path = out / f"{a.profile}-{slot}-{spec['label']}.wav"
