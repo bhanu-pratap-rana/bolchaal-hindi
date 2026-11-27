@@ -12,3 +12,4 @@ __pycache__/
 .wrangler/
 media-kokoro/
 samples/
+.hf-cache/
