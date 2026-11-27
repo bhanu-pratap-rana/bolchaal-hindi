@@ -40,43 +40,47 @@
     "launch-parler": {
       "male_1": {
         "provider": "parler",
-        "speaker": "Rohit",
-        "label": "Rohit",
-        "gender": "m",
-        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
-        "commercial": true,
-        "description": "Rohit speaks in a natural, friendly conversational tone at a moderate speed with moderate pitch. Very clear audio, close up, with no background noise.",
-        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
-      },
-      "male_2": {
-        "provider": "parler",
         "speaker": "Aman",
         "label": "Aman",
         "gender": "m",
         "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Aman speaks in a calm, polite conversational tone at a moderate speed with a slightly low pitch. Very clear audio, close up, with no background noise.",
-        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
+        "description": "Aman delivers a slightly expressive and animated speech at a moderate speed with slightly low pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Chosen by ear on 2026-11-27 (style b); male confirmed.",
+        "style": "b-slightly-expressive"
       },
-      "female_1": {
+      "male_2": {
         "provider": "parler",
-        "speaker": "Divya",
-        "label": "Divya",
-        "gender": "f",
+        "speaker": "Rohit",
+        "label": "Rohit",
+        "gender": "m",
         "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Divya speaks in a natural, warm conversational tone at a moderate speed with moderate pitch. Very clear audio, close up, with no background noise.",
-        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
+        "description": "Rohit speaks in an expressive, animated and friendly way, with lively rises and falls in pitch, at a moderate speed with moderate pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Second male voice (485 lines). Default style rated flat; style c is an untested guess, confirm by ear.",
+        "style": "c-expressive-friendly"
       },
-      "female_2": {
+      "female_1": {
         "provider": "parler",
         "speaker": "Rani",
         "label": "Rani",
         "gender": "f",
         "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Rani speaks in a bright, polite conversational tone at a moderate speed with a slightly high pitch. Very clear audio, close up, with no background noise.",
-        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
+        "description": "Rani speaks in a lively, expressive conversational style, like chatting warmly with a friend, smiling, with varied intonation, at a slightly fast pace with slightly high pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Chosen by ear on 2026-11-27 (style d); female confirmed.",
+        "style": "d-chatting"
+      },
+      "female_2": {
+        "provider": "parler",
+        "speaker": "Divya",
+        "label": "Divya",
+        "gender": "f",
+        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
+        "commercial": true,
+        "description": "Divya speaks in a lively, expressive conversational style, like chatting warmly with a friend, smiling, with varied intonation, at a slightly fast pace with moderate pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Second female voice (24 lines). Default style rated flat; style d is an untested guess.",
+        "style": "d-chatting"
       }
     },
     "launch-azure": {
