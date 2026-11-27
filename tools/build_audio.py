@@ -84,6 +84,8 @@ def main() -> int:
             mp3.write_bytes(ff(["-f", "wav", "-i", "-", "-af", post_filter(spec), "-ac", "1", "-ar", str(SR),
                                 "-b:a", "48k", "-f", "mp3", "-"], wav))
             stats["synthesised"] += 1
+            if stats["synthesised"] % 25 == 0:
+                print(f"  {stats['synthesised']} clips synthesised, {stats['cached']} reused", flush=True)
         return mp3
 
     def speak(where: str, text: str, override: str | None) -> tuple[str, list]:
@@ -94,6 +96,7 @@ def main() -> int:
         return spoken, subs
 
     for L in lessons:
+        print(f"{L['id']}: {L['title_en']}", flush=True)
         out = {"scenes": {}, "vocab": {}}
         for s in L["scenes"]:
             variants, spoken_lines = {}, {}

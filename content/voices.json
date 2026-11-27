@@ -43,40 +43,40 @@
         "speaker": "Rohit",
         "label": "Rohit",
         "gender": "m",
-        "licence": "Apache-2.0 (check model card)",
+        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Rohit speaks at a moderate pace in a clear, friendly voice. The recording is very high quality with no background noise.",
-        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+        "description": "Rohit speaks in a natural, friendly conversational tone at a moderate speed with moderate pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
       },
       "male_2": {
         "provider": "parler",
         "speaker": "Aman",
         "label": "Aman",
         "gender": "m",
-        "licence": "Apache-2.0 (check model card)",
+        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Aman speaks at a moderate pace in a calm, polite voice. The recording is very high quality with no background noise.",
-        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+        "description": "Aman speaks in a calm, polite conversational tone at a moderate speed with a slightly low pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
       },
       "female_1": {
         "provider": "parler",
         "speaker": "Divya",
         "label": "Divya",
         "gender": "f",
-        "licence": "Apache-2.0 (check model card)",
+        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Divya speaks at a moderate pace in a clear, warm voice. The recording is very high quality with no background noise.",
-        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+        "description": "Divya speaks in a natural, warm conversational tone at a moderate speed with moderate pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
       },
       "female_2": {
         "provider": "parler",
         "speaker": "Rani",
         "label": "Rani",
         "gender": "f",
-        "licence": "Apache-2.0 (check model card)",
+        "licence": "Apache-2.0 (AI4Bharat Indic Parler-TTS model card)",
         "commercial": true,
-        "description": "Rani speaks at a moderate pace in a bright, friendly voice. The recording is very high quality with no background noise.",
-        "verify": "Gender of named speakers is not stated on the model card; confirm by listening before use."
+        "description": "Rani speaks in a bright, polite conversational tone at a moderate speed with a slightly high pitch. Very clear audio, close up, with no background noise.",
+        "verify": "Model card lists Rohit and Divya as recommended Hindi speakers, Aman and Rani as available; genders are not stated. Confirm by ear in the notebook listening test."
       }
     },
     "launch-azure": {
