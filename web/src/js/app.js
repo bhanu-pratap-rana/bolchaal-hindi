@@ -5,8 +5,8 @@ import { renderDay, renderHome, renderWords, notFound } from './views.js';
 import { leaveScene, renderScene } from './scene.js';
 import { initGloss } from './gloss.js';
 import { registerSW, storageSummary } from './offline.js';
-import { reviewOn, setReview } from './review.js';
-import { $, $$, h, transition } from './util.js';
+import { exportCourseCSV, reviewOn, reviewer, setReview, setReviewer } from './review.js';
+import { $, $$, h, store, toast, transition } from './util.js';
 import { currentRoute, nextRoute } from './route.js';
 
 const main = document.getElementById('main');
@@ -75,13 +75,34 @@ function initSettings() {
 function banners() {
   if (course.preview) {
     const b = $('#preview-banner');
-    b.textContent = 'Preview: these lessons were drafted with AI help and are still being checked by students and a Hindi teacher. Voices are AI-generated. Use the flag on any line to report a problem.';
-    b.hidden = false;
+    const chip = h('button.preview-chip', { type: 'button', 'aria-expanded': 'false', 'aria-controls': 'preview-banner', onclick: () => {
+      b.hidden = !b.hidden; chip.setAttribute('aria-expanded', String(!b.hidden)); store.set('previewSeen', b.hidden);
+    } }, 'Preview');
+    $('#top .bar-nav').before(chip);
+    b.replaceChildren(
+      h('p', {}, h('b', {}, 'Preview. '), 'Lessons drafted with AI help, still being checked by a Hindi teacher. Voices are AI-generated.'),
+      h('button.link-btn', { type: 'button', onclick: () => { b.hidden = true; chip.setAttribute('aria-expanded', 'false'); store.set('previewSeen', true); } }, 'Got it'));
+    b.hidden = !!store.get('previewSeen', false);
+    chip.setAttribute('aria-expanded', String(!b.hidden));
   }
   if (reviewOn()) {
     const b = $('#review-banner');
-    b.replaceChildren('Reviewer mode is on: mark each line OK or Fix, then export the CSV from the day page. ',
-      h('button.link-btn', { type: 'button', onclick: () => { setReview(false); location.href = location.pathname + location.hash; } }, 'Turn off'));
+    const name = h('input', { type: 'text', value: reviewer(), placeholder: 'Your name', 'aria-label': 'Reviewer name', onchange: (e) => setReviewer(e.target.value.trim()) });
+    const vbtn = (v, label) => h('button', { type: 'button', 'aria-pressed': String(settings.variant === v), onclick: (e) => {
+      setSetting('variant', v); for (const x of e.currentTarget.parentElement.children) x.setAttribute('aria-pressed', String(x === e.currentTarget));
+    } }, label);
+    const exportAll = h('button.btn.small', { type: 'button', onclick: async () => {
+      exportAll.disabled = true;
+      try { const all = await Promise.all(course.days.map((d) => loadLesson(d.id))); const n = exportCourseCSV(all); toast(`Exported ${n} rows for ${all.length} days`); }
+      catch { toast('Couldn\'t load every day. Check your connection.'); }
+      exportAll.disabled = false;
+    } }, 'Export all days');
+    b.replaceChildren(
+      h('p', {}, h('b', {}, 'Reviewer mode. '), 'Mark each line OK or Fix. Lines that are the same for both learners are marked once.'),
+      h('div.review-tools', {}, name,
+        h('div.seg.mini', { role: 'group', 'aria-label': 'Learner version to review' }, vbtn('m', 'Man learner'), vbtn('f', 'Woman learner')),
+        exportAll,
+        h('button.link-btn', { type: 'button', onclick: () => { setReview(false); location.href = location.pathname + location.hash; } }, 'Turn off')));
     b.hidden = false;
   }
 }

@@ -9,6 +9,7 @@ import { announce, fmtTime, h, initial, roleColors, toast } from './util.js';
 import { loadFailed, loading, notFound, playWord } from './views.js';
 import { openGloss } from './gloss.js';
 import { currentRoute } from './route.js';
+import { openReport } from './report.js';
 
 const SPEEDS = [0.6, 0.8, 1, 1.2];
 const ICON = {
@@ -51,7 +52,10 @@ class SceneView {
   constructor(main, course, lesson, idx) {
     this.main = main; this.course = course; this.lesson = lesson; this.idx = idx;
     this.scene = lesson.scenes[idx];
-    this.mode = new URLSearchParams(location.hash.split('?')[1] || '').get('mode') || 'listen';
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    this.mode = params.get('mode') || 'listen';
+    this.startLine = params.has('line') ? Number(params.get('line')) : null;
+    this.seen = new Set(); // lines that became active while audio was playing
     this.colors = roleColors(lesson);
     this.learner = Object.keys(lesson.roles).find((r) => lesson.roles[r].learner);
     this.heard = new Set();
@@ -85,7 +89,7 @@ class SceneView {
     const sceneRoles = [...new Set(scene.lines.map((l) => l.role))];
     sceneRoles.sort((a) => (a === this.learner ? -1 : 1));
     this.castEls = {};
-    const cast = h('ul.cast', { 'aria-label': 'Who speaks in this scene' }, sceneRoles.map((r) => {
+    const cast = h('ul.cast', { 'aria-label': 'Who speaks in this scene', tabindex: '0' }, sceneRoles.map((r) => {
       const el = h('li.who', { class: r === this.learner ? 'who you' : 'who', style: { '--c': this.colors[r] } },
         h('span.av', { 'aria-hidden': 'true' }, initial(lesson.roles[r].en)),
         h('span', {}, this.roleName(r)), h('span.vn', {}, this.voiceLabel(r)));
@@ -140,8 +144,10 @@ class SceneView {
         h('button.icon-btn', { type: 'button', 'aria-label': 'Next line', 'aria-keyshortcuts': 'L', onclick: () => this.step(1) }, svg('next')),
         h('button.icon-btn', { type: 'button', 'aria-label': 'Replay this line', 'aria-keyshortcuts': 'R', onclick: () => this.replay(Math.max(0, this.player.index)) }, svg('replay')),
         h('div.now', {}, this.nowL, this.nowT),
-        this.speedBtn, this.timeEl)));
-    document.body.append(this.playerEl);
+        this.speedBtn, this.timeEl),
+      h('p.keys', {}, 'Keyboard: Space plays or pauses, J and L move a line, R replays the line.')));
+    document.getElementById('main').before(this.playerEl); // tab order: header, player, then the lines
+    this.playerEl.hidden = this.mode === 'check';
     this.playBtn.addEventListener('click', () => this.togglePlay());
     this.speedBtn.addEventListener('click', () => {
       const n = SPEEDS[(SPEEDS.indexOf(settings.speed) + 1) % SPEEDS.length] || 1;
@@ -155,7 +161,8 @@ class SceneView {
 
   paintSegs() {
     const { cues, duration } = this.variant;
-    this.segEls = cues.map(([a, b], i) => h('i', { style: { '--c': this.colors[this.scene.lines[i].role], flex: `${(b - a) / duration}` } }));
+    this.segEls = cues.map(([a], i) => h('i', { style: { '--c': this.colors[this.scene.lines[i].role],
+      flex: `${((cues[i + 1]?.[0] ?? duration) - a) / duration} 1 0` } }));
     this.segs.replaceChildren(...this.segEls);
   }
 
@@ -176,6 +183,13 @@ class SceneView {
       this.playBtn.disabled = false;
       if (!p.playing && p.index <= 0 && this.mode !== 'speak') this.nowT.textContent = 'Press play to start';
       this.errorEl?.remove();
+      if (this.startLine != null && this.variant.cues[this.startLine]) {
+        const i = this.startLine;
+        this.startLine = null;
+        p.seek(this.variant.cues[i][0] + 0.001);
+        this.lineEls?.[i]?.scrollIntoView({ block: 'center' });
+        this.lineEls?.[i]?.classList.add('found');
+      }
     });
     p.addEventListener('error', () => this.showError());
     p.addEventListener('blocked', () => toast('Tap play to start the audio'));
@@ -206,9 +220,11 @@ class SceneView {
   step(d) { this.pendingTurn = null; this.player.step(d); }
   replay(i) { this.pendingTurn = null; this.player.playLine(i); }
 
-  setHidden(el, hidden) {
-    el.dataset.hidden = String(hidden);
-    for (const t of el.querySelectorAll('.t-hi, .t-ro, .t-en')) t.toggleAttribute('aria-hidden', hidden);
+  /** kind 'first' hides everything (listen first); 'turn' hides Hindi and Roman but keeps the English cue */
+  setHidden(el, hidden, kind = 'first') {
+    el.dataset.hidden = hidden ? kind : 'false';
+    for (const t of el.querySelectorAll(kind === 'turn' ? '.t-hi, .t-ro' : '.t-hi, .t-ro, .t-en')) t.toggleAttribute('aria-hidden', hidden);
+    if (!hidden) for (const t of el.querySelectorAll('[aria-hidden]:is(.t-hi, .t-ro, .t-en)')) t.removeAttribute('aria-hidden');
   }
 
   togglePlay() {
@@ -236,6 +252,7 @@ class SceneView {
     const review = this.review ? marks(this.lesson.id) : null;
     this.lineEls = this.scene.lines.map((ln, i) => this.renderLine(ln, i, review));
     this.body.replaceChildren(h('ol.lines', { 'aria-label': 'Conversation' }, this.lineEls));
+    this.playerEl && (this.playerEl.hidden = this.mode === 'check');
     if (this.player.index >= 0) this.onLine(this.player.index);
   }
 
@@ -249,21 +266,22 @@ class SceneView {
     const report = `${this.course.report_url}?title=${encodeURIComponent(`Problem in ${this.scene.id} line ${i + 1}`)}&body=${encodeURIComponent(
       `Scene: ${this.scene.id} (${this.scene.title_en})\nLine: ${i + 1}\nLearner: ${this.v === 'f' ? 'woman' : 'man'}\nHindi: ${t.hi}\nRoman: ${t.roman}\nEnglish: ${t.en}\n\nWhat's wrong (text, translation, or how the voice says it):\n`)}`;
     const li = h('li.ln', { style: { '--c': this.colors[ln.role] }, 'data-you': String(you), 'data-i': String(i),
-      'data-hidden': String(hideFirst || hideTurn) },
+      'data-hidden': 'false' },
     h('span.av', { 'aria-hidden': 'true' }, initial(role.en)),
     h('div.txt', {},
       h('div.who-l', {}, h('b', {}, this.roleName(ln.role)), h('span', { lang: 'hi', 'data-hi-only': '' }, ` ${role.hi}`),
         t.fem ? h('span.fem', {}, 'woman\'s form') : null),
-      h('p.t-hi', { lang: 'hi', 'data-hi-only': '' }, h('span.rekha', { 'aria-hidden': 'true' }), this.linkWords(t.hi)),
+      h('p.t-hi', { lang: 'hi', 'data-hi-only': '' }, h('span.rekha', { 'aria-hidden': 'true' }), this.linkWords(t.hi.replace(/(\d)।/g, '$1 ।'))),
       h('p.t-ro', { 'data-ro-only': '' }, t.roman),
       h('p.t-en', {}, t.en),
       this.review && spoken ? h('p.spoken', {}, `The voice was given: ${spoken}`) : null),
     h('div.tools', {},
       h('button.icon-btn', { type: 'button', 'aria-label': `Play line ${i + 1}`, onclick: () => this.replay(i) }, svg('replay')),
-      h('a.icon-btn', { href: report, target: '_blank', rel: 'noopener', 'aria-label': `Report a problem with line ${i + 1}` }, svg('flag'))),
+      h('button.icon-btn', { type: 'button', 'aria-label': `Report a problem with line ${i + 1}`,
+        onclick: () => openReport({ scene: this.scene, i, t, v: this.v, githubUrl: report }) }, svg('flag'))),
     review ? this.reviewBox(i, review) : null);
     if (settings.script === 'roman') li.querySelector('.t-ro').prepend(h('span.rekha', { 'aria-hidden': 'true' }));
-    if (hideFirst || hideTurn) this.setHidden(li, true);
+    if (hideTurn) this.setHidden(li, true, 'turn'); else if (hideFirst) this.setHidden(li, true, 'first');
     return li;
   }
 
@@ -294,16 +312,17 @@ class SceneView {
     const box = h('div.review-box');
     const paint = () => {
       const m = all[`${this.scene.id}|${i}|${this.v}`] || {};
+      const same = !this.scene.lines[i].f; // identical for both learners: one mark covers both
+      const save = (patch) => {
+        for (const v of same ? ['m', 'f'] : [this.v]) all[`${this.scene.id}|${i}|${v}`] = mark(this.lesson.id, this.scene.id, i, v, patch);
+      };
       box.replaceChildren(
-        h('span.hint', {}, this.v === 'f' ? 'Woman learner:' : 'Man learner:'),
+        h('span.hint', {}, same ? 'Both learners:' : this.v === 'f' ? 'Woman learner:' : 'Man learner:'),
         h('div.seg.mini', { role: 'group', 'aria-label': `Review line ${i + 1}` },
-          ['OK', 'FIX'].map((st) => h('button', { type: 'button', 'aria-pressed': String(m.status === st), onclick: () => {
-            if (!reviewer()) { const n = prompt('Your name, for the review log'); if (n) setReviewer(n.trim()); }
-            all[`${this.scene.id}|${i}|${this.v}`] = mark(this.lesson.id, this.scene.id, i, this.v, { status: m.status === st ? '' : st });
-            paint();
-          } }, st === 'OK' ? 'OK' : 'Fix'))),
+          ['OK', 'FIX'].map((st) => h('button', { type: 'button', 'data-st': st, 'aria-pressed': String(m.status === st),
+            onclick: () => { save({ status: m.status === st ? '' : st }); paint(); } }, st === 'OK' ? 'OK' : 'Fix'))),
         h('input', { type: 'text', value: m.note || '', placeholder: 'What should change?', 'aria-label': `Note for line ${i + 1}`,
-          onchange: (e) => { all[`${this.scene.id}|${i}|${this.v}`] = mark(this.lesson.id, this.scene.id, i, this.v, { note: e.target.value }); } }));
+          onchange: (e) => save({ note: e.target.value }) }));
     };
     paint();
     return box;
@@ -313,7 +332,18 @@ class SceneView {
     const inScene = (this.lesson.vocab || []).filter((w) => this.scene.lines.some((l) => lineText(l, this.v).hi.includes(w.hi)));
     const pr = progress[this.scene.id] || {};
     const next = this.lesson.scenes[this.idx + 1];
+    const reviewPanel = this.review ? h('section.panel', {},
+      h('h2', {}, 'Review this scene'),
+      h('p', {}, `Reviewing as ${reviewer() || 'an unnamed reviewer'}, ${this.v === 'f' ? 'woman' : 'man'} learner version. Set your name and the version in the green bar at the top.`),
+      h('button.btn', { type: 'button', onclick: () => {
+        const all = marks(this.lesson.id);
+        this.scene.lines.forEach((ln, i) => {
+          for (const v of ln.f ? [this.v] : ['m', 'f']) if (!all[`${this.scene.id}|${i}|${v}`]?.status) mark(this.lesson.id, this.scene.id, i, v, { status: 'OK' });
+        });
+        this.renderBody(); toast('Unmarked lines set to OK');
+      } }, 'Mark the rest OK')) : null;
     this.aside.replaceChildren(...[
+      reviewPanel,
       pr.heard ? h('section.panel.done-card', {},
         h('h2', {}, 'You\'ve heard this scene'),
         h('p', {}, pr.best != null ? `Best check score: ${pr.best} of ${pr.total}.` : 'Try Speak mode to say your lines, or Check to test your listening.'),
@@ -340,11 +370,14 @@ class SceneView {
     for (const [r, el] of Object.entries(this.castEls)) el.dataset.speaking = String(ln && r === ln.role && this.player.playing);
     if (!ln) return;
     const t = lineText(ln, this.v);
+    const turnPending = this.mode === 'speak' && ln.role === this.learner && !this.heard.has(i);
     this.nowL.textContent = `Line ${i + 1} of ${this.scene.lines.length}: ${this.roleName(ln.role)}`;
-    this.nowT.textContent = settings.script === 'hindi' ? t.hi : t.roman;
+    this.nowT.textContent = this.mode === 'check' ? 'Listening…' : turnPending ? `Your line: “${t.en}”`
+      : settings.script === 'hindi' ? t.hi : t.roman;
     if (this.player.playing) {
-      if (!(this.mode === 'speak' && ln.role === this.learner && !this.heard.has(i))) this.reveal(i);
-      announce(`${this.roleName(ln.role)}: ${t.en}`);
+      if (this.mode === 'listen' && !this.player.stopAt) this.seen.add(i);
+      if (!turnPending) this.reveal(i);
+      if (this.mode !== 'check') announce(`${this.roleName(ln.role)}: ${t.en}`);
       const el = this.lineEls[i];
       const r = el.getBoundingClientRect();
       if (r.bottom > innerHeight - this.playerEl.offsetHeight - 16 || r.top < 80)
@@ -355,7 +388,7 @@ class SceneView {
   reveal(i) {
     this.heard.add(i);
     const el = this.lineEls?.[i];
-    if (el && el.dataset.hidden === 'true' && !el.querySelector('.turn')) this.setHidden(el, false);
+    if (el && el.dataset.hidden !== 'false' && !el.querySelector('.turn')) this.setHidden(el, false);
   }
 
   onProgress({ t, i, p }) {
@@ -372,17 +405,38 @@ class SceneView {
   onEnded() {
     this.lineEls?.forEach((el, j) => { el.dataset.heard = 'true'; this.reveal(j); });
     if (this.mode === 'listen' || this.mode === 'speak') {
-      const first = !progress[this.scene.id]?.heard;
-      markScene(this.scene.id, this.mode === 'speak' ? { heard: true, spoke: true } : { heard: true });
+      const enough = this.mode === 'speak' || this.seen.size >= Math.ceil(this.scene.lines.length * 0.8);
+      const first = enough && !progress[this.scene.id]?.heard;
+      if (enough) markScene(this.scene.id, this.mode === 'speak' ? { heard: true, spoke: true } : { heard: true });
       this.nowL.textContent = 'Finished';
       this.nowT.textContent = 'Play again, or try Speak or Check';
       announce(first ? 'Scene finished. Marked as heard.' : 'Scene finished.');
       this.renderAside();
+      this.showEndCard(enough);
     }
+  }
+
+  showEndCard(done) {
+    this.body.querySelector('.end-card')?.remove();
+    const next = this.lesson.scenes[this.idx + 1];
+    const dayDone = this.lesson.scenes.every((s) => progress[s.id]?.heard);
+    const card = h('section.end-card', { 'aria-labelledby': 'end-title' },
+      h('h2#end-title', { tabindex: '-1' }, dayDone ? `Day ${this.lesson.day} complete` : done ? 'Scene done' : 'End of the conversation'),
+      h('p', {}, dayDone ? 'You\'ve heard every scene of this day. Practise your lines, or move on to the next day.'
+        : this.mode === 'speak' ? 'You said every one of your lines. Try Check, or go on to the next scene.'
+          : 'Now say your side in Speak mode, or test your listening in Check.'),
+      h('div.day-actions', {},
+        this.mode !== 'speak' ? h('button.btn', { type: 'button', onclick: () => this.setMode('speak') }, 'Practise my lines') : null,
+        h('button.btn', { type: 'button', onclick: () => this.setMode('check') }, 'Check my listening'),
+        next ? h('a.btn.primary', { href: `#/scene/${next.id}` }, 'Next scene')
+          : h('a.btn.primary', { href: dayDone ? `#/day/${nextDayId(this.course, this.lesson.id) || this.lesson.id}` : `#/day/${this.lesson.id}` }, dayDone && nextDayId(this.course, this.lesson.id) ? 'Start the next day' : 'Back to the day')));
+    this.body.append(card);
+    card.scrollIntoView({ block: 'nearest' });
   }
 
   // ---------- modes ----------
   setMode(m) {
+    this.playerEl.hidden = m === 'check';
     if (m === this.mode) return;
     this.mode = m;
     this.player.pause();
@@ -423,11 +477,11 @@ class SceneView {
     const el = this.lineEls[j];
     el.querySelector('.turn')?.remove();
     const t = lineText(this.scene.lines[j], this.v);
-    const status = h('p', {}, 'Your turn. Say this line aloud, then hear how it sounds.');
+    const status = h('p', {}, `Your turn. Say “${t.en}” in Hindi, then hear how it sounds.`);
     const recBtn = this.recorder ? h('button.btn', { type: 'button' }, 'Record myself') : null;
     const compareBtn = h('button.btn', { type: 'button', hidden: true }, 'Play mine, then the model');
     const turn = h('div.turn', { role: 'group', 'aria-label': 'Your turn' }, status,
-      h('button.btn.small', { type: 'button', onclick: () => this.setHidden(el, false) }, 'Show the words'),
+      h('button.btn.small', { type: 'button', onclick: (e) => { this.setHidden(el, false); e.currentTarget.hidden = true; } }, 'Show the words'),
       recBtn, compareBtn,
       h('button.btn.accent', { type: 'button', onclick: () => { this.setHidden(el, false); this.heard.add(j); this.replay(j); } }, 'Hear it'),
       h('button.btn.primary', { type: 'button', onclick: () => { this.playBtn.focus({ preventScroll: true }); turn.remove(); this.setHidden(el, false); this.heard.add(j); this.recorder?.discard();
@@ -459,10 +513,11 @@ class SceneView {
     });
     el.append(turn);
     this.nowL.textContent = 'Your turn';
-    this.nowT.textContent = settings.script === 'hindi' ? t.hi : t.roman;
+    this.nowT.textContent = `Say it in Hindi: “${t.en}”`;
     announce('Your turn. Say the line, then press Hear it or Next line.');
     turn.querySelector('.btn.accent').focus({ preventScroll: true });
-    el.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    // keep the whole turn card, including Next line, clear of the player bar
+    turn.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
 
   renderCheck(attempt = 0) {
@@ -515,7 +570,7 @@ class SceneView {
     };
     const finish = () => {
       const best = Math.max(score, progress[this.scene.id]?.best ?? 0);
-      markScene(this.scene.id, { best, total: qs.length, heard: true });
+      markScene(this.scene.id, { best, total: qs.length });
       card.replaceChildren(h('h2#q-title', { tabindex: '-1' }, `You got ${score} of ${qs.length}`),
         h('p', {}, score === qs.length ? 'Every one right.' : 'Replay the scene in Listen mode and try again with new questions.'),
         h('div.day-actions', {},
@@ -538,6 +593,11 @@ class SceneView {
     this.offMedia?.();
     this.offSettings?.();
   }
+}
+
+function nextDayId(course, id) {
+  const i = course.days.findIndex((d) => d.id === id);
+  return course.days[i + 1]?.id;
 }
 
 export { playWord };

@@ -214,17 +214,52 @@ test.describe('practice', () => {
     await expect(dlg.getByRole('button', { name: 'I know it' })).toHaveAttribute('aria-pressed', 'true');
   });
 
-  test('report link opens a prefilled issue for that line', async ({ page }) => {
+  test('report sheet collects the problem without needing an account', async ({ page }) => {
     await openScene(page);
-    const href = await page.getByRole('link', { name: 'Report a problem with line 1' }).getAttribute('href');
-    expect(href).toContain('/issues/new?title=');
-    expect(decodeURIComponent(href!)).toContain('d07s1 line 1');
+    await page.getByRole('button', { name: 'Report a problem with line 1' }).click();
+    const dlg = page.getByRole('dialog', { name: 'Report a problem with line 1' });
+    await expect(dlg).toBeVisible();
+    await dlg.getByRole('radio', { name: 'The voice says it wrong' }).check();
+    await expect(dlg.getByRole('button', { name: 'Copy the report' })).toBeVisible();
+    await expect(dlg.getByRole('link', { name: 'Open a GitHub issue' })).toHaveCount(0); // GitHub only for reviewers
+  });
+
+  test('phrase search finds a line and opens it', async ({ page }) => {
+    await page.goto('./');
+    await page.getByRole('searchbox').fill('how much');
+    await page.getByRole('button', { name: 'Find' }).click();
+    const first = page.locator('a.phrase').first();
+    await expect(first).toBeVisible();
+    await first.click();
+    await expect(page.locator('.ln.found')).toBeVisible();
+  });
+
+  test('first visit asks how to learn and starts day 1', async ({ page }) => {
+    await page.goto('./');
+    const start = page.getByRole('region', { name: 'Before you start' });
+    await start.getByRole('button', { name: 'A woman' }).click();
+    await start.getByRole('button', { name: 'Roman letters only' }).click();
+    await start.getByRole('link', { name: 'Start day 1' }).click();
+    await expect(page.locator('.lines .ln').first()).toBeVisible();
+    await expect(page.locator('.ln .t-hi').first()).toBeHidden();
+  });
+
+  test('speak turn shows the English cue but hides the answer', async ({ page }) => {
+    await openScene(page, SCENE + '?mode=speak');
+    await page.locator('.play').click();
+    const turn = page.getByRole('group', { name: 'Your turn' });
+    await expect(turn).toBeVisible({ timeout: 15_000 });
+    const line = page.locator('.ln:has(.turn)');
+    await expect(line).toHaveAttribute('data-hidden', 'turn');
+    await expect(line.locator('.t-en')).toBeVisible();
+    const roman = await line.locator('.t-ro').textContent();
+    await expect(page.locator('.player .nt')).not.toContainText(roman!.trim().slice(0, 12));
+    await expect(page.locator('.player .nt')).toContainText('Say it in Hindi');
   });
 });
 
 test.describe('reviewers and offline', () => {
   test('reviewer marks persist and export as CSV', async ({ page }) => {
-    page.on('dialog', (d) => d.accept('Test Reviewer'));
     await page.goto('./?review=1' + SCENE);
     await expect(page.locator('#review-banner')).toBeVisible();
     await page.getByRole('group', { name: 'Review line 1' }).getByRole('button', { name: 'OK' }).click();

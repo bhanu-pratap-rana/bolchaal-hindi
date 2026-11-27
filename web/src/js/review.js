@@ -24,9 +24,10 @@ export function mark(lessonId, sceneId, i, v, patch) {
 }
 
 const esc = (s) => `"${String(s ?? '').replace(/"/g, '""')}"`;
-export function exportCSV(lesson) {
+const HEAD = ['scene', 'line', 'variant', 'role', 'hi', 'roman', 'en', 'spoken_as', 'status', 'note', 'reviewer', 'date'];
+function lessonRows(lesson) {
   const all = marks(lesson.id);
-  const rows = [['scene', 'line', 'variant', 'role', 'hi', 'roman', 'en', 'spoken_as', 'status', 'note', 'reviewer', 'date']];
+  const rows = [];
   for (const s of lesson.scenes) {
     s.lines.forEach((ln, i) => {
       for (const v of ['m', 'f']) {
@@ -36,15 +37,20 @@ export function exportCSV(lesson) {
       }
     });
   }
-  const csv = '﻿' + rows.map((r) => r.map(esc).join(',')).join('\r\n');
+  return rows;
+}
+function download(rows, name) {
+  const csv = '﻿' + [HEAD, ...rows].map((r) => r.map(esc).join(',')).join('\r\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
-  a.download = `review-${lesson.id}.csv`;
+  a.download = name;
   document.body.append(a);
   a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
-  return rows.length - 1;
+  return rows.length;
 }
+export function exportCSV(lesson) { return download(lessonRows(lesson), `review-${lesson.id}.csv`); }
+export function exportCourseCSV(lessons) { return download(lessons.flatMap(lessonRows), 'review-all-days.csv'); }
 
 export function reviewCounts(lesson) {
   const all = Object.values(marks(lesson.id));

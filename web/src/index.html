@@ -25,8 +25,9 @@
     <a href="#/" data-nav="home">Course</a>
     <a href="#/words" data-nav="words">Words</a>
   </nav>
-  <button class="icon-btn" id="open-settings" type="button" aria-haspopup="dialog" aria-label="Settings">
+  <button class="icon-btn settings-btn" id="open-settings" type="button" aria-haspopup="dialog">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+    <span class="settings-label">Settings</span>
   </button>
 </header>
 <div id="preview-banner" class="banner" hidden></div>
@@ -72,7 +73,7 @@
     <section class="about-voices" aria-labelledby="voices-title">
       <h3 id="voices-title">About the voices</h3>
       <p>Every voice in this course is AI-generated text-to-speech, not a recording of a person.</p>
-      <ul id="voice-list"></ul>
+      <details><summary>Voice names and licences</summary><ul id="voice-list"></ul></details>
     </section>
     <section aria-labelledby="storage-title">
       <h3 id="storage-title">Saved for offline</h3>
