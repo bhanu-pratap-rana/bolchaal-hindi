@@ -31,7 +31,7 @@ python3 tools/build_web.py --only all      # uses committed audio in media/
 npm run serve                               # http://localhost:8788
 python3 -m unittest discover -s tests/unit && npx playwright test
 ```
-Regenerating audio (only after content changes): download the Piper hi_IN voices (pratham, priyamvada, rohan; medium) into `./voices/`, then `PIPER_VOICES_DIR=./voices python3 tools/build_audio.py --profile demo-piper`. Only changed lines are synthesised. Commit `media/`.
+Regenerating audio (only after content changes): see `docs/VOICES.md` (Indic Parler-TTS, `--profile launch-parler`, on a Mac or Colab). Only changed lines are synthesised; then run `python3 tools/audio_qc.py --redo` and rebuild to remake any broken takes. Commit `media/`. The quick robotic demo voices are still available with `--profile demo-piper`.
 
 ## Layout
 ```
@@ -45,4 +45,4 @@ docs/                      plan link, content guide, review notes, licences, Cla
 
 ## Status
 Built and tested: all 20 days drafted (950 lines, Roman + feminine variants), demo audio, the app with every feature above, CI that validates, tests and deploys to GitHub Pages.
-Not done yet: teacher and student review of text and audio; launch voices (Indic Parler-TTS listening test); written permission from KHS to publish the course text; tests on real iPhone and Android devices.
+Not done yet: teacher and student review of text and audio; written permission from KHS to publish the course text; tests on real iPhone and Android devices.
