@@ -13,7 +13,7 @@ from __future__ import annotations
 import io
 import os
 
-from .base import TTSProvider, cache_key
+from .base import TTSProvider, cache_key, duration_ok
 
 
 class ParlerProvider(TTSProvider):
@@ -52,19 +52,29 @@ class ParlerProvider(TTSProvider):
         d = self.desc_tok(spec["description"], return_tensors="pt").to(self.device)
         p = self.tok(text, return_tensors="pt").to(self.device)
         sr = self.model.config.sampling_rate
-        # Parler samples randomly and now and then stops at once (empty or near-empty audio).
-        # Retry with the next seed; the seeds are fixed, so re-runs stay identical.
+        # Parler samples randomly: now and then a take stops early, skips words or babbles on.
+        # A take whose length doesn't fit the text is retried with the next seed (seeds are fixed,
+        # so re-runs stay identical). After 4 tries the take closest to a normal length is kept.
+        best, best_gap = None, float("inf")
         for attempt in range(4):
             self.torch.manual_seed(seed + attempt)
             audio = np.atleast_1d(self.model.generate(
                 input_ids=d.input_ids, attention_mask=d.attention_mask,
                 prompt_input_ids=p.input_ids, prompt_attention_mask=p.attention_mask,
             ).cpu().numpy().squeeze())
-            if audio.size >= 0.25 * sr:
+            secs = audio.size / sr
+            if duration_ok(text, secs):
+                best = audio
                 break
-            print(f"  empty audio, retrying ({attempt + 1}/3): {text}", flush=True)
+            gap = abs(secs - 0.09 * max(len(text.replace(" ", "")), 1))
+            if gap < best_gap:
+                best, best_gap = audio, gap
+            print(f"  take {attempt + 1} is {secs:.1f}s, unusual for this text; retrying: {text}", flush=True)
         else:
-            raise RuntimeError(f"Parler produced no audio after 4 tries for: {text}")
+            print(f"  WARNING kept the closest of 4 takes ({best.size / sr:.1f}s); listen to: {text}", flush=True)
+        audio = best
+        if audio.size < 0.1 * sr:
+            raise RuntimeError(f"Parler produced no usable audio for: {text}")
         buf = io.BytesIO()
         sf.write(buf, audio, sr, format="WAV")
         return buf.getvalue()
