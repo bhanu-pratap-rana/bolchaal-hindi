@@ -34,6 +34,21 @@ class TTSProvider(ABC):
         """Return a complete WAV file (bytes) for one line of Hindi text."""
 
 
+def spoken_chars(text: str) -> int:
+    """Letters and digits only: spaces and punctuation take no speaking time of their own."""
+    return sum(1 for c in text if c.isalnum() or "\u0900" <= c <= "\u097f" and c not in "\u0964\u0965")
+
+
+def duration_ok(text: str, seconds: float) -> bool:
+    """Is this a believable length for saying `text`? Hindi speech runs at about 0.09 s per character.
+
+    Far shorter means words were skipped or the model stopped; far longer means repeats or babbling.
+    The +1.2 s lets very short lines ("जी।") breathe.
+    """
+    n = max(spoken_chars(text), 1)
+    return 0.045 * n <= seconds <= 0.2 * n + 1.2
+
+
 def get_provider_class(name: str) -> type[TTSProvider]:
     """The provider class, without loading its model (its `settings` are enough for cache keys)."""
     if name == "piper":
